@@ -1,0 +1,1351 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Aroma buku tua dan keheningan menyelimuti perpustakaan kota sore ini. Aku sengaja ke sini mencari tempat tenang untuk mengerjakan tugas, sekalian menghemat listrik kosan.",
+    "bg_image": "library_day.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Narasi",
+    "text": "Di lorong rak masak, siluet cewek dengan rambut panjang dan pita kembar tampak menjinjit. Tachibana Nino—dikenal galak di kampus—hampir kehilangan keseimbangan saat meraih buku di rak teratas.",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_mencari.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "speaker": "Tachibana Nino",
+    "text": "Ugh... di mana sih buku resep kue tradisional Prancis itu? Raknya tinggi banget. Pustakawannya niat kerja nggak sih?!",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_frustrated.png",
+    "bgm": "hm_town.mp3",
+    "voice": "nino_jp_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Narasi",
+    "text": "Tanpa pikir panjang aku ambilkan bukunya dari belakang. Nino berbalik kaget, wajahnya memerah, lalu langsung menajam.",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_shocked.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 5,
+    "speaker": "Tachibana Nino",
+    "text": "Kyaaa! ...K-Kamu! [Nama_MC] kan?! Ngapain berdiri dekat-dekat begitu? Mau cari kesempatan ya?! Dasar!",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_tsundere.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "nino_jp_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "type": "question",
+    "speaker": "Sistem Pilihan (1/20)",
+    "text": "Nino menuduhmu karena kaget dan malu. Kamu...",
+    "options": [
+      {
+        "text": "Tersenyum, menyerahkan buku, dan bilang semoga resepnya berhasil—tanpa membela diri panjang.",
+        "affection_effect": 5,
+        "next_id": 7,
+        "feedback_text": "Nino tertegun. Ketulusan itu membuat bentengnya goyah sedikit."
+      },
+      {
+        "text": "Meletakkan buku di meja lalu pergi tanpa banyak kata.",
+        "affection_effect": 0,
+        "next_id": 8,
+        "feedback_text": "Nino menghela napas. Kamu terasa membosankan di matanya."
+      },
+      {
+        "text": "Meletakkan buku agak kasar dan bilang lain kali minta tolong yang sopan.",
+        "affection_effect": -5,
+        "next_id": 9,
+        "feedback_text": "Nino marah. Sikapmu membekas buruk."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 7,
+    "speaker": "Tachibana Nino",
+    "text": "E-Eh? *(Menerima buku canggung)* K-Kamu tahu ini buku resep? Mmm... m-makasih. Tapi jangan salah paham! Aku tidak minta ditolong!",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_03_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Tachibana Nino",
+    "text": "Hmph, aneh banget langsung kabur... Ya sudahlah, yang penting bukunya dapat.",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_town.mp3",
+    "voice": "nino_jp_03_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 9,
+    "speaker": "Tachibana Nino",
+    "text": "Dasar sombong! Gak butuh bantuan dari orang kayak kamu!",
+    "bg_image": "library_day.jpg",
+    "sprite": "nino_angry.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "nino_jp_03_a.wav",
+    "effect": "screen_shake"
+  },
+  {
+    "id": 10,
+    "speaker": "Narasi",
+    "text": "Keesokan harinya di taman kampus, sebuah bento mewah diletakkan keras di mejamu. Nino berdiri di samping dengan wajah cemberut.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_bento.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 11,
+    "type": "question",
+    "speaker": "Sistem Pilihan (2/20)",
+    "text": "Nino bilang ini 'sisa', padahal jelas dimasak semalaman. Kamu...",
+    "options": [
+      {
+        "text": "Mencicipi, lalu bilang porsi sisa jarang ditata semahal ini—dan mengucapkan terima kasih atas usahanya.",
+        "affection_effect": 5,
+        "next_id": 12,
+        "feedback_text": "Nino memalingkan wajah yang memerah padam."
+      },
+      {
+        "text": "Menerima dengan senang karena belum makan siang.",
+        "affection_effect": 0,
+        "next_id": 13,
+        "feedback_text": "Nino sedikit kecewa kamu menelan kata 'sisa' mentah-mentah."
+      },
+      {
+        "text": "Mengomentari rasanya kurang dan tetap makan.",
+        "affection_effect": -5,
+        "next_id": 14,
+        "feedback_text": "Nino tersinggung parah."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 12,
+    "speaker": "Tachibana Nino",
+    "text": "K-Kamu bicara apa?! Siapa yang kerja keras buat kamu! T-tapi... emang beneran enak? Awas kalau bohong!",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_super_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_05_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Tachibana Nino",
+    "text": "I-Iya, makan aja sampai habis! Dasar rakus...",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_05_a.wav",
+    "effect": ""
+  },
+  {
+    "id": 14,
+    "speaker": "Tachibana Nino",
+    "text": "Kalau gak suka jangan makan! Dasar tidak tahu diri!",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_angry.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "nino_jp_05_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 15,
+    "speaker": "Narasi",
+    "text": "Beberapa minggu Nino sering menunggumu di kampus, memberi bento, lalu pergi cepat.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 16,
+    "type": "question",
+    "speaker": "Sistem Pilihan (3/20)",
+    "text": "Suatu hari bento-nya lebih mewah dari biasanya. Kamu...",
+    "options": [
+      {
+        "text": "Membuka pelan, terkejut pada hiasannya, dan bertanya apakah ini khusus untukmu.",
+        "affection_effect": 5,
+        "next_id": 17,
+        "feedback_text": "Nino tersenyum malu. Usahanya dihargai."
+      },
+      {
+        "text": "Bilang hari ini lebih cantik dari biasanya.",
+        "affection_effect": 0,
+        "next_id": 18,
+        "feedback_text": "Dia sedikit kecewa kamu tidak bertanya lebih dalam."
+      },
+      {
+        "text": "Bertanya apakah dia tidak bosan membuat bento terus.",
+        "affection_effect": -5,
+        "next_id": 19,
+        "feedback_text": "Nino merasa diremehkan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 17,
+    "speaker": "Tachibana Nino",
+    "text": "J-Jangan salah paham! Aku cuma iseng! T-tapi... kamu suka?",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_101.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 18,
+    "speaker": "Tachibana Nino",
+    "text": "I-iya, aku agak bereksperimen hari ini.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_102.wav",
+    "effect": ""
+  },
+  {
+    "id": 19,
+    "speaker": "Tachibana Nino",
+    "text": "Kalau begitu aku tidak akan buat lagi!",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_angry.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_103.wav",
+    "effect": ""
+  },
+  {
+    "id": 20,
+    "speaker": "Narasi",
+    "text": "Suatu sore Nino duduk sendirian di taman dengan wajah murung, memegang buku resep yang sama.",
+    "bg_image": "campus_park_sunset.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 21,
+    "type": "question",
+    "speaker": "Sistem Pilihan (4/20)",
+    "text": "Ternyata dia gagal di lomba memasak yang diimpikan. Kamu...",
+    "options": [
+      {
+        "text": "Duduk di sampingnya dan bilang kegagalan bagian dari proses—kamu percaya lain kali dia bisa, dan kamu akan tetap mencicipi masakannya.",
+        "affection_effect": 5,
+        "next_id": 22,
+        "feedback_text": "Nino menangis dan memeluk tanpa sadar."
+      },
+      {
+        "text": "Menepuk pundak dan bilang lain kali coba lagi.",
+        "affection_effect": 0,
+        "next_id": 23,
+        "feedback_text": "Dia mengangguk, masih sedih."
+      },
+      {
+        "text": "Bilang makanya belajar lebih giat.",
+        "affection_effect": -5,
+        "next_id": 24,
+        "feedback_text": "Dia merasa disalahkan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 22,
+    "speaker": "Tachibana Nino",
+    "text": "Aku... berusaha keras! Tapi tetap gagal... T-tapi mendengar itu, aku ingin coba lagi. Terima kasih...",
+    "bg_image": "campus_park_sunset.jpg",
+    "sprite": "nino_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_104.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 23,
+    "speaker": "Tachibana Nino",
+    "text": "...Iya, aku akan coba lagi.",
+    "bg_image": "campus_park_sunset.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_105.wav",
+    "effect": ""
+  },
+  {
+    "id": 24,
+    "speaker": "Tachibana Nino",
+    "text": "Aku tahu aku kurang berusaha. Maaf merepotkan.",
+    "bg_image": "campus_park_sunset.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_106.wav",
+    "effect": ""
+  },
+  {
+    "id": 25,
+    "speaker": "Narasi",
+    "text": "Seminggu kemudian Nino berlatih di dapur kampus. Dia tersenyum saat melihatmu.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_cooking.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 26,
+    "type": "question",
+    "speaker": "Sistem Pilihan (5/20)",
+    "text": "Nino mengajak mencicipi masakan barunya, gugup. Kamu...",
+    "options": [
+      {
+        "text": "Mencicipi antusias dan bilang lebih enak dari restoran bintang lima.",
+        "affection_effect": 5,
+        "next_id": 27,
+        "feedback_text": "Nino tersenyum lebar, percaya diri naik."
+      },
+      {
+        "text": "Bilang cukup enak.",
+        "affection_effect": 0,
+        "next_id": 28,
+        "feedback_text": "Dia senang tapi masih ragu."
+      },
+      {
+        "text": "Mengomentari kurang garam tanpa pujian.",
+        "affection_effect": -5,
+        "next_id": 29,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 27,
+    "speaker": "Tachibana Nino",
+    "text": "B-Beneran?! Aku latihan seminggu! Berkat dukunganmu aku lebih berani!",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_107.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 28,
+    "speaker": "Tachibana Nino",
+    "text": "Ah... makasih. Aku akan terus latihan.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_108.wav",
+    "effect": ""
+  },
+  {
+    "id": 29,
+    "speaker": "Tachibana Nino",
+    "text": "Maaf... aku masih belajar.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_109.wav",
+    "effect": ""
+  },
+  {
+    "id": 30,
+    "speaker": "Narasi",
+    "text": "Nino menang lomba memasak kampus. Dia berlari mencarimu.",
+    "bg_image": "campus_day.jpg",
+    "sprite": "nino_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 31,
+    "type": "question",
+    "speaker": "Sistem Pilihan (6/20)",
+    "text": "Nino memelukmu erat karena senang. Kamu...",
+    "options": [
+      {
+        "text": "Membalas pelukan dan berbisik kamu selalu tahu dia bisa—kamu bangga.",
+        "affection_effect": 5,
+        "next_id": 32,
+        "feedback_text": "Pelukan itu menjadi penghargaan terbaik baginya."
+      },
+      {
+        "text": "Tersenyum dan bilang selamat.",
+        "affection_effect": 0,
+        "next_id": 33,
+        "feedback_text": "Dia senang, berharap lebih ekspresif."
+      },
+      {
+        "text": "Kaget dan sedikit mundur.",
+        "affection_effect": -5,
+        "next_id": 34,
+        "feedback_text": "Dia kecewa kamu tidak ikut merayakan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 32,
+    "speaker": "Tachibana Nino",
+    "text": "Semua berkat dukunganmu! Aku tidak akan di sini tanpamu!",
+    "bg_image": "campus_day.jpg",
+    "sprite": "nino_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_110.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 33,
+    "speaker": "Tachibana Nino",
+    "text": "Makasih ya!",
+    "bg_image": "campus_day.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_111.wav",
+    "effect": ""
+  },
+  {
+    "id": 34,
+    "speaker": "Tachibana Nino",
+    "text": "...Makasih.",
+    "bg_image": "campus_day.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_112.wav",
+    "effect": ""
+  },
+  {
+    "id": 35,
+    "speaker": "Narasi",
+    "text": "Nino mengajakmu ke restoran kecil favoritnya. Dia memesan untuk berdua tanpa bertanya.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 36,
+    "type": "question",
+    "speaker": "Sistem Pilihan (7/20)",
+    "text": "Dia bilang ini cara bilang terima kasih. Kamu...",
+    "options": [
+      {
+        "text": "Mengucapkan terima kasih dengan tenang dan menikmati makan bareng tanpa membesar-besarkan.",
+        "affection_effect": 5,
+        "next_id": 37,
+        "feedback_text": "Nino lega. Suasana hangat."
+      },
+      {
+        "text": "Bertanya kenapa tiba-tiba traktir.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Dia canggung menjelaskan."
+      },
+      {
+        "text": "Menolak karena tidak enak menerima.",
+        "affection_effect": -5,
+        "next_id": 39,
+        "feedback_text": "Nino tersinggung."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 37,
+    "speaker": "Tachibana Nino",
+    "text": "Jangan banyak tanya. Makan saja.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_113.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 38,
+    "speaker": "Tachibana Nino",
+    "text": "A-karena... kamu sering bantu. Itu saja.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_114.wav",
+    "effect": ""
+  },
+  {
+    "id": 39,
+    "speaker": "Tachibana Nino",
+    "text": "Kalau tidak mau, sudahlah.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "nino_angry.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_115.wav",
+    "effect": ""
+  },
+  {
+    "id": 40,
+    "speaker": "Narasi",
+    "text": "Di kampus hujan deras. Nino tidak bawa payung.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "nino_worried.png",
+    "bgm": "hm_rain.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 41,
+    "type": "question",
+    "speaker": "Sistem Pilihan (8/20)",
+    "text": "Kamu melihatnya di lorong. Kamu...",
+    "options": [
+      {
+        "text": "Menawarkan berbagi payung tanpa banyak komentar.",
+        "affection_effect": 5,
+        "next_id": 42,
+        "feedback_text": "Nino mengangguk kaku, lalu pelan merapat."
+      },
+      {
+        "text": "Menawarkan payungmu dan kamu yang basah.",
+        "affection_effect": 0,
+        "next_id": 43,
+        "feedback_text": "Dia menolak keras lalu akhirnya menerima dengan cemberut."
+      },
+      {
+        "text": "Hanya bilang hati-hati di jalan.",
+        "affection_effect": -5,
+        "next_id": 44,
+        "feedback_text": "Dia pergi sendiri ke hujan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 42,
+    "speaker": "Tachibana Nino",
+    "text": "...Jangan bilang ke siapa-siapa.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_116.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 43,
+    "speaker": "Tachibana Nino",
+    "text": "Hmph. Aku pinjam sebentar saja.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_117.wav",
+    "effect": ""
+  },
+  {
+    "id": 44,
+    "speaker": "Tachibana Nino",
+    "text": "Aku kuat sendiri.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "nino_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_118.wav",
+    "effect": ""
+  },
+  {
+    "id": 45,
+    "speaker": "Narasi",
+    "text": "Nino meminta pendapat soal resep baru yang dia ciptakan semalaman.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_cooking.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 46,
+    "type": "question",
+    "speaker": "Sistem Pilihan (9/20)",
+    "text": "Kamu mencicipi. Kamu...",
+    "options": [
+      {
+        "text": "Menjelaskan apa yang kamu suka secara spesifik, lalu satu saran kecil yang membangun.",
+        "affection_effect": 5,
+        "next_id": 47,
+        "feedback_text": "Nino mencatat dengan serius, tersenyum."
+      },
+      {
+        "text": "Bilang enak.",
+        "affection_effect": 0,
+        "next_id": 48,
+        "feedback_text": "Dia ingin detail lebih."
+      },
+      {
+        "text": "Langsung menunjuk kekurangan tanpa pujian.",
+        "affection_effect": -5,
+        "next_id": 49,
+        "feedback_text": "Semangatnya turun."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 47,
+    "speaker": "Tachibana Nino",
+    "text": "Oke... aku catat. Makasih sudah jujur.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_119.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 48,
+    "speaker": "Tachibana Nino",
+    "text": "Cuma enak? ...Yasudah.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_120.wav",
+    "effect": ""
+  },
+  {
+    "id": 49,
+    "speaker": "Tachibana Nino",
+    "text": "...Aku akan perbaiki.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_121.wav",
+    "effect": ""
+  },
+  {
+    "id": 50,
+    "speaker": "Narasi",
+    "text": "Teman Nino mengejek hobinya memasak sebagai 'hal rumah tangga'. Nino diam.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 51,
+    "type": "question",
+    "speaker": "Sistem Pilihan (10/20)",
+    "text": "Kamu mendengar itu. Kamu...",
+    "options": [
+      {
+        "text": "Membela dengan tenang: memasak butuh skill, dan hasilnya nyata.",
+        "affection_effect": 5,
+        "next_id": 52,
+        "feedback_text": "Nino menatapmu lama, lalu mengangguk."
+      },
+      {
+        "text": "Mengajak Nino pergi dari situ.",
+        "affection_effect": 0,
+        "next_id": 53,
+        "feedback_text": "Dia mengikuti, masih terluka."
+      },
+      {
+        "text": "Diam karena tidak mau ikut ribut.",
+        "affection_effect": -5,
+        "next_id": 54,
+        "feedback_text": "Nino merasa sendirian."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 52,
+    "speaker": "Tachibana Nino",
+    "text": "...Makasih. Aku jarang dibela.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_teary.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_122.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 53,
+    "speaker": "Tachibana Nino",
+    "text": "Ayo pulang.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_123.wav",
+    "effect": ""
+  },
+  {
+    "id": 54,
+    "speaker": "Tachibana Nino",
+    "text": "...Aku ke perpustakaan dulu.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "nino_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_124.wav",
+    "effect": ""
+  },
+  {
+    "id": 55,
+    "speaker": "Narasi",
+    "text": "Nino mengajak ke rooftop malam. Kota di bawah berkilau.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_pensive.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 56,
+    "type": "question",
+    "speaker": "Sistem Pilihan (11/20)",
+    "text": "Dia bilang kadang lelah selalu terlihat kuat. Kamu...",
+    "options": [
+      {
+        "text": "Mendengarkan, lalu bilang dia boleh lemah di depanmu.",
+        "affection_effect": 5,
+        "next_id": 57,
+        "feedback_text": "Bahunya turun. Dia menghela napas panjang."
+      },
+      {
+        "text": "Memberi nasihat agar istirahat lebih banyak.",
+        "affection_effect": 0,
+        "next_id": 58,
+        "feedback_text": "Masuk akal, tapi dia butuh didengar dulu."
+      },
+      {
+        "text": "Mengalihkan ke topik lain.",
+        "affection_effect": -5,
+        "next_id": 59,
+        "feedback_text": "Dia menyesal membuka mulut."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 57,
+    "speaker": "Tachibana Nino",
+    "text": "Kamu... aneh. Tapi aneh yang tidak menjengkelkan.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_125.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 58,
+    "speaker": "Tachibana Nino",
+    "text": "Iya... aku akan coba.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_126.wav",
+    "effect": ""
+  },
+  {
+    "id": 59,
+    "speaker": "Tachibana Nino",
+    "text": "Sudahlah. Ayo turun.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_127.wav",
+    "effect": ""
+  },
+  {
+    "id": 60,
+    "speaker": "Narasi",
+    "text": "Nino hampir mengucapkan perasaan, lalu mengurungkan dengan alasan cuaca.",
+    "bg_image": "park_night.jpg",
+    "sprite": "nino_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 61,
+    "type": "question",
+    "speaker": "Sistem Pilihan (12/20)",
+    "text": "Kamu menyadari itu. Kamu...",
+    "options": [
+      {
+        "text": "Memberi ruang: bilang tidak apa-apa jika belum siap bilang.",
+        "affection_effect": 5,
+        "next_id": 62,
+        "feedback_text": "Nino mengangguk lega."
+      },
+      {
+        "text": "Mendesak pelan apa yang mau dikatakan.",
+        "affection_effect": 0,
+        "next_id": 63,
+        "feedback_text": "Dia panik dan mengelak."
+      },
+      {
+        "text": "Mengganti topik total.",
+        "affection_effect": -5,
+        "next_id": 64,
+        "feedback_text": "Kesempatan tertutup."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 62,
+    "speaker": "Tachibana Nino",
+    "text": "...Nanti. Aku janji.",
+    "bg_image": "park_night.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_128.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 63,
+    "speaker": "Tachibana Nino",
+    "text": "Bukan apa-apa!",
+    "bg_image": "park_night.jpg",
+    "sprite": "nino_tsundere.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_129.wav",
+    "effect": ""
+  },
+  {
+    "id": 64,
+    "speaker": "Tachibana Nino",
+    "text": "Iya, dingin ya.",
+    "bg_image": "park_night.jpg",
+    "sprite": "nino_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_130.wav",
+    "effect": ""
+  },
+  {
+    "id": 65,
+    "speaker": "Narasi",
+    "text": "Keluarga Nino mengundang makan malam. Dia tegang.",
+    "bg_image": "house_day.jpg",
+    "sprite": "nino_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 66,
+    "type": "question",
+    "speaker": "Sistem Pilihan (13/20)",
+    "text": "Di depan keluarganya, kamu...",
+    "options": [
+      {
+        "text": "Berbicara jujur tentang bagaimana Nino mengajarkan ketekunan lewat masakannya.",
+        "affection_effect": 5,
+        "next_id": 67,
+        "feedback_text": "Ibunya tersenyum. Nino memerah."
+      },
+      {
+        "text": "Menjawab sopan seperlunya.",
+        "affection_effect": 0,
+        "next_id": 68,
+        "feedback_text": "Aman, tapi kaku."
+      },
+      {
+        "text": "Terlalu formal sampai terasa jauh.",
+        "affection_effect": -5,
+        "next_id": 69,
+        "feedback_text": "Nino khawatir."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 67,
+    "speaker": "Tachibana Nino",
+    "text": "Ibu bilang kamu baik. Jangan sombong ya.",
+    "bg_image": "house_day.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_131.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 68,
+    "speaker": "Tachibana Nino",
+    "text": "Lain kali lebih santai...",
+    "bg_image": "house_day.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_132.wav",
+    "effect": ""
+  },
+  {
+    "id": 69,
+    "speaker": "Tachibana Nino",
+    "text": "Mereka... tidak apa-apa kok.",
+    "bg_image": "house_day.jpg",
+    "sprite": "nino_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_133.wav",
+    "effect": ""
+  },
+  {
+    "id": 70,
+    "speaker": "Narasi",
+    "text": "Setelah makan malam, kalian berjalan di taman.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "nino_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 71,
+    "type": "question",
+    "speaker": "Sistem Pilihan (14/20)",
+    "text": "Nino bertanya apakah kamu serius dengan hubungan ini. Kamu...",
+    "options": [
+      {
+        "text": "Menjawab dengan alasan konkret, bukan formalitas.",
+        "affection_effect": 5,
+        "next_id": 72,
+        "feedback_text": "Dia mengerat tanganmu."
+      },
+      {
+        "text": "Bilang serius tanpa penjelasan.",
+        "affection_effect": 0,
+        "next_id": 73,
+        "feedback_text": "Masih ada keraguan di matanya."
+      },
+      {
+        "text": "Ragu.",
+        "affection_effect": -5,
+        "next_id": 74,
+        "feedback_text": "Dia melepaskan tangan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 72,
+    "speaker": "Tachibana Nino",
+    "text": "Aku juga serius. Jangan buat aku menyesal.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "nino_teary.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_134.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 73,
+    "speaker": "Tachibana Nino",
+    "text": "Oke... aku percaya.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_135.wav",
+    "effect": ""
+  },
+  {
+    "id": 74,
+    "speaker": "Tachibana Nino",
+    "text": "...Aku mengerti.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "nino_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_136.wav",
+    "effect": ""
+  },
+  {
+    "id": 75,
+    "speaker": "Narasi",
+    "text": "Nino memberimu celemek kecil buatan sendiri sebagai hadiah.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_shy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 76,
+    "type": "question",
+    "speaker": "Sistem Pilihan (15/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memakainya langsung dan bilang akan dipakai saat memasak bareng.",
+        "affection_effect": 5,
+        "next_id": 77,
+        "feedback_text": "Nino menutup wajah, senang."
+      },
+      {
+        "text": "Mengucapkan terima kasih dan menyimpan.",
+        "affection_effect": 0,
+        "next_id": 78,
+        "feedback_text": "Dia berharap kamu pakai sekarang."
+      },
+      {
+        "text": "Bilang tidak butuh.",
+        "affection_effect": -5,
+        "next_id": 79,
+        "feedback_text": "Dia menarik hadiah itu kembali."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 77,
+    "speaker": "Tachibana Nino",
+    "text": "P-pakai yang bener nanti!",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_super_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_137.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 78,
+    "speaker": "Tachibana Nino",
+    "text": "Semoga muat.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_138.wav",
+    "effect": ""
+  },
+  {
+    "id": 79,
+    "speaker": "Tachibana Nino",
+    "text": "Maaf sudah memaksa.",
+    "bg_image": "kitchen_day.jpg",
+    "sprite": "nino_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_139.wav",
+    "effect": ""
+  },
+  {
+    "id": 80,
+    "speaker": "Narasi",
+    "text": "Di bawah sakura, Nino bilang ingin momen ini abadi.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "nino_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 81,
+    "type": "question",
+    "speaker": "Sistem Pilihan (16/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Meletakkan sehelai sakura di rambutnya dan bilang momen ini akan kamu ingat.",
+        "affection_effect": 5,
+        "next_id": 82,
+        "feedback_text": "Nino terdiam, lalu tersenyum kecil."
+      },
+      {
+        "text": "Mengangguk setuju pemandangannya indah.",
+        "affection_effect": 0,
+        "next_id": 83,
+        "feedback_text": "Kurang dari yang dia harapkan."
+      },
+      {
+        "text": "Mengajak foto saja biar abadi.",
+        "affection_effect": -5,
+        "next_id": 84,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 82,
+    "speaker": "Tachibana Nino",
+    "text": "Kamu... selalu tahu cara aneh yang berhasil.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_140.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 83,
+    "speaker": "Tachibana Nino",
+    "text": "Iya... indah.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_141.wav",
+    "effect": ""
+  },
+  {
+    "id": 84,
+    "speaker": "Tachibana Nino",
+    "text": "Yasudah.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_142.wav",
+    "effect": ""
+  },
+  {
+    "id": 85,
+    "speaker": "Narasi",
+    "text": "Hari wisuda Nino. Dia berlari ke arahmu dalam toga.",
+    "bg_image": "graduation_hall.jpg",
+    "sprite": "nino_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 86,
+    "type": "question",
+    "speaker": "Sistem Pilihan (17/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memeluknya dan bilang bangga—bukan hanya pada nilai, tapi pada ketekunannya.",
+        "affection_effect": 5,
+        "next_id": 87,
+        "feedback_text": "Nino menangis di bahumu."
+      },
+      {
+        "text": "Mengucapkan selamat.",
+        "affection_effect": 0,
+        "next_id": 88,
+        "feedback_text": "Dia senang, ingin lebih."
+      },
+      {
+        "text": "Memuji penampilan saja.",
+        "affection_effect": -5,
+        "next_id": 89,
+        "feedback_text": "Dia kecewa fokusnya hanya pada luar."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 87,
+    "speaker": "Tachibana Nino",
+    "text": "Aku... sampai di sini karena kamu juga.",
+    "bg_image": "graduation_hall.jpg",
+    "sprite": "nino_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_143.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 88,
+    "speaker": "Tachibana Nino",
+    "text": "Makasih.",
+    "bg_image": "graduation_hall.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_144.wav",
+    "effect": ""
+  },
+  {
+    "id": 89,
+    "speaker": "Tachibana Nino",
+    "text": "...Iya.",
+    "bg_image": "graduation_hall.jpg",
+    "sprite": "nino_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_145.wav",
+    "effect": ""
+  },
+  {
+    "id": 90,
+    "speaker": "Narasi",
+    "text": "Malam wisuda di rooftop. Nino menanyakan masa depan kalian.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 91,
+    "type": "question",
+    "speaker": "Sistem Pilihan (18/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Bilang kalian akan bersama, apapun yang terjadi.",
+        "affection_effect": 5,
+        "next_id": 92,
+        "feedback_text": "Dia lega, air mata bahagia."
+      },
+      {
+        "text": "Bilang lihat saja nanti.",
+        "affection_effect": 0,
+        "next_id": 93,
+        "feedback_text": "Dia gelisah."
+      },
+      {
+        "text": "Bilang belum tahu.",
+        "affection_effect": -5,
+        "next_id": 94,
+        "feedback_text": "Dia melepaskan tangan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 92,
+    "speaker": "Tachibana Nino",
+    "text": "Aku juga akan selalu ada.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_cry.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_146.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 93,
+    "speaker": "Tachibana Nino",
+    "text": "Aku akan menunggu kepastianmu.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_147.wav",
+    "effect": ""
+  },
+  {
+    "id": 94,
+    "speaker": "Tachibana Nino",
+    "text": "Aku mengerti...",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "nino_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_148.wav",
+    "effect": ""
+  },
+  {
+    "id": 95,
+    "speaker": "Narasi",
+    "text": "Nino membuka restoran kecil. Meja khusus disiapkan untuk kalian.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 96,
+    "type": "question",
+    "speaker": "Sistem Pilihan (19/20)",
+    "text": "Kamu mencicipi menu spesialnya. Kamu...",
+    "options": [
+      {
+        "text": "Mengatakan ini momen paling berarti—melihat mimpinya jadi nyata dan bisa berbagi.",
+        "affection_effect": 5,
+        "next_id": 97,
+        "feedback_text": "Nino menangis bahagia."
+      },
+      {
+        "text": "Memuji rasanya enak.",
+        "affection_effect": 0,
+        "next_id": 98,
+        "feedback_text": "Dia ingin apresiasi lebih dalam."
+      },
+      {
+        "text": "Mengomentari teknis restoran saja.",
+        "affection_effect": -5,
+        "next_id": 99,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 97,
+    "speaker": "Tachibana Nino",
+    "text": "Aku tidak bisa bayangkan tanpa kamu di sini.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_149.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 98,
+    "speaker": "Tachibana Nino",
+    "text": "Aku senang kamu suka.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "nino_jp_150.wav",
+    "effect": ""
+  },
+  {
+    "id": 99,
+    "speaker": "Tachibana Nino",
+    "text": "Aku akan perbaiki.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "nino_jp_151.wav",
+    "effect": ""
+  },
+  {
+    "id": 100,
+    "type": "question",
+    "speaker": "Sistem Pilihan (20/20)",
+    "text": "Di bawah sakura, Nino berlutut dengan kotak kecil. Dia meminta kamu menjadi pendamping hidupnya. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan jelas, memakaikan cincin itu, dan berjanji mendukungnya.",
+        "affection_effect": 5,
+        "next_id": 101,
+        "feedback_text": "Nino memeluk erat, menangis bahagia."
+      },
+      {
+        "text": "Mengatakan ingin bersama, tapi belum siap menikah sekarang.",
+        "affection_effect": 0,
+        "next_id": 101,
+        "feedback_text": "Nino tersenyum, ada kecewa yang ditahan."
+      },
+      {
+        "text": "Menolak dengan lembut.",
+        "affection_effect": -5,
+        "next_id": 101,
+        "feedback_text": "Nino meninggalkanmu di bawah sakura."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 101,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Chapter 2 telah selesai. Menghitung perasaan Tachibana Nino kepadamu...",
+    "ending_type": "auto",
+    "ending_image": "auto",
+    "bgm": ""
+  }
+]

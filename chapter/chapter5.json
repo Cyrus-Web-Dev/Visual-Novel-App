@@ -1,0 +1,1351 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Malam ini aku datang ke rumah mewah bergaya Eropa di kawasan elite. Hari pertama sebagai guru privat Watanabe Itsuki, anak pemilik yayasan.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Narasi",
+    "text": "Di ruang belajar luas, Itsuki duduk rapi berpakaian formal. Buku tebal menumpuk. Wajahnya serius—tapi lingkaran hitam di bawah mata tidak bisa berbohong.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_serius.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "speaker": "Watanabe Itsuki",
+    "text": "Selamat malam, [Nama_MC]-san. Mulai hari ini Anda mengajari saya. Saya hanya menerima metode yang logis dan efisien. Tolong jangan buang waktu saya.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_formal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Narasi",
+    "text": "Satu jam berlalu. Itsuki memaksakan hafalan rumus sampai pusing. Tiba-tiba—*kruuk*—perutnya berbunyi nyaring.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_shocked.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 5,
+    "speaker": "Watanabe Itsuki",
+    "text": "A-Ah...! *(Menutup perut, merah padam)* I-Itu... suara gesekan kursi! Bukan perut saya!",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "itsuki_jp_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "type": "question",
+    "speaker": "Sistem Pilihan (1/20)",
+    "text": "Itsuki kelaparan karena melewatkan makan, tapi gengsinya menolak mengaku. Kamu...",
+    "options": [
+      {
+        "text": "Mengeluarkan roti dan bilang kebetulan kamu juga lapar—minta tolong dihabiskan agar tidak mubazir.",
+        "affection_effect": 5,
+        "next_id": 7,
+        "feedback_text": "Alasan logis tanpa meruntuhkan gengsinya. Itsuki bersyukur."
+      },
+      {
+        "text": "Pura-pura percaya soal kursi dan lanjut soal.",
+        "affection_effect": 0,
+        "next_id": 8,
+        "feedback_text": "Perutnya tetap lapar, fokus hilang."
+      },
+      {
+        "text": "Bilang terang-terangan itu perut lapar, suruh makan dulu.",
+        "affection_effect": -5,
+        "next_id": 9,
+        "feedback_text": "Gengsinya terluka. Sesi dibatalkan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 7,
+    "speaker": "Watanabe Itsuki",
+    "text": "E-Eh? Anda juga lapar...? *(Mata berbinar ke roti)* J-Jika agar tidak mubazir... baiklah, saya bantu menghabiskan...",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_eating_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_03_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Watanabe Itsuki",
+    "text": "I-Iya, lanjut saja... *(Tangan gemetar karena lemas)*",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_lemas.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_03_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 9,
+    "speaker": "Watanabe Itsuki",
+    "text": "Anda tidak sopan! Saya tidak lapar! Silakan pulang hari ini!",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_angry.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "itsuki_jp_03_a.wav",
+    "effect": "screen_shake"
+  },
+  {
+    "id": 10,
+    "speaker": "Narasi",
+    "text": "Keesokan harinya Itsuki malu-malu menawarkan kopi buatan sendiri.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_formal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 11,
+    "type": "question",
+    "speaker": "Sistem Pilihan (2/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan hangat dan menghargai usahanya.",
+        "affection_effect": 5,
+        "next_id": 12,
+        "feedback_text": "Itsuki tersipu."
+      },
+      {
+        "text": "Mengucapkan terima kasih biasa.",
+        "affection_effect": 0,
+        "next_id": 13,
+        "feedback_text": "Sedikit kecewa."
+      },
+      {
+        "text": "Bilang lebih suka teh.",
+        "affection_effect": -5,
+        "next_id": 14,
+        "feedback_text": "Tersinggung."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 12,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya belajar membuatnya khusus untuk Anda.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_101.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya harap Anda suka.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_102.wav",
+    "effect": ""
+  },
+  {
+    "id": 14,
+    "speaker": "Watanabe Itsuki",
+    "text": "Maaf, saya tidak tahu kesukaan Anda.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_103.wav",
+    "effect": ""
+  },
+  {
+    "id": 15,
+    "speaker": "Narasi",
+    "text": "Itsuki menunjukkan kemampuan memasak di dapur.",
+    "bg_image": "mansion_kitchen.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 16,
+    "type": "question",
+    "speaker": "Sistem Pilihan (3/20)",
+    "text": "Dia bilang belajar sendiri. Kamu...",
+    "options": [
+      {
+        "text": "Memuji bakatnya dengan spesifik.",
+        "affection_effect": 5,
+        "next_id": 17,
+        "feedback_text": "Itsuki berseri."
+      },
+      {
+        "text": "Bilang cukup enak.",
+        "affection_effect": 0,
+        "next_id": 18,
+        "feedback_text": "Kurang."
+      },
+      {
+        "text": "Mengomentari kurang garam.",
+        "affection_effect": -5,
+        "next_id": 19,
+        "feedback_text": "Hancur."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 17,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya tidak pernah dapat pujian seperti ini.",
+    "bg_image": "mansion_kitchen.jpg",
+    "sprite": "itsuki_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_104.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 18,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya senang Anda menyukai.",
+    "bg_image": "mansion_kitchen.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_105.wav",
+    "effect": ""
+  },
+  {
+    "id": 19,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan perbaiki.",
+    "bg_image": "mansion_kitchen.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_106.wav",
+    "effect": ""
+  },
+  {
+    "id": 20,
+    "speaker": "Narasi",
+    "text": "Di taman malam, Itsuki bicara tentang kesepian anak tunggal.",
+    "bg_image": "mansion_garden_night.jpg",
+    "sprite": "itsuki_pensive.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 21,
+    "type": "question",
+    "speaker": "Sistem Pilihan (4/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memegang tangan dan bilang kamu peduli—dia tidak sendirian lagi.",
+        "affection_effect": 5,
+        "next_id": 22,
+        "feedback_text": "Itsuki menangis diam."
+      },
+      {
+        "text": "Mengangguk simpati.",
+        "affection_effect": 0,
+        "next_id": 23,
+        "feedback_text": "Kurang."
+      },
+      {
+        "text": "Bilang dia kan punya banyak pembantu.",
+        "affection_effect": -5,
+        "next_id": 24,
+        "feedback_text": "Tidak mengerti."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 22,
+    "speaker": "Watanabe Itsuki",
+    "text": "Tidak ada yang pernah bilang itu...",
+    "bg_image": "mansion_garden_night.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_107.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 23,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya sudah terbiasa.",
+    "bg_image": "mansion_garden_night.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_108.wav",
+    "effect": ""
+  },
+  {
+    "id": 24,
+    "speaker": "Watanabe Itsuki",
+    "text": "Anda benar.",
+    "bg_image": "mansion_garden_night.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_109.wav",
+    "effect": ""
+  },
+  {
+    "id": 25,
+    "speaker": "Narasi",
+    "text": "Itsuki menunjukkan koleksi buku di perpustakaan pribadi.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 26,
+    "type": "question",
+    "speaker": "Sistem Pilihan (5/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Terkesan pada dedikasinya.",
+        "affection_effect": 5,
+        "next_id": 27,
+        "feedback_text": "Itsuki bangga berbagi."
+      },
+      {
+        "text": "Bilang banyak buku.",
+        "affection_effect": 0,
+        "next_id": 28,
+        "feedback_text": "Kurang."
+      },
+      {
+        "text": "Meragukan apakah semua dibaca.",
+        "affection_effect": -5,
+        "next_id": 29,
+        "feedback_text": "Merasa diremehkan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 27,
+    "speaker": "Watanabe Itsuki",
+    "text": "Sekarang saya bisa berbagi dengan Anda.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_110.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 28,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya harap Anda tertarik.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_town.mp3",
+    "voice": "itsuki_jp_111.wav",
+    "effect": ""
+  },
+  {
+    "id": 29,
+    "speaker": "Watanabe Itsuki",
+    "text": "Maaf, saya terlalu memaksa.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_112.wav",
+    "effect": ""
+  },
+  {
+    "id": 30,
+    "speaker": "Narasi",
+    "text": "Di atap mansion, Itsuki bilang sering ke sini sendirian—sekarang tidak.",
+    "bg_image": "mansion_roof_night.jpg",
+    "sprite": "itsuki_soft.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 31,
+    "type": "question",
+    "speaker": "Sistem Pilihan (6/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Bilang akan selalu datang ke sini bersamanya.",
+        "affection_effect": 5,
+        "next_id": 32,
+        "feedback_text": "Itsuki terharu."
+      },
+      {
+        "text": "Mengomentari pemandangan.",
+        "affection_effect": 0,
+        "next_id": 33,
+        "feedback_text": "Kurang merespons."
+      },
+      {
+        "text": "Bilang kedinginan, ajak turun.",
+        "affection_effect": -5,
+        "next_id": 34,
+        "feedback_text": "Kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 32,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya tidak pernah bayangkan bertemu seseorang seperti Anda.",
+    "bg_image": "mansion_roof_night.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_113.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 33,
+    "speaker": "Watanabe Itsuki",
+    "text": "Iya, indah.",
+    "bg_image": "mansion_roof_night.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_114.wav",
+    "effect": ""
+  },
+  {
+    "id": 34,
+    "speaker": "Watanabe Itsuki",
+    "text": "Mari turun.",
+    "bg_image": "mansion_roof_night.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_115.wav",
+    "effect": ""
+  },
+  {
+    "id": 35,
+    "speaker": "Narasi",
+    "text": "Itsuki menggenggam tangan dan bilang mencintaimu.",
+    "bg_image": "park_night.jpg",
+    "sprite": "itsuki_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 36,
+    "type": "question",
+    "speaker": "Sistem Pilihan (7/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Membalas: kamu juga mencintainya.",
+        "affection_effect": 5,
+        "next_id": 37,
+        "feedback_text": "Itsuki menangis bahagia."
+      },
+      {
+        "text": "Bilang teman yang baik.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Friendzone."
+      },
+      {
+        "text": "Bilang belum siap.",
+        "affection_effect": -5,
+        "next_id": 39,
+        "feedback_text": "Kecewa berat."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 37,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya sangat bahagia!",
+    "bg_image": "park_night.jpg",
+    "sprite": "itsuki_cry.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_116.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 38,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya senang jadi teman Anda.",
+    "bg_image": "park_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_117.wav",
+    "effect": ""
+  },
+  {
+    "id": 39,
+    "speaker": "Watanabe Itsuki",
+    "text": "Maaf sudah membuat tidak nyaman.",
+    "bg_image": "park_night.jpg",
+    "sprite": "itsuki_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_118.wav",
+    "effect": ""
+  },
+  {
+    "id": 40,
+    "speaker": "Narasi",
+    "text": "Itsuki menunjukkan rancangan arsitektur pertamanya.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_proud.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 41,
+    "type": "question",
+    "speaker": "Sistem Pilihan (8/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memuji bakat alami dan bilang bangga.",
+        "affection_effect": 5,
+        "next_id": 42,
+        "feedback_text": "Itsuki berseri."
+      },
+      {
+        "text": "Bilang bagus.",
+        "affection_effect": 0,
+        "next_id": 43,
+        "feedback_text": "Kurang detail."
+      },
+      {
+        "text": "Langsung kritik tanpa pujian.",
+        "affection_effect": -5,
+        "next_id": 44,
+        "feedback_text": "Kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 42,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan buat yang lebih baik—untuk Anda!",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_119.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 43,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya senang Anda suka.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_120.wav",
+    "effect": ""
+  },
+  {
+    "id": 44,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan perbaiki.",
+    "bg_image": "mansion_library.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_121.wav",
+    "effect": ""
+  },
+  {
+    "id": 45,
+    "speaker": "Narasi",
+    "text": "Di pantai milik keluarganya, Itsuki bilang belum pernah sebahagia ini.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "itsuki_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 46,
+    "type": "question",
+    "speaker": "Sistem Pilihan (9/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Bilang melihatnya tersenyum membuat harimu sempurna.",
+        "affection_effect": 5,
+        "next_id": 47,
+        "feedback_text": "Itsuki tersipu."
+      },
+      {
+        "text": "Mengomentari laut indah.",
+        "affection_effect": 0,
+        "next_id": 48,
+        "feedback_text": "Kurang."
+      },
+      {
+        "text": "Bilang kepanasan.",
+        "affection_effect": -5,
+        "next_id": 49,
+        "feedback_text": "Kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 47,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya ingin momen ini selamanya—bersama Anda.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_122.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 48,
+    "speaker": "Watanabe Itsuki",
+    "text": "Iya, indah.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_123.wav",
+    "effect": ""
+  },
+  {
+    "id": 49,
+    "speaker": "Watanabe Itsuki",
+    "text": "Mari cari tempat teduh.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_124.wav",
+    "effect": ""
+  },
+  {
+    "id": 50,
+    "speaker": "Narasi",
+    "text": "Di musim gugur Itsuki bilang bersyukur kamu ada.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "itsuki_soft.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 51,
+    "type": "question",
+    "speaker": "Sistem Pilihan (10/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Membalas: dia membuat hidupmu lebih bermakna.",
+        "affection_effect": 5,
+        "next_id": 52,
+        "feedback_text": "Itsuki tersipu."
+      },
+      {
+        "text": "Bilang senang bertemu.",
+        "affection_effect": 0,
+        "next_id": 53,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bilang hidup penuh kejutan.",
+        "affection_effect": -5,
+        "next_id": 54,
+        "feedback_text": "Kurang pribadi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 52,
+    "speaker": "Watanabe Itsuki",
+    "text": "Anda membuat saya percaya pada cinta.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_125.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 53,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya senang Anda di sini.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_126.wav",
+    "effect": ""
+  },
+  {
+    "id": 54,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya mengerti.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "itsuki_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_127.wav",
+    "effect": ""
+  },
+  {
+    "id": 55,
+    "speaker": "Narasi",
+    "text": "Di salju, Itsuki menggigil.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "itsuki_cold.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 56,
+    "type": "question",
+    "speaker": "Sistem Pilihan (11/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memakaikan jaketmu ke pundaknya.",
+        "affection_effect": 5,
+        "next_id": 57,
+        "feedback_text": "Dia merasa dihangatkan."
+      },
+      {
+        "text": "Mengajak masuk.",
+        "affection_effect": 0,
+        "next_id": 58,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Menyuruh pakai lebih tebal.",
+        "affection_effect": -5,
+        "next_id": 59,
+        "feedback_text": "Kurang peduli."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 57,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya tidak pernah merasa sehangat ini.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_128.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 58,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya baik-baik saja.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_129.wav",
+    "effect": ""
+  },
+  {
+    "id": 59,
+    "speaker": "Watanabe Itsuki",
+    "text": "...",
+    "bg_image": "snow_park.jpg",
+    "sprite": "itsuki_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 60,
+    "speaker": "Narasi",
+    "text": "Itsuki bertanya apakah kamu ingat hari pertama di ruang belajar.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 61,
+    "type": "question",
+    "speaker": "Sistem Pilihan (12/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menceritakan detail siswa paling berdedikasi yang kini berarti bagimu.",
+        "affection_effect": 5,
+        "next_id": 62,
+        "feedback_text": "Itsuki menangis bahagia."
+      },
+      {
+        "text": "Bilang ingat dia lapar.",
+        "affection_effect": 0,
+        "next_id": 63,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bilang kabur.",
+        "affection_effect": -5,
+        "next_id": 64,
+        "feedback_text": "Hancur."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 62,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya juga tidak akan lupa!",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_130.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 63,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya ingat.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_131.wav",
+    "effect": ""
+  },
+  {
+    "id": 64,
+    "speaker": "Watanabe Itsuki",
+    "text": "Mungkin hanya hari biasa bagi Anda.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_132.wav",
+    "effect": ""
+  },
+  {
+    "id": 65,
+    "speaker": "Narasi",
+    "text": "Itsuki bilang ingin membangun masa depan bersamamu.",
+    "bg_image": "mansion_garden_day.jpg",
+    "sprite": "itsuki_soft.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 66,
+    "type": "question",
+    "speaker": "Sistem Pilihan (13/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Mengangguk dan bilang kamu juga menginginkannya.",
+        "affection_effect": 5,
+        "next_id": 67,
+        "feedback_text": "Itsuki lega."
+      },
+      {
+        "text": "Bilang perlu dipikirkan.",
+        "affection_effect": 0,
+        "next_id": 68,
+        "feedback_text": "Ragu."
+      },
+      {
+        "text": "Mengalihkan topik.",
+        "affection_effect": -5,
+        "next_id": 69,
+        "feedback_text": "Kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 67,
+    "speaker": "Watanabe Itsuki",
+    "text": "Terima kasih...",
+    "bg_image": "mansion_garden_day.jpg",
+    "sprite": "itsuki_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_133.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 68,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan menunggu.",
+    "bg_image": "mansion_garden_day.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_134.wav",
+    "effect": ""
+  },
+  {
+    "id": 69,
+    "speaker": "Watanabe Itsuki",
+    "text": "...",
+    "bg_image": "mansion_garden_day.jpg",
+    "sprite": "itsuki_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 70,
+    "speaker": "Narasi",
+    "text": "Itsuki menunjukkan jadwal padat yang dia buat sendiri—hampir tidak ada waktu istirahat.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_tired.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 71,
+    "type": "question",
+    "speaker": "Sistem Pilihan (14/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menandai waktu istirahat wajib di jadwalnya, dengan tegas tapi lembut.",
+        "affection_effect": 5,
+        "next_id": 72,
+        "feedback_text": "Dia mengalah, lega."
+      },
+      {
+        "text": "Menyarankan istirahat.",
+        "affection_effect": 0,
+        "next_id": 73,
+        "feedback_text": "Dia mengangguk formal."
+      },
+      {
+        "text": "Memuji kedisiplinannya saja.",
+        "affection_effect": -5,
+        "next_id": 74,
+        "feedback_text": "Masalah tidak tersentuh."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 72,
+    "speaker": "Watanabe Itsuki",
+    "text": "...Baik. Saya coba ikuti.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_135.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 73,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan pertimbangkan.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_136.wav",
+    "effect": ""
+  },
+  {
+    "id": 74,
+    "speaker": "Watanabe Itsuki",
+    "text": "Terima kasih pujiannya.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_137.wav",
+    "effect": ""
+  },
+  {
+    "id": 75,
+    "speaker": "Narasi",
+    "text": "Itsuki hampir menangis saat orang tuanya membatalkan janji lagi.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 76,
+    "type": "question",
+    "speaker": "Sistem Pilihan (15/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Hadir diam di sampingnya dulu, baru bicara saat dia siap.",
+        "affection_effect": 5,
+        "next_id": 77,
+        "feedback_text": "Dia merasa tidak sendirian."
+      },
+      {
+        "text": "Menghibur dengan kata-kata semangat.",
+        "affection_effect": 0,
+        "next_id": 78,
+        "feedback_text": "Baik, kurang tepat waktu."
+      },
+      {
+        "text": "Menyalahkan orang tuanya.",
+        "affection_effect": -5,
+        "next_id": 79,
+        "feedback_text": "Dia membela mereka, situasi rumit."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 77,
+    "speaker": "Watanabe Itsuki",
+    "text": "Tetap di sini... sebentar saja.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_teary.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_138.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 78,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya baik-baik saja.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_forced_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_139.wav",
+    "effect": ""
+  },
+  {
+    "id": 79,
+    "speaker": "Watanabe Itsuki",
+    "text": "Jangan bilang buruk tentang mereka.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_140.wav",
+    "effect": ""
+  },
+  {
+    "id": 80,
+    "speaker": "Narasi",
+    "text": "Itsuki memberikan dasi sederhana sebagai hadiah.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_shy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 81,
+    "type": "question",
+    "speaker": "Sistem Pilihan (16/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memakainya dan bilang cocok.",
+        "affection_effect": 5,
+        "next_id": 82,
+        "feedback_text": "Itsuki senang."
+      },
+      {
+        "text": "Mengucapkan terima kasih.",
+        "affection_effect": 0,
+        "next_id": 83,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Bilang tidak perlu.",
+        "affection_effect": -5,
+        "next_id": 84,
+        "feedback_text": "Kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 82,
+    "speaker": "Watanabe Itsuki",
+    "text": "Pas...",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_141.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 83,
+    "speaker": "Watanabe Itsuki",
+    "text": "Semoga Anda suka.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_142.wav",
+    "effect": ""
+  },
+  {
+    "id": 84,
+    "speaker": "Watanabe Itsuki",
+    "text": "Maaf.",
+    "bg_image": "mansion_study_room.jpg",
+    "sprite": "itsuki_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_143.wav",
+    "effect": ""
+  },
+  {
+    "id": 85,
+    "speaker": "Narasi",
+    "text": "Di bawah sakura di taman rumahnya.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 86,
+    "type": "question",
+    "speaker": "Sistem Pilihan (17/20)",
+    "text": "Itsuki menatap dengan harap. Kamu...",
+    "options": [
+      {
+        "text": "Memberi ruang untuk dia bicara.",
+        "affection_effect": 5,
+        "next_id": 87,
+        "feedback_text": "Dia mengumpulkan keberanian."
+      },
+      {
+        "text": "Menanyakan pikirannya.",
+        "affection_effect": 0,
+        "next_id": 88,
+        "feedback_text": "Sedikit tekanan."
+      },
+      {
+        "text": "Mengajak masuk karena dingin.",
+        "affection_effect": -5,
+        "next_id": 89,
+        "feedback_text": "Momen putus."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 87,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya... siap.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_144.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 88,
+    "speaker": "Watanabe Itsuki",
+    "text": "Nanti...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_145.wav",
+    "effect": ""
+  },
+  {
+    "id": 89,
+    "speaker": "Watanabe Itsuki",
+    "text": "Iya, masuk saja.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_146.wav",
+    "effect": ""
+  },
+  {
+    "id": 90,
+    "speaker": "Narasi",
+    "text": "Itsuki bilang kamu membuatnya percaya bisa dicintai apa adanya.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 91,
+    "type": "question",
+    "speaker": "Sistem Pilihan (18/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Membalas bahwa dia pantas dicintai sejak awal.",
+        "affection_effect": 5,
+        "next_id": 92,
+        "feedback_text": "Itsuki menangis bahagia."
+      },
+      {
+        "text": "Mengangguk.",
+        "affection_effect": 0,
+        "next_id": 93,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Terkesima diam.",
+        "affection_effect": -5,
+        "next_id": 94,
+        "feedback_text": "Ragu."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 92,
+    "speaker": "Watanabe Itsuki",
+    "text": "Terima kasih telah datang dalam hidup saya.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_147.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 93,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya juga.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "itsuki_jp_148.wav",
+    "effect": ""
+  },
+  {
+    "id": 94,
+    "speaker": "Watanabe Itsuki",
+    "text": "...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 95,
+    "speaker": "Narasi",
+    "text": "Menjelang puncak, Itsuki menggenggam tanganmu.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 96,
+    "type": "question",
+    "speaker": "Sistem Pilihan (19/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Siap mendengarkan dan menjawab dengan jujur.",
+        "affection_effect": 5,
+        "next_id": 97,
+        "feedback_text": "Dia mengangguk."
+      },
+      {
+        "text": "Menggenggam balik.",
+        "affection_effect": 0,
+        "next_id": 98,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Melepaskan karena gugup.",
+        "affection_effect": -5,
+        "next_id": 99,
+        "feedback_text": "Terluka."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 97,
+    "speaker": "Watanabe Itsuki",
+    "text": "Baik... saya bilang sekarang.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "itsuki_jp_149.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 98,
+    "speaker": "Watanabe Itsuki",
+    "text": "...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 99,
+    "speaker": "Watanabe Itsuki",
+    "text": "Maaf...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "itsuki_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "itsuki_jp_150.wav",
+    "effect": ""
+  },
+  {
+    "id": 100,
+    "type": "question",
+    "speaker": "Sistem Pilihan (20/20)",
+    "text": "Di bawah sakura, Itsuki meminta menjadi pendamping hidup dan bagian dari setiap rencananya. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan jelas dan berjanji mendukung setiap mimpinya.",
+        "affection_effect": 5,
+        "next_id": 101,
+        "feedback_text": "Itsuki memeluk erat, menangis bahagia."
+      },
+      {
+        "text": "Mengatakan ingin bersama, tapi belum siap menikah.",
+        "affection_effect": 0,
+        "next_id": 101,
+        "feedback_text": "Itsuki tersenyum, ada kecewa."
+      },
+      {
+        "text": "Menolak dengan lembut.",
+        "affection_effect": -5,
+        "next_id": 101,
+        "feedback_text": "Itsuki melepas tangan dan pergi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 101,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Chapter 5 telah selesai. Menghitung perasaan Watanabe Itsuki kepadamu...",
+    "ending_type": "auto",
+    "ending_image": "auto",
+    "bgm": ""
+  }
+]

@@ -1,0 +1,1351 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Sore itu hujan rintik-rintik mengetuk jendela ruang les bahasa Inggris. Aku duduk di baris belakang, merapikan catatan yang penuh coretan. Hanya beberapa orang yang masih bertahan setelah kelas formal selesai.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "",
+    "bgm": "hm_rain.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Narasi",
+    "text": "Di sudut dekat jendela, Suzuki Ichika menopang dagu. Rambut pendeknya agak berantakan. Di sekolah dia model yang sibuk; di sini dia terlihat lelah—lebih manusiawi.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_tired.png",
+    "bgm": "",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "speaker": "Suzuki Ichika",
+    "text": "Haaah... Kenapa Past Perfect ini ribet banget. Kalau nilai tesku jelek, agensi bisa potong jadwal minggu depan...",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_frustrated.png",
+    "bgm": "",
+    "voice": "ichika_jp_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Narasi",
+    "text": "Ichika mengacak rambutnya. Matanya sempat melirik ke arahku, lalu cepat berubah menjadi senyum yang biasa dia pakai di depan kamera.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_forced_smile.png",
+    "bgm": "",
+    "voice": "",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 5,
+    "speaker": "Suzuki Ichika",
+    "text": "Eh, [Nama_MC]? Sejak kapan kamu di situ? Jangan bilang dari tadi kamu perhatiin aku yang lagi bengong ya?",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_teasing.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "type": "question",
+    "speaker": "Sistem Pilihan (1/20)",
+    "text": "Ichika mencoba menutupi rasa lelah dengan candaan. Bagaimana kamu merespons?",
+    "options": [
+      {
+        "text": "Aku bilang aku khawatir melihatnya kelihatan lelah, tanpa banyak basa-basi.",
+        "affection_effect": 5,
+        "next_id": 7,
+        "feedback_text": "Ichika terdiam sebentar. Senyumnya jadi lebih pelan."
+      },
+      {
+        "text": "Aku ikut bercanda dan bilang memang dari tadi memperhatikan dia yang stres.",
+        "affection_effect": 0,
+        "next_id": 8,
+        "feedback_text": "Ichika tertawa kecil. Suasana cair, tapi belum terbuka."
+      },
+      {
+        "text": "Aku panik dan minta maaf karena merasa seperti mengintip.",
+        "affection_effect": -5,
+        "next_id": 9,
+        "feedback_text": "Ichika hanya mengangkat bahu. Percakapan berhenti."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 7,
+    "speaker": "Suzuki Ichika",
+    "text": "Khawatir...? *(Wajahnya merona)* Jangan salah paham. Aku cuma... jadwalnya padat. Tapi... makasih. Jarang ada yang bilang gitu.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_03_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Suzuki Ichika",
+    "text": "Haha, lucu juga kamu. Tapi serius, kepalaku rasanya mau meledak sama buku ini.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_laugh.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_03_a.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Suzuki Ichika",
+    "text": "Hmm, oke deh. Aku lanjut sendiri aja.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "",
+    "voice": "ichika_jp_03_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 10,
+    "speaker": "Narasi",
+    "text": "Beberapa menit kemudian kepala Ichika tertunduk di atas buku. Bahunya tegang karena posisi tidur yang salah.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_sleeping.png",
+    "bgm": "",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 11,
+    "type": "question",
+    "speaker": "Sistem Pilihan (2/20)",
+    "text": "Ichika tertidur di meja. Kamu...",
+    "options": [
+      {
+        "text": "Dengan hati-hati menyandarkan kepalanya agar lebih nyaman, tanpa membangunkan.",
+        "affection_effect": 5,
+        "next_id": 12,
+        "feedback_text": "Dalam tidur, Ichika sedikit merapat."
+      },
+      {
+        "text": "Membangunkannya pelan dan menawarkan minum.",
+        "affection_effect": 0,
+        "next_id": 13,
+        "feedback_text": "Ichika mengucek mata, menghargai."
+      },
+      {
+        "text": "Membiarkannya tidur dan fokus ke catatan sendiri.",
+        "affection_effect": -5,
+        "next_id": 14,
+        "feedback_text": "Saat bangun, lehernya pegal."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 12,
+    "speaker": "Suzuki Ichika",
+    "text": "*(Terbangun)* Ah—! Aku ketiduran?! Maaf... tapi bahumu... *(Merona)* Jangan dibahas, oke?",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_super_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_04_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Suzuki Ichika",
+    "text": "Makasih... Aku kayak zombie tadi. Maaf sudah ganggu.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_04_a.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 14,
+    "speaker": "Suzuki Ichika",
+    "text": "*(Mengucek leher)* Aduh... Sepertinya aku harus pulang sebelum hujan deras.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_tired.png",
+    "bgm": "hm_rain.mp3",
+    "voice": "ichika_jp_04_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 15,
+    "speaker": "Narasi",
+    "text": "Les selesai. Hujan di luar semakin deras. Ichika berdiri di pintu tanpa payung.",
+    "bg_image": "classroom_night.jpg",
+    "sprite": "ichika_worried.png",
+    "bgm": "hm_rain.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 16,
+    "type": "question",
+    "speaker": "Sistem Pilihan (3/20)",
+    "text": "Ichika harus pulang di tengah hujan. Kamu...",
+    "options": [
+      {
+        "text": "Menawarkan berbagi payung sampai stasiun, tanpa membuatnya merasa berhutang.",
+        "affection_effect": 5,
+        "next_id": 17,
+        "feedback_text": "Di bawah payung yang sama, percakapan mengalir lebih tenang."
+      },
+      {
+        "text": "Menawarkan jaket sebagai penutup sampai angkutan tiba.",
+        "affection_effect": 0,
+        "next_id": 18,
+        "feedback_text": "Ichika menerima dengan senyum kecil."
+      },
+      {
+        "text": "Mengucapkan hati-hati di jalan, lalu berpisah.",
+        "affection_effect": -5,
+        "next_id": 19,
+        "feedback_text": "Ichika melangkah sendiri ke hujan."
+      }
+    ],
+    "bgm": "hm_rain.mp3"
+  },
+  {
+    "id": 17,
+    "speaker": "Suzuki Ichika",
+    "text": "Boleh...? *(Suara pelan)* Jangan menjauh banget, nanti kamu yang basah.",
+    "bg_image": "rainy_street.jpg",
+    "sprite": "ichika_shy.png",
+    "bgm": "hm_rain.mp3",
+    "voice": "ichika_jp_05_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 18,
+    "speaker": "Suzuki Ichika",
+    "text": "Makasih ya... Aku jadi tidak terlalu kedinginan.",
+    "bg_image": "rainy_street.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_rain.mp3",
+    "voice": "ichika_jp_05_a.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 19,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... Hati-hati juga.",
+    "bg_image": "classroom_night.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_05_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 20,
+    "speaker": "Narasi",
+    "text": "Keesokan harinya di koridor, Ichika menghampirimu dengan kotak kecil. Pipinya merah, dan dia ragu sebelum berbicara.",
+    "bg_image": "school_corridor.jpg",
+    "sprite": "ichika_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 21,
+    "type": "question",
+    "speaker": "Sistem Pilihan (4/20)",
+    "text": "Ichika memberikan kue buatan sendiri. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan antusias, bertanya apakah dibuatnya sendiri, dan berjanji menghabiskannya.",
+        "affection_effect": 5,
+        "next_id": 22,
+        "feedback_text": "Ichika tersenyum lega. Dia begadang membuatnya."
+      },
+      {
+        "text": "Menerima sopan, bilang terima kasih, tanpa banyak komentar.",
+        "affection_effect": 0,
+        "next_id": 23,
+        "feedback_text": "Ichika mengangguk. Ada kekosongan di matanya."
+      },
+      {
+        "text": "Menolak dengan alasan sedang menjaga pola makan.",
+        "affection_effect": -5,
+        "next_id": 24,
+        "feedback_text": "Ichika memegang kotak lebih erat."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 22,
+    "speaker": "Suzuki Ichika",
+    "text": "Beneran...? Aku sempat ragu mau kasih. Tapi kalau kamu suka, aku lega banget.",
+    "bg_image": "school_corridor.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_06_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 23,
+    "speaker": "Suzuki Ichika",
+    "text": "Semoga cocok di lidahmu.",
+    "bg_image": "school_corridor.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ichika_jp_06_a.wav",
+    "effect": ""
+  },
+  {
+    "id": 24,
+    "speaker": "Suzuki Ichika",
+    "text": "O-oh... oke. Maaf ya, aku tidak tahu.",
+    "bg_image": "school_corridor.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_06_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 25,
+    "speaker": "Narasi",
+    "text": "Ichika mengajakmu ke rooftop. Angin sore menggerakkan rambutnya. Dia diam cukup lama sebelum membuka suara tentang tekanan agensi.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 26,
+    "type": "question",
+    "speaker": "Sistem Pilihan (5/20)",
+    "text": "Ichika menceritakan tekanan dari kerja dan sekolah. Kamu...",
+    "options": [
+      {
+        "text": "Mendengarkan sampai selesai tanpa buru-buru memberi solusi.",
+        "affection_effect": 5,
+        "next_id": 27,
+        "feedback_text": "Ichika menghela napas. Beban terasa sedikit turun."
+      },
+      {
+        "text": "Langsung memberi saran praktis tentang jadwal dan manajer.",
+        "affection_effect": 0,
+        "next_id": 28,
+        "feedback_text": "Saran masuk akal, tapi dia masih menahan sesuatu."
+      },
+      {
+        "text": "Mengalihkan topik karena percakapan terasa terlalu berat.",
+        "affection_effect": -5,
+        "next_id": 29,
+        "feedback_text": "Pintu yang baru terbuka, tertutup lagi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 27,
+    "speaker": "Suzuki Ichika",
+    "text": "Makasih... Aku jarang bisa bilang begini. Di depan kamera aku harus selalu 'baik-baik saja'.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_vulnerable.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_07_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 28,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... mungkin aku harus lebih tegas. Makasih sarannya.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_07_a.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 29,
+    "speaker": "Suzuki Ichika",
+    "text": "Cuacanya bagus ya hari ini.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_forced_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_07_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 30,
+    "speaker": "Narasi",
+    "text": "Di kafe kecil, Ichika mulai bicara tentang masa sebelum jadi model—saat dia masih sering diejek.",
+    "bg_image": "cafe_day.jpg",
+    "sprite": "ichika_normal.png",
+    "bgm": "",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 31,
+    "type": "question",
+    "speaker": "Sistem Pilihan (6/20)",
+    "text": "Ichika membuka cerita tentang masa lalu yang tidak nyaman. Kamu...",
+    "options": [
+      {
+        "text": "Mendengarkan, lalu bilang kamu melihatnya sebagai dirinya—bukan hanya wajah di poster.",
+        "affection_effect": 5,
+        "next_id": 32,
+        "feedback_text": "Ichika menunduk. Tangannya di cangkir sedikit gemetar."
+      },
+      {
+        "text": "Mengangguk dan bilang masa lalu memang berat, lalu lanjut minum.",
+        "affection_effect": 0,
+        "next_id": 33,
+        "feedback_text": "Cerita berhenti di permukaan."
+      },
+      {
+        "text": "Menyuruhnya melupakan karena sekarang sudah sukses.",
+        "affection_effect": -5,
+        "next_id": 34,
+        "feedback_text": "Sukses tidak menghapus luka yang baru dia bagikan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 32,
+    "speaker": "Suzuki Ichika",
+    "text": "Kamu... orang pertama yang bilang gitu tanpa terdengar pura-pura.",
+    "bg_image": "cafe_day.jpg",
+    "sprite": "ichika_teary_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_08_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 33,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... sudah lewat sih.",
+    "bg_image": "cafe_day.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "",
+    "voice": "ichika_jp_08_a.wav",
+    "effect": ""
+  },
+  {
+    "id": 34,
+    "speaker": "Suzuki Ichika",
+    "text": "Benar juga.",
+    "bg_image": "cafe_day.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_08_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 35,
+    "speaker": "Narasi",
+    "text": "Ichika mulai sering mengirim pesan malam—bukan tentang kerja, tapi hal kecil yang dia tahan seharian.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 36,
+    "type": "question",
+    "speaker": "Sistem Pilihan (7/20)",
+    "text": "Ichika mengirim pesan panjang di tengah malam tentang rasa lelah. Kamu...",
+    "options": [
+      {
+        "text": "Membalas tenang: kamu ada, dan dia boleh cerita kapan saja.",
+        "affection_effect": 5,
+        "next_id": 37,
+        "feedback_text": "Pesan berikutnya datang lebih cepat."
+      },
+      {
+        "text": "Membalas singkat 'semangat' lalu tidur.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Percakapan berhenti di stiker."
+      },
+      {
+        "text": "Tidak membalas sampai pagi.",
+        "affection_effect": -5,
+        "next_id": 39,
+        "feedback_text": "Keesokan harinya senyumnya terlalu rapi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 37,
+    "speaker": "Suzuki Ichika",
+    "text": "Makasih... Aku jadi bisa tidur.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_101.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 38,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya, semangat.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "ichika_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_102.wav",
+    "effect": ""
+  },
+  {
+    "id": 39,
+    "speaker": "Suzuki Ichika",
+    "text": "Gapapa, pasti kamu capek.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "ichika_forced_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_103.wav",
+    "effect": ""
+  },
+  {
+    "id": 40,
+    "speaker": "Narasi",
+    "text": "Di atap sekolah saat makan siang, Ichika lupa bawa bekal dan hanya menatap kotak makanmu.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_hungry.png",
+    "bgm": "",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 41,
+    "type": "question",
+    "speaker": "Sistem Pilihan (8/20)",
+    "text": "Kamu menyadari Ichika tidak makan. Kamu...",
+    "options": [
+      {
+        "text": "Membagi bekal tanpa membuatnya merasa minta ampun.",
+        "affection_effect": 5,
+        "next_id": 42,
+        "feedback_text": "Dia menerima pelan-pelan."
+      },
+      {
+        "text": "Menawarkan sedikit dengan nada bercanda.",
+        "affection_effect": 0,
+        "next_id": 43,
+        "feedback_text": "Suasana ringan."
+      },
+      {
+        "text": "Makan sendiri karena tidak enak menawarkan.",
+        "affection_effect": -5,
+        "next_id": 44,
+        "feedback_text": "Ichika bilang tidak lapar."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 42,
+    "speaker": "Suzuki Ichika",
+    "text": "...Makasih. Ini pertama kalinya ada yang bagi bekal denganku di sekolah.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_104.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 43,
+    "speaker": "Suzuki Ichika",
+    "text": "Haha, oke deh. Sekalian aja.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_laugh.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_105.wav",
+    "effect": ""
+  },
+  {
+    "id": 44,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku tidak lapar kok.",
+    "bg_image": "rooftop_sunset.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_106.wav",
+    "effect": ""
+  },
+  {
+    "id": 45,
+    "speaker": "Narasi",
+    "text": "Di kelas les, Ichika salah menjawab soal di depan orang. Wajahnya memerah.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_embarrassed.png",
+    "bgm": "",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 46,
+    "type": "question",
+    "speaker": "Sistem Pilihan (9/20)",
+    "text": "Setelah kelas, Ichika masih menunduk. Kamu...",
+    "options": [
+      {
+        "text": "Mendekat dan bilang semua orang pernah salah, lalu menawarkan review bareng.",
+        "affection_effect": 5,
+        "next_id": 47,
+        "feedback_text": "Ketegangan di bahunya turun."
+      },
+      {
+        "text": "Mengatakan tidak apa-apa secara singkat.",
+        "affection_effect": 0,
+        "next_id": 48,
+        "feedback_text": "Dia tersenyum kecil lalu buru-buru pergi."
+      },
+      {
+        "text": "Diam agar tidak membuatnya semakin malu.",
+        "affection_effect": -5,
+        "next_id": 49,
+        "feedback_text": "Dia pergi lebih dulu tanpa bilang apa-apa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 47,
+    "speaker": "Suzuki Ichika",
+    "text": "...Makasih. Aku merasa bodoh banget tadi.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_relieved.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_107.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 48,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... gapapa.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ichika_jp_108.wav",
+    "effect": ""
+  },
+  {
+    "id": 49,
+    "speaker": "Suzuki Ichika",
+    "text": "...",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 50,
+    "speaker": "Narasi",
+    "text": "Ichika mendapat kontrak iklan besar. Di balik senang, jadwalnya akan lebih gila.",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 51,
+    "type": "question",
+    "speaker": "Sistem Pilihan (10/20)",
+    "text": "Kamu menanggapi kabar itu dengan...",
+    "options": [
+      {
+        "text": "Ikut senang, lalu bertanya apakah dia masih punya waktu untuk dirinya—dan untuk kalian.",
+        "affection_effect": 5,
+        "next_id": 52,
+        "feedback_text": "Ichika lega ada yang memikirkan itu."
+      },
+      {
+        "text": "Mengucapkan selamat dengan antusias.",
+        "affection_effect": 0,
+        "next_id": 53,
+        "feedback_text": "Dia senang, topik lelah tidak sempat dibahas."
+      },
+      {
+        "text": "Langsung khawatir dan menyuruh menolak kontrak.",
+        "affection_effect": -5,
+        "next_id": 54,
+        "feedback_text": "Dia merasa tidak didukung."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 52,
+    "speaker": "Suzuki Ichika",
+    "text": "Kamu... memikirkan itu juga ya. Makasih.",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_vulnerable.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_109.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 53,
+    "speaker": "Suzuki Ichika",
+    "text": "Makasih! Aku senang kamu ikut senang.",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_happy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_110.wav",
+    "effect": ""
+  },
+  {
+    "id": 54,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku tidak bisa menolak begitu saja...",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_frustrated.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_111.wav",
+    "effect": ""
+  },
+  {
+    "id": 55,
+    "speaker": "Narasi",
+    "text": "Di taman malam, Ichika hampir bilang sesuatu tentang perasaan, lalu mengurungkan.",
+    "bg_image": "park_night.jpg",
+    "sprite": "ichika_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 56,
+    "type": "question",
+    "speaker": "Sistem Pilihan (11/20)",
+    "text": "Kamu menyadari dia menahan kata. Kamu...",
+    "options": [
+      {
+        "text": "Memberi ruang: bilang dia tidak harus terburu-buru.",
+        "affection_effect": 5,
+        "next_id": 57,
+        "feedback_text": "Ichika lebih tenang."
+      },
+      {
+        "text": "Menanyakan langsung apa yang mau dia bilang.",
+        "affection_effect": 0,
+        "next_id": 58,
+        "feedback_text": "Dia gelagapan."
+      },
+      {
+        "text": "Mengganti topik agar tidak canggung.",
+        "affection_effect": -5,
+        "next_id": 59,
+        "feedback_text": "Kesempatan itu berlalu."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 57,
+    "speaker": "Suzuki Ichika",
+    "text": "...Makasih. Aku butuh waktu sedikit lagi.",
+    "bg_image": "park_night.jpg",
+    "sprite": "ichika_teary_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_112.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 58,
+    "speaker": "Suzuki Ichika",
+    "text": "N-nanti saja...",
+    "bg_image": "park_night.jpg",
+    "sprite": "ichika_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_113.wav",
+    "effect": ""
+  },
+  {
+    "id": 59,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya, cuacanya dingin ya.",
+    "bg_image": "park_night.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_114.wav",
+    "effect": ""
+  },
+  {
+    "id": 60,
+    "speaker": "Narasi",
+    "text": "Ichika sakit ringan karena kurang istirahat, tapi tetap datang ke les.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_pale.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 61,
+    "type": "question",
+    "speaker": "Sistem Pilihan (12/20)",
+    "text": "Melihatnya pucat, kamu...",
+    "options": [
+      {
+        "text": "Menyuruh istirahat dengan tegas tapi lembut, dan menawarkan antar.",
+        "affection_effect": 5,
+        "next_id": 62,
+        "feedback_text": "Dia mengalah dan mengaku lega."
+      },
+      {
+        "text": "Menanyakan apakah dia baik-baik saja.",
+        "affection_effect": 0,
+        "next_id": 63,
+        "feedback_text": "Dia bilang 'baik' otomatis."
+      },
+      {
+        "text": "Tidak berkomentar karena dia bilang masih kuat.",
+        "affection_effect": -5,
+        "next_id": 64,
+        "feedback_text": "Di tengah les dia hampir pingsan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 62,
+    "speaker": "Suzuki Ichika",
+    "text": "Oke... aku pulang. Antar aku, ya.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_115.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 63,
+    "speaker": "Suzuki Ichika",
+    "text": "Baik kok. Jangan khawatir.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_tired.png",
+    "bgm": "",
+    "voice": "ichika_jp_116.wav",
+    "effect": ""
+  },
+  {
+    "id": 64,
+    "speaker": "Suzuki Ichika",
+    "text": "...Aku pusing.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_tired.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_117.wav",
+    "effect": ""
+  },
+  {
+    "id": 65,
+    "speaker": "Narasi",
+    "text": "Keluarga Ichika ingin bertemu. Dia gugup dan memintamu datang ke rumah.",
+    "bg_image": "house_day.jpg",
+    "sprite": "ichika_nervous.png",
+    "bgm": "",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 66,
+    "type": "question",
+    "speaker": "Sistem Pilihan (13/20)",
+    "text": "Di depan orang tuanya, kamu...",
+    "options": [
+      {
+        "text": "Berbicara jujur tentang bagaimana Ichika membuatmu ingin lebih baik.",
+        "affection_effect": 5,
+        "next_id": 67,
+        "feedback_text": "Orang tuanya mengangguk. Ichika memegang lenganmu."
+      },
+      {
+        "text": "Menjawab sopan seperlunya.",
+        "affection_effect": 0,
+        "next_id": 68,
+        "feedback_text": "Suasana aman tapi kaku."
+      },
+      {
+        "text": "Terlalu gugup sampai salah ucap.",
+        "affection_effect": -5,
+        "next_id": 69,
+        "feedback_text": "Ichika mencoba menutupi dengan tertawa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 67,
+    "speaker": "Suzuki Ichika",
+    "text": "Ayah bilang dia percaya padamu. Aku... lega banget.",
+    "bg_image": "house_day.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_118.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 68,
+    "speaker": "Suzuki Ichika",
+    "text": "Lain kali lebih santai ya...",
+    "bg_image": "house_day.jpg",
+    "sprite": "ichika_nervous.png",
+    "bgm": "",
+    "voice": "ichika_jp_119.wav",
+    "effect": ""
+  },
+  {
+    "id": 69,
+    "speaker": "Suzuki Ichika",
+    "text": "Gapapa... mereka orangnya baik kok.",
+    "bg_image": "house_day.jpg",
+    "sprite": "ichika_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_120.wav",
+    "effect": ""
+  },
+  {
+    "id": 70,
+    "speaker": "Narasi",
+    "text": "Setelah pertemuan keluarga, kalian berjalan di taman sore.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 71,
+    "type": "question",
+    "speaker": "Sistem Pilihan (14/20)",
+    "text": "Ichika bertanya apakah kamu yakin dengan hubungan ini. Kamu...",
+    "options": [
+      {
+        "text": "Menjawab tenang dan spesifik—alasan yang kamu rasakan.",
+        "affection_effect": 5,
+        "next_id": 72,
+        "feedback_text": "Tangannya mengerat di tanganmu."
+      },
+      {
+        "text": "Mengatakan 'yakin' tanpa penjelasan.",
+        "affection_effect": 0,
+        "next_id": 73,
+        "feedback_text": "Dia menerima, masih ada pertanyaan di mata."
+      },
+      {
+        "text": "Ragu dan meminta waktu.",
+        "affection_effect": -5,
+        "next_id": 74,
+        "feedback_text": "Dia mengangguk dan melepaskan genggaman."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 72,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku juga yakin. Aku sangat yakin.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_teary_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_121.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 73,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku senang kamu yakin.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ichika_jp_122.wav",
+    "effect": ""
+  },
+  {
+    "id": 74,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku mengerti...",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_123.wav",
+    "effect": ""
+  },
+  {
+    "id": 75,
+    "speaker": "Narasi",
+    "text": "Ichika memberi gelang sederhana yang dia pilih sendiri.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_shy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 76,
+    "type": "question",
+    "speaker": "Sistem Pilihan (15/20)",
+    "text": "Melihat pemberian itu, kamu...",
+    "options": [
+      {
+        "text": "Memakainya di depan dia dan bilang akan dijaga baik-baik.",
+        "affection_effect": 5,
+        "next_id": 77,
+        "feedback_text": "Ichika menutup mulut, senang tak tertahan."
+      },
+      {
+        "text": "Mengucapkan terima kasih dan menyimpan di tas.",
+        "affection_effect": 0,
+        "next_id": 78,
+        "feedback_text": "Dia berharap kamu memakainya sekarang."
+      },
+      {
+        "text": "Bilang kalian belum sejauh itu.",
+        "affection_effect": -5,
+        "next_id": 79,
+        "feedback_text": "Dia menyimpan gelang itu kembali."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 77,
+    "speaker": "Suzuki Ichika",
+    "text": "Pas banget... Aku senang.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_124.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 78,
+    "speaker": "Suzuki Ichika",
+    "text": "Semoga kamu suka.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ichika_jp_125.wav",
+    "effect": ""
+  },
+  {
+    "id": 79,
+    "speaker": "Suzuki Ichika",
+    "text": "Maaf... aku terlalu cepat.",
+    "bg_image": "classroom_day.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_126.wav",
+    "effect": ""
+  },
+  {
+    "id": 80,
+    "speaker": "Narasi",
+    "text": "Agensi mulai menerima hubungan kalian. Ichika menyampaikan kabar itu dengan hati-hati.",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_happy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 81,
+    "type": "question",
+    "speaker": "Sistem Pilihan (16/20)",
+    "text": "Bagaimana reaksimu?",
+    "options": [
+      {
+        "text": "Senang, dan bilang kamu akan membuktikan diri pantas di sisinya.",
+        "affection_effect": 5,
+        "next_id": 82,
+        "feedback_text": "Ichika tersenyum lebar."
+      },
+      {
+        "text": "Bilang bagus kalau mereka setuju.",
+        "affection_effect": 0,
+        "next_id": 83,
+        "feedback_text": "Dia sedikit kecewa karena kurang antusias."
+      },
+      {
+        "text": "Bilang tidak peduli pendapat mereka.",
+        "affection_effect": -5,
+        "next_id": 84,
+        "feedback_text": "Ichika khawatir masa depan kalian."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 82,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku juga yakin kamu orang yang tepat.",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_127.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 83,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... mereka setuju.",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_128.wav",
+    "effect": ""
+  },
+  {
+    "id": 84,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku harap semuanya baik-baik saja...",
+    "bg_image": "cafe_night.jpg",
+    "sprite": "ichika_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_129.wav",
+    "effect": ""
+  },
+  {
+    "id": 85,
+    "speaker": "Narasi",
+    "text": "Di atap gedung les, bintang terlihat jelas. Ichika bilang ingin momen ini abadi.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 86,
+    "type": "question",
+    "speaker": "Sistem Pilihan (17/20)",
+    "text": "Bagaimana tanggapanmu?",
+    "options": [
+      {
+        "text": "Menjawab bahwa momen ini akan abadi di ingatanmu selama kamu mengingatnya.",
+        "affection_effect": 5,
+        "next_id": 87,
+        "feedback_text": "Ichika terkesima."
+      },
+      {
+        "text": "Mengatakan pemandangannya indah.",
+        "affection_effect": 0,
+        "next_id": 88,
+        "feedback_text": "Dia berharap lebih dari itu."
+      },
+      {
+        "text": "Bilang dingin dan mengajak turun.",
+        "affection_effect": -5,
+        "next_id": 89,
+        "feedback_text": "Dia kecewa diam-diam."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 87,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku mencintaimu, [Nama_MC].",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "ichika_teary_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_130.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 88,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... indah.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_131.wav",
+    "effect": ""
+  },
+  {
+    "id": 89,
+    "speaker": "Suzuki Ichika",
+    "text": "Baiklah. Ayo turun.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_132.wav",
+    "effect": ""
+  },
+  {
+    "id": 90,
+    "speaker": "Narasi",
+    "text": "Musim semi berikutnya, Ichika mengajak kembali ke ruang les tempat kalian bertemu.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 91,
+    "type": "question",
+    "speaker": "Sistem Pilihan (18/20)",
+    "text": "Dia bertanya apakah kamu ingat hari pertama. Kamu...",
+    "options": [
+      {
+        "text": "Menceritakan detail kecil yang kamu ingat dan apa yang kamu rasakan saat itu.",
+        "affection_effect": 5,
+        "next_id": 92,
+        "feedback_text": "Ichika tertawa sambil menangis."
+      },
+      {
+        "text": "Bilang ingat, dia sedang stres grammar.",
+        "affection_effect": 0,
+        "next_id": 93,
+        "feedback_text": "Cukup, tapi kurang hangat."
+      },
+      {
+        "text": "Bilang ingatannya sudah kabur.",
+        "affection_effect": -5,
+        "next_id": 94,
+        "feedback_text": "Senyumnya tidak sampai ke mata."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 92,
+    "speaker": "Suzuki Ichika",
+    "text": "Kamu ingat sampai situ...? Aku bahagia banget.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_crying_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_133.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 93,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya, aku memang stres banget waktu itu.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ichika_jp_134.wav",
+    "effect": ""
+  },
+  {
+    "id": 94,
+    "speaker": "Suzuki Ichika",
+    "text": "Iya... banyak hal memang terjadi.",
+    "bg_image": "classroom_sunset.jpg",
+    "sprite": "ichika_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_135.wav",
+    "effect": ""
+  },
+  {
+    "id": 95,
+    "speaker": "Narasi",
+    "text": "Hubungan kalian semakin dalam. Ichika mulai membicarakan masa depan dengan lebih serius.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 96,
+    "type": "question",
+    "speaker": "Sistem Pilihan (19/20)",
+    "text": "Ichika menanyakan komitmen jangka panjang. Kamu...",
+    "options": [
+      {
+        "text": "Menjawab dengan tenang bahwa kamu ingin menjalaninya bersama.",
+        "affection_effect": 5,
+        "next_id": 97,
+        "feedback_text": "Dia menghembuskan napas lega."
+      },
+      {
+        "text": "Mengatakan ingin bersama tapi masih butuh waktu.",
+        "affection_effect": 0,
+        "next_id": 98,
+        "feedback_text": "Ada kecewa yang disembunyikan."
+      },
+      {
+        "text": "Menunda jawaban.",
+        "affection_effect": -5,
+        "next_id": 99,
+        "feedback_text": "Dia mengangguk pelan, jarak terasa lagi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 97,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku juga. Aku sangat ingin.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ichika_jp_136.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 98,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku akan menunggu.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ichika_jp_137.wav",
+    "effect": ""
+  },
+  {
+    "id": 99,
+    "speaker": "Suzuki Ichika",
+    "text": "...Oke.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "ichika_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ichika_jp_138.wav",
+    "effect": ""
+  },
+  {
+    "id": 100,
+    "type": "question",
+    "speaker": "Sistem Pilihan (20/20)",
+    "text": "Di ujung senja di ruang les yang sama, Ichika menggenggam tanganmu dan berbicara tentang menghabiskan hidup bersama. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan jelas—karena kamu juga menginginkannya.",
+        "affection_effect": 5,
+        "next_id": 101,
+        "feedback_text": "Ichika memelukmu, suaranya serak karena lega."
+      },
+      {
+        "text": "Mengatakan ingin bersama, tapi belum siap ke jenjang itu sekarang.",
+        "affection_effect": 0,
+        "next_id": 101,
+        "feedback_text": "Ada kecewa yang dia coba sembunyikan."
+      },
+      {
+        "text": "Menolak dengan lembut karena merasa belum siap.",
+        "affection_effect": -5,
+        "next_id": 101,
+        "feedback_text": "Ichika melepaskan tanganmu dan berjalan pergi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 101,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Chapter 1 telah selesai. Menghitung perasaan Suzuki Ichika kepadamu...",
+    "ending_type": "auto",
+    "ending_image": "auto",
+    "bgm": ""
+  }
+]

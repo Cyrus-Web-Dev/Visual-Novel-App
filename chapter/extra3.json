@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Beberapa bulan setelah pernikahan. Rumah kecil kalian masih berbau cat baru. Tapi setiap pagi ada Miku di dapur—dan itu sudah cukup membuatmu merasa pulang.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Yoshikawa Miku",
+    "text": "Pagi... aku sudah seduh teh. Mau ikut baca sebentar sebelum kamu kerja?",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "",
+    "voice": "ex3_miku_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 3,
+    "speaker": "Yoshikawa Miku",
+    "text": "Museum kota minta aku bantu tur sejarah weekend. Aku bilang iya. Takut, tapi kamu bilang aku boleh coba.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "miku_nervous.png",
+    "bgm": "",
+    "voice": "ex3_miku_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Yoshikawa Miku",
+    "text": "Dulu aku selalu pakai headphone biar orang nggak ajak bicara. Sekarang aku yang kadang mulai ngobrol. Aneh ya.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "",
+    "voice": "ex3_miku_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 5,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kalau lelah, boleh diam di sampingku. Nggak harus selalu isi dengan kata.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "",
+    "voice": "ex3_miku_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kemarin ada pengunjung yang nanya soal era Edo. Aku jawab panjang. Habis itu dia bilang terima kasih... aku hampir menangis.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ex3_miku_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 7,
+    "speaker": "Yoshikawa Miku",
+    "text": "Ada yang bilang tulisanku hangat. Aku belum terbiasa dipuji. Tapi aku simpan emailnya.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "",
+    "voice": "ex3_miku_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Yoshikawa Miku",
+    "text": "Anak... kalau ada nanti, aku mau bacain cerita samurai sebelum tidur. Bukan menakut-nakuti—buat nemenin.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "",
+    "voice": "ex3_miku_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kamu yang bikin aku berani bilang aku di sini. Makasih sudah nggak pergi waktu aku pendiam.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "miku_teary_smile.png",
+    "bgm": "",
+    "voice": "ex3_miku_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kadang aku masih tutup telinga pakai headphone di rumah. Bukan karena menolakmu—cuma butuh sepi sebentar. Jangan marah ya.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "",
+    "voice": "ex3_miku_12.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 11,
+    "speaker": "Yoshikawa Miku",
+    "text": "Malam pertama... aku pegang ujung selimut sampai putih. Kamu bilang pelan saja. Aku ingat itu.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ex3_miku_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 12,
+    "speaker": "Yoshikawa Miku",
+    "text": "Sekarang aku lebih berani mendekat. Genggam tangan dulu, baru sisanya. Aku masih malu—tapi nggak lari lagi.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "",
+    "voice": "ex3_miku_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kalau aku diam terlalu lama, ketuk bahu saja. Kadang aku cuma tenggelam di pikiran, bukan menjauh.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "",
+    "voice": "ex3_miku_13.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 14,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku mencintaimu. Pelan-pelan, setiap hari.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "miku_happy_blush.png",
+    "bgm": "",
+    "voice": "ex3_miku_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Yoshikawa Miku",
+    "text": "Besok... boleh baca bareng di sofa? Nggak harus sejarah. Apa saja. Asal bareng.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "",
+    "voice": "ex3_miku_14.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 16,
+    "speaker": "Narasi",
+    "text": "Hidup kalian bareng Miku tidak spektakuler setiap detik—tapi justru karena itu, terasa nyata dan hangat.",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 17,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Extra Chapter 3 selesai. Kisah setelah menikah dengan Yoshikawa Miku terus berlanjut.",
+    "ending_type": "extra",
+    "ending_image": "auto",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  }
+]

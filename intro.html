@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Harmoni Lima Hati — Opening</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700;800&display=swap');
+
+  :root {
+    --bg0: #07060f;
+    --accent: #a78bfa;
+    --accent2: #f0abfc;
+    --gold: #f5d08a;
+    --text: #f8f5ff;
+    --muted: rgba(248,245,255,0.62);
+    --card: rgba(255,255,255,0.07);
+    --line: rgba(255,255,255,0.14);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background: var(--bg0);
+    color: var(--text);
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+
+  #stage {
+    position: relative;
+    width: 100%; height: 100%;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(167,139,250,0.22), transparent 60%),
+      radial-gradient(ellipse 700px 400px at 80% 100%, rgba(240,171,252,0.12), transparent 55%),
+      linear-gradient(180deg, #0b0a14 0%, #141025 50%, #0a0812 100%);
+  }
+
+  canvas#fx {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    z-index: 1; pointer-events: none;
+  }
+
+  .layer {
+    position: absolute; inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.85s ease;
+  }
+  .layer.active { opacity: 1; pointer-events: auto; }
+
+  /* Scene 1 flare */
+  #s1 .flare {
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 40px 20px rgba(255,255,255,0.85), 0 0 120px 60px rgba(167,139,250,0.45);
+    animation: flareGrow 2.3s cubic-bezier(.2,.8,.2,1) forwards;
+  }
+  @keyframes flareGrow {
+    0%   { transform: scale(0); opacity: 0; }
+    35%  { transform: scale(1); opacity: 1; }
+    100% { transform: scale(90); opacity: 0; }
+  }
+
+  /* Scene 2 logo */
+  #s2 { flex-direction: column; gap: 16px; text-align: center; }
+  .logo-mark {
+    width: 118px; height: 118px;
+    border-radius: 28px;
+    background: linear-gradient(145deg, #c4b5fd, #a78bfa 40%, #7c3aed);
+    display: grid; place-items: center;
+    box-shadow: 0 20px 50px rgba(124,58,237,0.45), 0 0 0 1px rgba(255,255,255,0.2) inset;
+    transform: scale(0.4) rotate(-10deg);
+    opacity: 0;
+  }
+  #s2.active .logo-mark { animation: logoIn 1.15s cubic-bezier(.2,.9,.2,1) 0.12s forwards; }
+  @keyframes logoIn {
+    to { transform: scale(1) rotate(0); opacity: 1; }
+  }
+  .logo-mark span {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 800; font-size: 50px; color: #fff;
+  }
+  .logo-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(34px, 5.5vw, 60px);
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    background: linear-gradient(180deg, #fff 15%, var(--gold));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    opacity: 0; transform: translateY(16px);
+  }
+  #s2.active .logo-title { animation: fadeUp 0.95s ease 0.5s forwards; }
+  .logo-sub {
+    font-size: 13px; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--muted); opacity: 0;
+  }
+  #s2.active .logo-sub { animation: fadeUp 0.95s ease 0.75s forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+  /* Scene 3 characters */
+  #s3 {
+    flex-direction: column;
+    gap: 22px;
+    padding: 28px 18px 70px;
+  }
+  .scene-label {
+    font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase;
+    color: var(--gold); opacity: 0; text-align: center;
+  }
+  #s3.active .scene-label { animation: fadeUp 0.75s ease forwards; }
+  .scene-heading {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(20px, 3.2vw, 30px);
+    font-weight: 700; text-align: center;
+    opacity: 0; transform: translateY(10px);
+  }
+  #s3.active .scene-heading { animation: fadeUp 0.85s ease 0.15s forwards; }
+
+  .chars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    max-width: 1200px;
+  }
+
+  .char-card {
+    width: 180px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 14px 12px 16px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    opacity: 0;
+    transform: translateY(36px) scale(0.9);
+  }
+  #s3.active .char-card { animation: cardIn 0.75s cubic-bezier(.2,.85,.2,1) forwards; }
+  #s3.active .char-card:nth-child(1) { animation-delay: 0.30s; }
+  #s3.active .char-card:nth-child(2) { animation-delay: 0.45s; }
+  #s3.active .char-card:nth-child(3) { animation-delay: 0.60s; }
+  #s3.active .char-card:nth-child(4) { animation-delay: 0.75s; }
+  #s3.active .char-card:nth-child(5) { animation-delay: 0.90s; }
+  @keyframes cardIn {
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  .portrait-wrap {
+    width: 100%;
+    height: 200px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(0,0,0,0.25));
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .portrait-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.45s ease;
+  }
+  .char-card:hover img { transform: scale(1.05); }
+  .portrait-fallback {
+    position: absolute; inset: 0;
+    display: none;
+    align-items: center; justify-content: center;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 42px; font-weight: 800;
+    color: #fff;
+  }
+
+  .char-game {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 15px; font-weight: 700;
+    margin-bottom: 2px;
+    line-height: 1.3;
+  }
+  .char-voice {
+    font-size: 12px;
+    color: #ddd6fe;
+    margin-top: 6px;
+    line-height: 1.35;
+  }
+  .char-voice strong {
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .char-style {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: rgba(167,139,250,0.2);
+    color: #e9d5ff;
+  }
+
+  /* Scene 4 thanks */
+  #s4 { flex-direction: column; gap: 16px; text-align: center; padding: 24px; }
+  .thanks-kicker {
+    font-size: 11px; letter-spacing: 0.42em; text-transform: uppercase;
+    color: var(--gold); opacity: 0;
+  }
+  #s4.active .thanks-kicker { animation: fadeUp 0.75s ease forwards; }
+  .thanks-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(26px, 4.5vw, 44px);
+    font-weight: 800; line-height: 1.3;
+    opacity: 0; transform: translateY(14px);
+  }
+  #s4.active .thanks-title { animation: fadeUp 0.95s ease 0.2s forwards; }
+  .thanks-body {
+    max-width: 540px;
+    font-size: 14.5px; line-height: 1.8;
+    color: var(--muted);
+    opacity: 0; transform: translateY(10px);
+  }
+  #s4.active .thanks-body { animation: fadeUp 0.95s ease 0.4s forwards; }
+  .credit-row {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    justify-content: center; opacity: 0;
+  }
+  #s4.active .credit-row { animation: fadeUp 0.95s ease 0.65s forwards; }
+  .credit-pill {
+    padding: 7px 12px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card);
+    font-size: 11.5px;
+  }
+  .credit-pill strong { color: var(--gold); }
+  .redirect-hint {
+    margin-top: 4px;
+    font-size: 12px;
+    color: rgba(248,245,255,0.4);
+    opacity: 0;
+  }
+  #s4.active .redirect-hint { animation: fadeUp 0.95s ease 0.9s forwards; }
+
+  .glow-ring {
+    position: absolute;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    border: 1px solid rgba(167,139,250,0.22);
+    animation: ringPulse 4s ease-in-out infinite;
+    pointer-events: none; z-index: 0;
+  }
+  @keyframes ringPulse {
+    0%,100% { transform: scale(0.92); opacity: 0.25; }
+    50% { transform: scale(1.08); opacity: 0.65; }
+  }
+
+  .hud {
+    position: absolute; z-index: 10;
+    left: 0; right: 0; bottom: 0;
+    padding: 16px 22px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    pointer-events: none;
+  }
+  .progress {
+    flex: 1; max-width: 200px; height: 3px;
+    border-radius: 99px; background: rgba(255,255,255,0.1); overflow: hidden;
+  }
+  .progress > i {
+    display: block; height: 100%; width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 0.3s linear;
+  }
+  .skip {
+    pointer-events: auto;
+    border: 1px solid var(--line);
+    background: rgba(0,0,0,0.3);
+    color: var(--muted);
+    font-family: inherit; font-size: 11px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 8px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .skip:hover { color: var(--text); border-color: rgba(255,255,255,0.35); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="fx"></canvas>
+
+  <div class="layer" id="s1"><div class="flare"></div></div>
+
+  <div class="layer" id="s2">
+    <div class="glow-ring" style="opacity:0.35"></div>
+    <div class="logo-mark"><span>V</span></div>
+    <div class="logo-title">VOICEVOX</div>
+    <div class="logo-sub">Voice Engine Tribute · Harmoni Lima Hati</div>
+  </div>
+
+  <div class="layer" id="s3">
+    <div class="scene-label">Cast &amp; Voice</div>
+    <div class="scene-heading">Lima hati · Lima suara dari VOICEVOX</div>
+    <div class="chars" id="char-grid"></div>
+  </div>
+
+  <div class="layer" id="s4">
+    <div class="glow-ring"></div>
+    <div class="thanks-kicker">Special Thanks</div>
+    <div class="thanks-title">ありがとうございました</div>
+    <div class="thanks-body">
+      Terima kasih kepada <strong style="color:#f5d08a">VOICEVOX</strong>, developer
+      <strong style="color:#f5d08a">Hiroshiba</strong>, dan para kontributor karakter suara.
+      Tanpa engine dan karakter-karakter ini, dialog di
+      <em>Harmoni Lima Hati</em> tidak akan terdengar sehidup ini.
+    </div>
+     <!-- ===== TAMBAHKAN INI ===== -->
+     <div class="credit-row" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px;">
+        <div class="credit-pill" style="font-size: 10px; opacity: 0.7; max-width: 400px; text-align: center;">
+            🎵 Music Assets by <strong>Kevin MacLeod</strong> (incompetech.com)<br>
+            Licensed under Creative Commons: By Attribution 4.0 License<br>
+            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" 
+               style="color: var(--gold); text-decoration: none; font-size: 10px;">
+               creativecommons.org/licenses/by/4.0/
+            </a>
+        </div>
+    </div>
+    <div class="credit-row">
+      <div class="credit-pill">九州そら (VOICEVOX)→ <strong>Ichika</strong></div>
+      <div class="credit-pill">四国めたん (VOICEVOX)→ <strong>Nino</strong></div>
+      <div class="credit-pill">小夜/SAYO (VOICEVOX)→ <strong>Miku</strong></div>
+      <div class="credit-pill">春日部つむぎ (VOICEVOX)→ <strong>Yotsuba</strong></div>
+      <div class="credit-pill">琴詠ニア (VOICEVOX)→ <strong>Itsuki</strong></div>
+    </div>
+    <div class="redirect-hint" id="redirect-hint">Menuju login…</div>
+  </div>
+
+  <div class="hud">
+    <div class="progress"><i id="bar"></i></div>
+    <button class="skip" id="btn-skip" type="button">Skip</button>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   Cast: game character ↔ VOICEVOX speaker
+   Gambar: taruh di assets/sprites/ (atau path di bawah)
+   ========================================================= */
+const CHARACTERS = [
+  {
+    game: 'Suzuki Ichika',
+    voice: '九州そら',
+    style: 'あまあま · manis',
+    color: '#ff8fa8',
+    // coba beberapa path umum project kamu
+    images: [
+      'assets/sprites/ichika.png',
+      'assets/sprites/ichika_smile.png',
+      'assets/images/characters/ichika.png',
+      'assets/img/ichika.png'
+    ]
+  },
+  {
+    game: 'Tachibana Nino',
+    voice: '四国めたん',
+    style: 'ツンツン · tsundere',
+    color: '#c084fc',
+    images: [
+      'assets/sprites/nino_normal.png',
+      'assets/sprites/nino.png',
+      'assets/sprites/nino_tsundere.png',
+      'assets/images/characters/nino.png'
+    ]
+  },
+  {
+    game: 'Yoshikawa Miku',
+    voice: '小夜 / SAYO',
+    style: 'lembut · tenang',
+    color: '#60a5fa',
+    images: [
+      'assets/sprites/miku_blush.png',
+      'assets/sprites/miku.png',
+      'assets/sprites/miku_soft_smile.png',
+      'assets/images/characters/miku.png'
+    ]
+  },
+  {
+    game: 'Takahashi Yotsuba',
+    voice: '春日部つむぎ',
+    style: 'ceria · energetic',
+    color: '#4ade80',
+    images: [
+      'assets/sprites/yotsuba_happy.png',
+      'assets/sprites/yotsuba.png',
+      'assets/sprites/yotsuba_energetic.png',
+      'assets/images/characters/yotsuba.png'
+    ]
+  },
+  {
+    game: 'Watanabe Itsuki',
+    voice: '琴詠ニア',
+    style: 'formal · soft',
+    color: '#fbbf24',
+    images: [
+      'assets/sprites/itsuki_formal_smile.png',
+      'assets/sprites/itsuki.png',
+      'assets/sprites/itsuki_formal.png',
+      'assets/images/characters/itsuki.png'
+    ]
+  }
+];
+
+const LOGIN_URL = 'login.html';
+
+const grid = document.getElementById('char-grid');
+CHARACTERS.forEach((c, i) => {
+  const card = document.createElement('div');
+  card.className = 'char-card';
+  const initial = c.game.split(' ').pop().charAt(0);
+  card.innerHTML = `
+    <div class="portrait-wrap" style="background:linear-gradient(160deg, ${c.color}55, #1a1028)">
+      <img alt="${c.game}" data-idx="0" />
+      <div class="portrait-fallback" style="background:linear-gradient(145deg, ${c.color}, ${c.color}88)">${initial}</div>
+    </div>
+    <div class="char-game">${c.game}</div>
+    <div class="char-voice">CV: <strong>${c.voice} (VOICEVOX)</strong></div>
+    <div class="char-style">${c.style}</div>
+  `;
+  const img = card.querySelector('img');
+  const fallback = card.querySelector('.portrait-fallback');
+
+  function tryNext(n) {
+    if (n >= c.images.length) {
+      img.style.display = 'none';
+      fallback.style.display = 'flex';
+      return;
+    }
+    img.onerror = () => tryNext(n + 1);
+    img.onload = () => {
+      img.style.display = 'block';
+      fallback.style.display = 'none';
+    };
+    img.src = c.images[n];
+  }
+  tryNext(0);
+
+  grid.appendChild(card);
+});
+
+/* particles */
+const canvas = document.getElementById('fx');
+const ctx = canvas.getContext('2d');
+let W, H, particles = [];
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+for (let i = 0; i < 70; i++) {
+  particles.push({
+    x: Math.random() * W,
+    y: Math.random() * H,
+    r: Math.random() * 1.6 + 0.4,
+    vx: (Math.random() - 0.5) * 0.22,
+    vy: -Math.random() * 0.3 - 0.04,
+    a: Math.random() * 0.4 + 0.1,
+    hue: 250 + Math.random() * 35
+  });
+}
+(function draw() {
+  ctx.clearRect(0, 0, W, H);
+  for (const p of particles) {
+    p.x += p.vx; p.y += p.vy;
+    if (p.y < -8) { p.y = H + 8; p.x = Math.random() * W; }
+    ctx.beginPath();
+    ctx.fillStyle = `hsla(${p.hue},90%,78%,${p.a})`;
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  requestAnimationFrame(draw);
+})();
+
+/* timeline */
+const scenes = ['s1', 's2', 's3', 's4'];
+const durations = [2200, 3000, 5800, 3200]; // setelah s4 → login
+let idx = 0;
+let timer = null;
+let done = false;
+const bar = document.getElementById('bar');
+
+function goLogin() {
+  if (done) return;
+  done = true;
+  clearTimeout(timer);
+  const hint = document.getElementById('redirect-hint');
+  if (hint) hint.textContent = 'Membuka login…';
+  // fade out lalu redirect
+  document.getElementById('stage').style.transition = 'opacity 0.7s ease';
+  document.getElementById('stage').style.opacity = '0';
+  setTimeout(() => {
+    window.location.href = LOGIN_URL;
+  }, 750);
+}
+
+function showScene(i) {
+  scenes.forEach((id, n) => {
+    document.getElementById(id).classList.toggle('active', n === i);
+  });
+  const total = durations.reduce((a, b) => a + b, 0);
+  const doneMs = durations.slice(0, i).reduce((a, b) => a + b, 0);
+  bar.style.width = Math.min(100, (doneMs / total) * 100 + 8) + '%';
+}
+
+function next() {
+  if (done) return;
+  idx++;
+  if (idx >= scenes.length) {
+    bar.style.width = '100%';
+    goLogin();
+    return;
+  }
+  showScene(idx);
+  timer = setTimeout(next, durations[idx]);
+}
+
+function skipAll() {
+  // loncat ke thanks sebentar, lalu login
+  clearTimeout(timer);
+  idx = scenes.length - 1;
+  showScene(idx);
+  bar.style.width = '100%';
+  timer = setTimeout(goLogin, 1600);
+}
+
+document.getElementById('btn-skip').addEventListener('click', skipAll);
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    skipAll();
+  }
+});
+
+showScene(0);
+timer = setTimeout(next, durations[0]);
+</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Beberapa bulan setelah pernikahan. Rumah kecil kalian masih berbau cat baru. Tapi setiap pagi ada Nino di dapur—dan itu sudah cukup membuatmu merasa pulang.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Tachibana Nino",
+    "text": "Bangun. Sarapan sudah siap. Jangan bilang mau instan—aku masak dari jam enam.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_cooking.png",
+    "bgm": "",
+    "voice": "ex2_nino_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 3,
+    "speaker": "Tachibana Nino",
+    "text": "Hmph. Bukan karena khawatir kamu lapar. Cuma... dapur kosong itu menyebalkan.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_tsundere.png",
+    "bgm": "",
+    "voice": "ex2_nino_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Tachibana Nino",
+    "text": "Restoran kecil yang aku incar sudah ada kabar. Sewanya masuk akal. Aku... sedikit grogi.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_nervous.png",
+    "bgm": "",
+    "voice": "ex2_nino_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 5,
+    "speaker": "Tachibana Nino",
+    "text": "Kalau kamu bilang dukung, aku akan coba. Jangan cuma bilang semangat terus pergi main game.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "",
+    "voice": "ex2_nino_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "speaker": "Tachibana Nino",
+    "text": "Dulu aku usir kamu di perpustakaan. Sekarang aku yang nungguin kamu di meja makan. Lucu, kan? Jangan ketawa.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "",
+    "voice": "ex2_nino_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 7,
+    "speaker": "Tachibana Nino",
+    "text": "Hari ini laku dua puluh porsi. Bukan banyak, tapi ada yang bilang rasanya seperti masakan rumah. Aku senang.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_happy.png",
+    "bgm": "hm_town.mp3",
+    "voice": "ex2_nino_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Tachibana Nino",
+    "text": "Pelanggan bilang sausnya enak. Aku hampir bilang 'tentu saja'—tapi aku tahan. Jangan sampai sombong.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "",
+    "voice": "ex2_nino_12.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Tachibana Nino",
+    "text": "Anak? J-jangan buru-buru. Tapi kalau nanti... aku mau ajarin dia masak. Biar nggak cuma bisa pesan ojek makanan.",
+    "bg_image": "restaurant_day.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "",
+    "voice": "ex2_nino_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Tachibana Nino",
+    "text": "Kamu suami yang aneh. Dulu aku usir di perpustakaan, sekarang kamu yang cuci piring malam-malam. Jangan sombong.",
+    "bg_image": "house_kitchen_night.jpg",
+    "sprite": "nino_soft_smile.png",
+    "bgm": "",
+    "voice": "ex2_nino_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 11,
+    "speaker": "Tachibana Nino",
+    "text": "Kadang aku masih ketus. Bukan karena marah—karena malu. Kalau aku terlalu manis, aku sendiri yang bingung.",
+    "bg_image": "house_kitchen_night.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "",
+    "voice": "ex2_nino_13.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 12,
+    "speaker": "Tachibana Nino",
+    "text": "Malam pertama... aku malu banget. Lampu dimatiin, terus aku bilang jangan lihat. Kamu ketawa pelan. Menyebalkan.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "nino_super_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ex2_nino_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Tachibana Nino",
+    "text": "Sekarang lebih tenang. Peluk dari belakang waktu aku masak... itu boleh. Tapi jangan tiba-tiba, nanti pisaunya goyang.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "",
+    "voice": "ex2_nino_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 14,
+    "speaker": "Tachibana Nino",
+    "text": "Kalau aku rewel soal bumbu atau jadwal, peluk aja dari belakang. Nanti aku diam sendiri.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "nino_shy.png",
+    "bgm": "",
+    "voice": "ex2_nino_14.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Tachibana Nino",
+    "text": "Aku... sayang kamu. Jangan minta diulang terus. Cukup sekali malam ini.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "nino_teary.png",
+    "bgm": "",
+    "voice": "ex2_nino_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 16,
+    "speaker": "Tachibana Nino",
+    "text": "...Oke, boleh dua kali. Tapi itu saja. Tidur.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "",
+    "voice": "ex2_nino_15.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 17,
+    "speaker": "Narasi",
+    "text": "Hidup kalian bareng Nino tidak spektakuler setiap detik—tapi justru karena itu, terasa nyata dan hangat.",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 18,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Extra Chapter 2 selesai. Kisah setelah menikah dengan Tachibana Nino terus berlanjut.",
+    "ending_type": "extra",
+    "ending_image": "auto",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  }
+]

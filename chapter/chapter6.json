@@ -1,0 +1,814 @@
+[
+  {
+    "speaker": "Narasi",
+    "text": "Hari kelulusan universitas akhirnya tiba. Aula kampus dipenuhi sukacita. Aku berdiri di koridor luar, menatap piagam kelulusanku—bersyukur bisa menyelesaikan kuliah meski hidup serba kekurangan.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_festival.mp3",
+    "voice": "",
+    "effect": "",
+    "id": 1
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Tiba-tiba langkah kaki ramai mendekat. Sebelum aku berbalik, lima orang yang sangat kukenal sudah berdiri mengepungku. Suasana mendadak tegang—tapi manis.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": "screen_shake",
+    "characters": [
+      {
+        "name": "Ichika",
+        "sprite": "ichika.png",
+        "position": "left"
+      },
+      {
+        "name": "Nino",
+        "sprite": "nino_normal.png",
+        "position": "right"
+      }
+    ],
+    "id": 2
+  },
+  {
+    "speaker": "Suzuki Ichika",
+    "text": "Ara-ara, [Nama_MC]! Hari besar kamu, ya? Aku tidak akan melewatkan momen ini!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "harem_ichika_01.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Ichika",
+        "sprite": "ichika.png",
+        "position": "left"
+      },
+      {
+        "name": "Nino",
+        "sprite": "nino_normal.png",
+        "position": "right"
+      }
+    ],
+    "id": 3
+  },
+  {
+    "speaker": "Tachibana Nino",
+    "text": "Hei! Jangan pikir setelah lulus kamu bisa kabur. Kamu sudah janji makan bento buatanku setiap hari, ingat?!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "harem_nino_01.wav",
+    "effect": "sprite_jump",
+    "characters": [
+      {
+        "name": "Nino",
+        "sprite": "nino_tsundere.png",
+        "position": "right"
+      },
+      {
+        "name": "Ichika",
+        "sprite": "ichika.png",
+        "position": "left"
+      }
+    ],
+    "id": 4
+  },
+  {
+    "speaker": "Yoshikawa Miku",
+    "text": "A-aku juga tidak mau melewatkan hari ini. Aku sudah siapkan teh matcha spesial...",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "harem_miku_01.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Miku",
+        "sprite": "miku_blush.png",
+        "position": "left"
+      },
+      {
+        "name": "Nino",
+        "sprite": "nino_tsundere.png",
+        "position": "right"
+      }
+    ],
+    "id": 5
+  },
+  {
+    "speaker": "Takahashi Yotsuba",
+    "text": "Ehh?! Jangan serius banget! Hari ini kan hari bahagia! Ayo rayakan bersama!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "harem_yotsuba_01.wav",
+    "effect": "sprite_jump",
+    "characters": [
+      {
+        "name": "Yotsuba",
+        "sprite": "yotsuba_happy.png",
+        "position": "right"
+      },
+      {
+        "name": "Miku",
+        "sprite": "miku_blush.png",
+        "position": "left"
+      }
+    ],
+    "id": 6
+  },
+  {
+    "speaker": "Watanabe Itsuki",
+    "text": "T-Tolong tenang! Bagaimanapun saya murid privatnya yang paling utama, jadi jadwal saya harus diprioritaskan!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "harem_itsuki_01.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Itsuki",
+        "sprite": "itsuki_formal_angry.png",
+        "position": "left"
+      },
+      {
+        "name": "Yotsuba",
+        "sprite": "yotsuba_happy.png",
+        "position": "right"
+      }
+    ],
+    "id": 7
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Kelimanya mulai berdebat. Aku terjebak di tengah, berkeringat dingin—karena aku menyayangi mereka semua.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Ichika",
+        "sprite": "ichika.png",
+        "position": "left"
+      },
+      {
+        "name": "Nino",
+        "sprite": "nino_angry.png",
+        "position": "right"
+      },
+      {
+        "name": "Miku",
+        "sprite": "miku_pout.png",
+        "position": "center"
+      }
+    ],
+    "id": 8
+  },
+  {
+    "type": "question",
+    "speaker": "Sistem Pilihan (1/5)",
+    "text": "Lima cewek yang kamu sayangi berdiri di depanmu, saling berebut perhatian. Bagaimana sikapmu?",
+    "options": [
+      {
+        "text": "Aku tersenyum kaku dan bilang jangan bertengkar di hari kelulusan.",
+        "affection_effect": 0,
+        "next_id": 10,
+        "feedback_text": "Mereka sedikit mereda, meski masih saling lirik."
+      },
+      {
+        "text": "Aku mengangkat kedua tangan seolah menyerah, lalu tertawa.",
+        "affection_effect": 0,
+        "next_id": 10,
+        "feedback_text": "Yotsuba tertawa lebih dulu. Ketegangan sedikit cair."
+      },
+      {
+        "text": "Aku diam saja, menunggu mereka selesai berdebat.",
+        "affection_effect": 0,
+        "next_id": 10,
+        "feedback_text": "Ichika menghela napas dan mengambil alih pembicaraan."
+      }
+    ],
+    "id": 9,
+    "bgm": ""
+  },
+  {
+    "speaker": "Suzuki Ichika",
+    "text": "Aduh, kalian ini... Aku tahu kita semua punya perasaan yang sama. Tapi berdebat tidak akan menyelesaikan apa-apa.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_ichika_02.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Ichika",
+        "sprite": "ichika_smile.png",
+        "position": "center"
+      }
+    ],
+    "id": 10
+  },
+  {
+    "speaker": "Tachibana Nino",
+    "text": "Hmph... Ichika benar. Aku benci melihat muka bingungnya. Bagaimana kalau kita bicarakan dengan baik-baik?",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_nino_02.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "Nino",
+        "sprite": "nino_blush.png",
+        "position": "left"
+      },
+      {
+        "name": "Ichika",
+        "sprite": "ichika_smile.png",
+        "position": "right"
+      }
+    ],
+    "id": 11
+  },
+  {
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku setuju... Kita semua mencintai [Nama_MC] dengan cara kita masing-masing. Mungkin... kita bisa saling berbagi?",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_miku_02.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Miku",
+        "sprite": "miku_blush.png",
+        "position": "center"
+      }
+    ],
+    "id": 12
+  },
+  {
+    "speaker": "Takahashi Yotsuba",
+    "text": "Yeeay! Berbagi? Aku setuju banget! Yang penting kita semua bahagia!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_yotsuba_02.wav",
+    "effect": "sprite_jump",
+    "characters": [
+      {
+        "name": "Yotsuba",
+        "sprite": "yotsuba_happy.png",
+        "position": "right"
+      }
+    ],
+    "id": 13
+  },
+  {
+    "speaker": "Watanabe Itsuki",
+    "text": "Jika itu keputusan mufakat... saya ikut. Tapi... apakah [Nama_MC]-san setuju?",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_itsuki_02.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Itsuki",
+        "sprite": "itsuki_super_blush.png",
+        "position": "left"
+      }
+    ],
+    "id": 14
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Semua mata tertuju padaku. Kelima cewek menatap dengan penuh harap.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": "flash",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ],
+    "id": 15
+  },
+  {
+    "type": "question",
+    "speaker": "Sistem Pilihan (2/5)",
+    "text": "Mereka menawarkan hubungan yang tidak biasa—berlima. Bagaimana jawabanmu?",
+    "options": [
+      {
+        "text": "Aku bilang aku tidak mau kehilangan satu pun dari mereka, dan jika mereka rela, aku juga rela.",
+        "affection_effect": 0,
+        "next_id": 17,
+        "feedback_text": "Wajah mereka melembut bersamaan."
+      },
+      {
+        "text": "Aku bertanya apakah mereka benar-benar sudah memikirkan ini matang-matang.",
+        "affection_effect": 0,
+        "next_id": 17,
+        "feedback_text": "Ichika mengangguk. Mereka sudah lama berdiskusi."
+      },
+      {
+        "text": "Aku terdiam lama, lalu mengangguk pelan.",
+        "affection_effect": 0,
+        "next_id": 17,
+        "feedback_text": "Yotsuba memelukmu lebih dulu. Yang lain menyusul."
+      }
+    ],
+    "id": 16,
+    "bgm": ""
+  },
+  {
+    "speaker": "MC",
+    "text": "Kalian... serius? Kalian rela berbagi?",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": "",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ],
+    "id": 17
+  },
+  {
+    "speaker": "Suzuki Ichika",
+    "text": "Tentu. Kami sudah lama berdiskusi. Tidak ada dari kami yang bisa melepaskanmu—dan kami tidak ingin saling menyakiti.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_ichika_03.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Ichika",
+        "sprite": "ichika_smile.png",
+        "position": "left"
+      }
+    ],
+    "id": 18
+  },
+  {
+    "speaker": "Tachibana Nino",
+    "text": "Jangan salah paham! Aku masih cemburu. Tapi aku lebih takut kehilanganmu daripada berbagi.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_nino_03.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "Nino",
+        "sprite": "nino_tsundere.png",
+        "position": "right"
+      }
+    ],
+    "id": 19
+  },
+  {
+    "speaker": "Yoshikawa Miku",
+    "text": "Selama aku masih bisa melihat senyummu... aku rela. Kebahagiaanmu adalah kebahagiaanku.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_miku_03.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Miku",
+        "sprite": "miku_blush.png",
+        "position": "center"
+      }
+    ],
+    "id": 20
+  },
+  {
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku tidak paham yang rumit! Yang aku tahu, aku bahagia saat bersamamu—dan mereka juga!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_yotsuba_03.wav",
+    "effect": "sprite_jump",
+    "characters": [
+      {
+        "name": "Yotsuba",
+        "sprite": "yotsuba_happy.png",
+        "position": "right"
+      }
+    ],
+    "id": 21
+  },
+  {
+    "speaker": "Watanabe Itsuki",
+    "text": "Ini keputusan paling tidak rasional yang pernah saya buat. Tapi cinta memang tidak selalu rasional.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_itsuki_03.wav",
+    "effect": "",
+    "characters": [
+      {
+        "name": "Itsuki",
+        "sprite": "itsuki_formal_smile.png",
+        "position": "left"
+      }
+    ],
+    "id": 22
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Setelah diskusi panjang, kami sepakat. Bukan keputusan mudah—tapi kami memilih kebahagiaan bersama.",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": "",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ],
+    "id": 23
+  },
+  {
+    "id": 24,
+    "speaker": "Narasi",
+    "text": "Malam itu, di atap kampus yang sepi, kalian berenam duduk bersisian. Angin malam membawa suara kota yang jauh.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 25,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku masih takut. Tapi kalau kita saling jaga... mungkin ini bisa jadi rumah yang aneh tapi hangat.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "harem_ichika_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 26,
+    "speaker": "Tachibana Nino",
+    "text": "Jangan bilang rumah aneh. Nanti aku yang atur dapur—biar setidaknya makanannya normal.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "nino_tsundere.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "harem_nino_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 27,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku... senang. Untuk pertama kalinya, aku tidak sendirian di masa depan yang kubayangkan.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "harem_miku_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 28,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku janji nggak akan memaksakan diri lagi. Soalnya sekarang ada kalian yang narik aku balik.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "harem_yotsuba_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 29,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan belajar berbagi waktu. Tidak efisien—tapi saya ingin mencobanya.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "harem_itsuki_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 30,
+    "speaker": "Narasi",
+    "text": "Kamu menggenggam tangan mereka bergantian. Tidak ada janji besar malam itu—hanya kehadiran, dan itu sudah cukup.",
+    "bg_image": "rooftop_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "speaker": "Semua Cewek (Bersamaan)",
+    "text": "Kami mencintaimu, [Nama_MC]!",
+    "bg_image": "campus_corridor.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "all_girls_together.wav",
+    "effect": "flash",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ],
+    "id": 31
+  },
+  {
+    "speaker": "Narasi (Timeskip)",
+    "text": "Beberapa tahun berlalu. Berkat kerja keras, aku akhirnya stabil secara finansial. Hubungan kami berenam—meski tidak biasa—berjalan dengan caranya sendiri: penuh cemburu kecil, tertawa, dan komitmen yang terus diperbarui.",
+    "bg_image": "campus_day.jpg",
+    "sprite": "",
+    "bgm": "hm_festival.mp3",
+    "voice": "",
+    "effect": "",
+    "id": 32
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Suatu malam di apartemen bersama, Ichika memasak, Nino mengeluh tentang porsi, Miku membaca di sofa, Yotsuba menyanyi di dapur, dan Itsuki menyusun jadwal liburan di laptop.",
+    "bg_image": "house_day.jpg",
+    "sprite": "",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": "",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ],
+    "id": 33
+  },
+  {
+    "id": 34,
+    "speaker": "Suzuki Ichika",
+    "text": "Lihat, [Nama_MC]. Lima pasang sandal di rak. Dulu aku kira ini mustahil. Sekarang... terasa biasa. Dan aku suka biasa itu.",
+    "bg_image": "house_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_ichika_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 35,
+    "speaker": "Tachibana Nino",
+    "text": "Jangan cengeng di dapur. Makan dulu. Nanti dingin.",
+    "bg_image": "house_day.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_nino_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 36,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku... menulis catatan kecil tiap malam. Tentang kalian. Biar suatu hari, kalau aku lupa, tetap ada bukti kita bahagia.",
+    "bg_image": "house_day.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "harem_miku_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "type": "question",
+    "speaker": "Sistem Pilihan (3/5)",
+    "text": "Di tengah kekacauan manis itu, mereka menatapmu menunggu keputusan soal kapan menikah. Kamu...",
+    "options": [
+      {
+        "text": "Mengatakan kalian sudah siap, dan kamu ingin meresmikan semuanya.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Yotsuba berteriak senang. Itsuki menutup laptop dengan senyum kecil."
+      },
+      {
+        "text": "Meminta waktu beberapa bulan lagi untuk menyiapkan semuanya dengan baik.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Mereka mengangguk. Nino bilang 'asal jangan terlalu lama'."
+      },
+      {
+        "text": "Tertawa dan bilang biar semesta yang tentukan—lalu digetil lima orang sekaligus.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Suasana cair. Percakapan dilanjutkan dengan lebih serius keesokan harinya."
+      }
+    ],
+    "id": 37,
+    "bgm": ""
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Hari yang dinanti tiba. Di aula yang megah, musik pernikahan bergaung. Pintu terbuka—lima pengantin wanita berjalan anggun dalam gaun putih yang berbeda.",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "",
+    "effect": "",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "five_brides.png",
+        "position": "center"
+      }
+    ],
+    "id": 38
+  },
+  {
+    "type": "question",
+    "speaker": "Sistem Pilihan (4/5)",
+    "text": "Di altar, sebelum mengucap janji, kamu menatap mereka satu per satu. Apa yang kamu rasakan?",
+    "options": [
+      {
+        "text": "Syukur yang dalam—karena setiap dari mereka memilih tetap di sini.",
+        "affection_effect": 0,
+        "next_id": 40,
+        "feedback_text": "Air mata Ichika jatuh lebih dulu. Yang lain menyusul."
+      },
+      {
+        "text": "Sedikit takut, tapi lebih besar rasa ingin menjaga mereka semua.",
+        "affection_effect": 0,
+        "next_id": 40,
+        "feedback_text": "Itsuki mengangguk pelan, seolah memahami."
+      },
+      {
+        "text": "Bahagia yang sederhana: ingin tertawa bersama mereka sampai tua.",
+        "affection_effect": 0,
+        "next_id": 40,
+        "feedback_text": "Yotsuba tersenyum lebar. Miku menggenggam tanganmu lebih erat."
+      }
+    ],
+    "id": 39,
+    "bgm": ""
+  },
+  {
+    "speaker": "Suzuki Ichika",
+    "text": "Aku tidak pernah bayangkan hari ini. Bersama-sama denganmu—dan bersama mereka—ini mimpi yang jadi nyata.",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "harem_wedding_ichika.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "Ichika",
+        "sprite": "ichika_wedding.png",
+        "position": "left"
+      }
+    ],
+    "id": 40
+  },
+  {
+    "speaker": "Tachibana Nino",
+    "text": "Aku masih tidak percaya. Tapi melihatmu di altar bersama kami... aku tidak menyesal.",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "harem_wedding_nino.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "Nino",
+        "sprite": "nino_wedding.png",
+        "position": "right"
+      }
+    ],
+    "id": 41
+  },
+  {
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku sangat bahagia. Terima kasih telah menerima aku apa adanya.",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "harem_wedding_miku.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "Miku",
+        "sprite": "miku_wedding.png",
+        "position": "left"
+      }
+    ],
+    "id": 42
+  },
+  {
+    "speaker": "Takahashi Yotsuba",
+    "text": "Ini hari terbaik dalam hidupku! Aku tidak sabar memulai hidup baru bersama kalian!",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "harem_wedding_yotsuba.wav",
+    "effect": "sprite_jump",
+    "characters": [
+      {
+        "name": "Yotsuba",
+        "sprite": "yotsuba_wedding.png",
+        "position": "right"
+      }
+    ],
+    "id": 43
+  },
+  {
+    "speaker": "Watanabe Itsuki",
+    "text": "Ini keputusan paling tidak rasional—dan paling membahagiakan. Saya bersyukur bisa berada di sini.",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "harem_wedding_itsuki.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "Itsuki",
+        "sprite": "itsuki_wedding.png",
+        "position": "center"
+      }
+    ],
+    "id": 44
+  },
+  {
+    "type": "question",
+    "speaker": "Sistem Pilihan (5/5)",
+    "text": "Saat mengucapkan janji, kata-kata apa yang paling ingin kamu sampaikan?",
+    "options": [
+      {
+        "text": "Janji untuk hadir—di hari baik maupun sulit—untuk mereka semua.",
+        "affection_effect": 0,
+        "next_id": 46,
+        "feedback_text": "Kelimanya mengangguk, mata berkaca-kaca."
+      },
+      {
+        "text": "Janji untuk terus belajar mencintai mereka dengan cara yang adil.",
+        "affection_effect": 0,
+        "next_id": 46,
+        "feedback_text": "Nino menyenggol bahumu pelan. Ichika tersenyum."
+      },
+      {
+        "text": "Janji sederhana: tidak pergi, dan selalu pulang ke rumah yang sama.",
+        "affection_effect": 0,
+        "next_id": 46,
+        "feedback_text": "Yotsuba menangis sambil tertawa. Miku mengusap air matanya."
+      }
+    ],
+    "id": 45,
+    "bgm": ""
+  },
+  {
+    "speaker": "Semua Cewek (Bersamaan)",
+    "text": "[Nama_MC]... terima kasih. Mulai hari ini, mari ikat janji ini—dan hidup bahagia bersama selamanya!",
+    "bg_image": "wedding_hall.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "all_girls_together_wedding.wav",
+    "effect": "typewriter",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "five_brides_smile.png",
+        "position": "center"
+      }
+    ],
+    "id": 46
+  },
+  {
+    "speaker": "Narasi",
+    "text": "Aku menggenggam tangan mereka satu per satu di depan altar. Kisah seorang pria yang dulu serba kekurangan berakhir dengan harmoni lima hati yang memilih untuk tinggal.",
+    "bg_image": "wedding_cg_final.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "",
+    "effect": "fade_out",
+    "id": 47
+  },
+  {
+    "type": "game_clear",
+    "speaker": "Sistem",
+    "text": "👑 CONGRATULATIONS! YOU UNLOCKED THE TRUE HAREM ENDING 👑",
+    "ending_type": "harem",
+    "ending_image": "harem_wedding.jpg",
+    "id": 48,
+    "bgm": "hm_wedding.mp3"
+  }
+]

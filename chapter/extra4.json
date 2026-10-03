@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Beberapa bulan setelah pernikahan. Rumah kecil kalian masih berbau cat baru. Tapi setiap pagi ada Yotsuba di dapur—dan itu sudah cukup membuatmu merasa pulang.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Pagi! Aku sudah joging. Kamu tinggal bangun dan makan—aku bikin pancake bentuk hati, jangan ketawa!",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 3,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Klub komunitas anak-anak minta aku latih basket minggu ini. Aku bilang oke, tapi jamnya nggak barengan date kita.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_energetic.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Dulu aku nggak bisa bilang tidak. Sekarang aku belajar. Soalnya kamu bilang aku juga berhak istirahat.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 5,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Kalau aku kelelahan, tarik tanganku pulang ya. Kayak dulu di lapangan.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Anak-anak di klub bilang pelatihnya lucu. Aku malu, tapi senang. Kayak... aku berguna tanpa harus bilang iya ke semua orang.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_festival.mp3",
+    "voice": "ex4_yotsuba_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 7,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Anak kita nanti—kalau ada—aku ajarin lari di pantai. Tapi kalau dia mau baca di rumah bareng kamu, juga boleh!",
+    "bg_image": "beach_day.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku nggak perlu jadi yang paling hebat. Cukup jadi yang pulang ke kamu setiap sore.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Makasih sudah marahin aku dulu. Tanpa itu, mungkin aku masih pura-pura kuat sendirian.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "yotsuba_teary.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Kadang aku masih bilang 'bisa!' padahal capek. Ingatkan aku ya—pelan aja, kayak dulu.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_12.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 11,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Malam pertama aku ketawa gugup terus. Kamu bilang santai. Aku coba—meski jantungku kayak habis sprint.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ex4_yotsuba_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 12,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Sekarang aku suka malam yang sepi bareng kamu. Nggak harus rame. Peluk, tidur, bangun, ulang.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Kalau aku terlalu rame di rumah, bilang aja. Aku bisa diam... sebentar. Hehe.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "yotsuba_laugh.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_13.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 14,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku sayang kamu! Boleh diulang besok pagi.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Sumpah. Besok pagi aku bilang lagi sebelum joging. Jangan tidur dulu!",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "yotsuba_energetic.png",
+    "bgm": "",
+    "voice": "ex4_yotsuba_14.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 16,
+    "speaker": "Narasi",
+    "text": "Hidup kalian bareng Yotsuba tidak spektakuler setiap detik—tapi justru karena itu, terasa nyata dan hangat.",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 17,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Extra Chapter 4 selesai. Kisah setelah menikah dengan Takahashi Yotsuba terus berlanjut.",
+    "ending_type": "extra",
+    "ending_image": "auto",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  }
+]

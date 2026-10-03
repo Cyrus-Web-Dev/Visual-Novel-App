@@ -1,0 +1,709 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Beberapa tahun setelah pernikahan. Rumah besar di pinggir kota jadi tempat kalian berenam tinggal bersama. Pagi ini matahari masuk lewat jendela dapur, dan suasana sudah ramai sebelum jam tujuh.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Narasi",
+    "text": "Aroma miso dan telur orak-arik memenuhi dapur. Nino berdiri di depan kompor dengan celemek favoritnya, sementara Yotsuba sudah memakai baju olahraga.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_cooking.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "speaker": "Tachibana Nino",
+    "text": "Oi, Yotsuba! Jangan lari-lari di dapur! Nanti nabrak wajan, terus kamu yang bersihin!",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_annoyed.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_nino_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Hehe maaf! Aku cuma mau ambil air dulu sebelum joging pagi~ [Nama_MC] udah bangun belum?",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_yotsuba_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 5,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku dengar dia masih di kamar mandi. Biarin aja, kan weekend. Nino, telurnya jangan terlalu mateng ya.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_ichika_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "speaker": "Tachibana Nino",
+    "text": "Aku tahu! Jangan sok ngatur di daporku. ...Tapi makasih sudah ingetin.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_nino_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 7,
+    "speaker": "Yoshikawa Miku",
+    "text": "Pagi... Aku bawa teh hijau. Ada yang mau?",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_miku_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya sudah bangun sejak pukul lima. Jadwal hari ini sudah saya susun. Setelah sarapan, ada waktu untuk membaca bersama selama empat puluh menit.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "itsuki_formal.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_itsuki_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Itsuki~ hari ini libur! Santai dikit boleh dong. Ayo makan dulu, baru urusan jadwal.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_energetic.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_yotsuba_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Watanabe Itsuki",
+    "text": "...Baiklah. Saya akui aroma masakan Nino-san membuat saya sulit fokus pada jadwal.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_itsuki_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 11,
+    "speaker": "Tachibana Nino",
+    "text": "Hmph. Sudah jelas enak. [Nama_MC], duduk. Jangan berdiri di situ kayak patung.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_nino_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 12,
+    "speaker": "Suzuki Ichika",
+    "text": "Haha, Nino masih sama seperti dulu ya. Ayo, [Nama_MC]. Sarapan bareng selalu jadi bagian favoritku.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_happy.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_ichika_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Narasi",
+    "text": "Kalian duduk mengelilingi meja dapur yang agak penuh. Piring saling bertumpuk, tawa kecil terdengar, dan untuk sesaat dunia terasa sangat sederhana.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 14,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kemarin aku nemu buku resep era Edo di toko bekas. Nino, mau coba bikin satu menu bareng?",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "miku_excited.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_miku_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Tachibana Nino",
+    "text": "Boleh. Tapi jangan sampai dapur berantakan kayak waktu Yotsuba 'bantu' kemarin.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_nino_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 16,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Hei! Aku cuma kelepasan numpahin tepung dikit! Dikit banget kok!",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "yotsuba_laugh.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_yotsuba_03.wav",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 17,
+    "speaker": "Suzuki Ichika",
+    "text": "Dikit yang memenuhi setengah lantai, maksudnya? Santai, yang penting lucu. [Nama_MC] bahkan ikut ngepel bareng.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_teasing.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_ichika_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 18,
+    "speaker": "Narasi",
+    "text": "Setelah sarapan, Yotsuba pergi joging. Itsuki membawa laptop ke ruang tengah. Miku duduk di sofa dengan buku tebal. Ichika menyeduh kopi, dan Nino mencuci piring sambil bersenandung pelan.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 19,
+    "speaker": "Suzuki Ichika",
+    "text": "[Nama_MC], sini sebentar. Kursi di sebelahku kosong, lho. Atau kamu mau bantu Nino? Dia pura-pura tidak butuh bantuan, tapi selalu senang kalau ada yang menemani.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_ichika_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 20,
+    "speaker": "Tachibana Nino",
+    "text": "Aku dengar itu! Dasar Ichika. ...Tapi kalau [Nama_MC] mau mengeringkan piring, aku tidak keberatan.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_nino_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 21,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku juga... kalau boleh, nanti sore ajak jalan ke toko buku? Cuma sebentar. Kalau kamu sibuk, gapapa.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_miku_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 22,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya juga ingin mengusulkan sesuatu. Malam ini, bagaimana jika kita makan di luar? Ada restoran kecil yang saya teliti ulasannya. Ratingnya tinggi, dan harganya masuk akal.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_itsuki_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 23,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Wah Itsuki yang ngajak makan luar? Langka! Aku setuju banget! [Nama_MC], ayo ikut ya?",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_yotsuba_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 24,
+    "speaker": "Suzuki Ichika",
+    "text": "Kalau semua setuju, aku ikut. Tapi malam ini jangan terlalu larut. Besok ada shooting pagi—meski cuma iklan lokal, tetap harus fresh.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_normal.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_ichika_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 25,
+    "speaker": "Narasi",
+    "text": "Siang hari. Kamu dan Miku jalan kaki ke toko buku di dekat stasiun. Angin sejuk, dan dia sesekali menunjuk etalase dengan mata berbinar.",
+    "bg_image": "street_day.jpg",
+    "sprite": "",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 26,
+    "speaker": "Yoshikawa Miku",
+    "text": "Dulu aku selalu ke sini sendirian. Sekarang... rasanya beda. Lebih hangat. Makasih sudah mau nemenin, meskipun cuma ngeliatin aku pilih-pilih buku.",
+    "bg_image": "street_day.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_miku_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 27,
+    "speaker": "Yoshikawa Miku",
+    "text": "Oh, ini! Sejarah dapur Jepang kuno. Nino pasti suka. Aku beliin buat dia, ya? Jangan bilang-bilang dulu—biar kejutan.",
+    "bg_image": "bookstore_day.jpg",
+    "sprite": "miku_excited.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_miku_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 28,
+    "speaker": "Narasi",
+    "text": "Sore di rumah. Yotsuba baru pulang joging, basah keringat, langsung diserang handuk oleh Nino.",
+    "bg_image": "living_room_afternoon.jpg",
+    "sprite": "",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 29,
+    "speaker": "Tachibana Nino",
+    "text": "Mandi dulu! Jangan duduk di sofa pakai baju basah. Aku baru cuci sarung bantalnya kemarin!",
+    "bg_image": "living_room_afternoon.jpg",
+    "sprite": "nino_angry.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_nino_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 30,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya iya~ Nino kayak ibu-ibu aja. Tapi... enak sih, ada yang nungguin pulang.",
+    "bg_image": "living_room_afternoon.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_yotsuba_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 31,
+    "speaker": "Suzuki Ichika",
+    "text": "Kami semua nungguin, kok. Termasuk [Nama_MC] yang dari tadi bolak-balik ke jendela.",
+    "bg_image": "living_room_afternoon.jpg",
+    "sprite": "ichika_teasing.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_ichika_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 32,
+    "speaker": "Watanabe Itsuki",
+    "text": "Secara statistik, kemungkinan Yotsuba pulang lewat jalur taman adalah tujuh puluh persen. Saya hanya... kebetulan berdiri di dekat jendela yang sama.",
+    "bg_image": "living_room_afternoon.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_itsuki_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 33,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Itsuki tsundere juga ternyata! Lucu banget. Ayo mandi dulu, nanti kita siap-siap ke restoran!",
+    "bg_image": "living_room_afternoon.jpg",
+    "sprite": "yotsuba_laugh.png",
+    "bgm": "hm_spring.mp3",
+    "voice": "as_yotsuba_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 34,
+    "speaker": "Narasi",
+    "text": "Malam. Restoran kecil yang direkomendasikan Itsuki ternyata nyaman dan tidak terlalu ramai. Lima cewek duduk di sekelilingmu, masing-masing dengan ekspresi puas setelah hidangan pertama.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 35,
+    "speaker": "Watanabe Itsuki",
+    "text": "Sesuai prediksi. Porsi seimbang, rasa konsisten, dan pelayanan efisien. Saya senang kalian menyukainya.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "itsuki_happy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_itsuki_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 36,
+    "speaker": "Tachibana Nino",
+    "text": "Lumayan. Tapi sausnya masih kalah sama buatan aku. Besok aku bikin yang lebih enak di rumah.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_nino_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 37,
+    "speaker": "Suzuki Ichika",
+    "text": "Persaingan sehat di dapur, ya. Yang penting [Nama_MC] yang jadi juri tidak pilih kasih... atau boleh sedikit pilih kasih ke aku?",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "ichika_teasing.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_ichika_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 38,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku... senang. Bukan cuma makanannya. Tapi kita semua bisa duduk begini, tanpa buru-buru, tanpa takut kehilangan satu sama lain.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_miku_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 39,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya! Dulu aku mikir, bisa nggak ya hidup bareng sebanyak ini? Ternyata bisa. Bahkan lebih seru dari yang kubayangkan!",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_yotsuba_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 40,
+    "speaker": "Watanabe Itsuki",
+    "text": "Keputusan paling tidak rasional dalam hidup saya... ternyata menghasilkan kebahagiaan paling stabil. Data empiris mendukung.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_itsuki_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 41,
+    "speaker": "Suzuki Ichika",
+    "text": "[Nama_MC]. Terima kasih sudah memilih kami semua. Bukan hanya dulu di hari pernikahan—tapi setiap hari, dengan cara-cara kecil yang kamu lakukan.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "ichika_teary_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_ichika_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 42,
+    "speaker": "Tachibana Nino",
+    "text": "Jangan bikin aku emo di restoran. ...Tapi iya. Makasih. Dan jangan coba-coba kabur, ya. Aku masak setiap hari bukan tanpa alasan.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_nino_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 43,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku juga... makasih. Karena kamu, aku berani bilang suka sejarah ke orang lain. Bahkan sekarang Nino dan Itsuki kadang ikut dengerin.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "miku_happy_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_miku_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 44,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku janji nggak akan memaksakan diri lagi kayak dulu. Soalnya sekarang ada kalian yang tarik aku balik ke rumah kalau kelelahan!",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_yotsuba_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 45,
+    "speaker": "Watanabe Itsuki",
+    "text": "Dan saya belajar bahwa istirahat bukan tanda kelemahan. [Nama_MC] mengajarkan itu dengan sabar. Saya berhutang banyak.",
+    "bg_image": "restaurant_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_itsuki_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4501,
+    "speaker": "Narasi",
+    "text": "Di jalan pulang, lampu-lampu kota memantul di genangan kecil. Yotsuba bersiul pelan. Nino menyesuaikan langkahmu. Miku sesekali tersenyum ke arah jendela toko buku yang sudah tutup.",
+    "bg_image": "street_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 4502,
+    "speaker": "Suzuki Ichika",
+    "text": "Kamu tahu, [Nama_MC]? Aku dulu takut menua sendirian di depan kamera. Sekarang aku takut menua... tapi bareng kalian. Dan itu jauh lebih manis.",
+    "bg_image": "street_night.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_ichika_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4503,
+    "speaker": "Tachibana Nino",
+    "text": "Jangan bilang menua di jalan. Nanti aku nangis. ...Bukan nangis. Debu.",
+    "bg_image": "street_night.jpg",
+    "sprite": "nino_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_nino_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4504,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku ingin mencatat malam ini. Bukan di buku sejarah—di buku kita. Halaman yang cuma kita yang baca.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_miku_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4505,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku... bahagia banget. Sampai kadang takut ini mimpi. Tapi tanganmu hangat. Jadi nyata.",
+    "bg_image": "street_night.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_yotsuba_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4506,
+    "speaker": "Watanabe Itsuki",
+    "text": "Data menunjukkan kebahagiaan kami stabil. Saya... tidak lagi membutuhkan angka untuk mempercayainya.",
+    "bg_image": "street_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_itsuki_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 46,
+    "speaker": "Narasi",
+    "text": "Perjalanan pulang di bawah lampu jalan. Yotsuba berjalan di depan sambil bersiul, Nino dan Ichika bergandengan denganmu di sisi berbeda, Miku memegang kantung buku, Itsuki menyamakan langkah di belakang.",
+    "bg_image": "street_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 47,
+    "speaker": "Suzuki Ichika",
+    "text": "Besok weekend lagi. Mau piknik di taman belakang rumah? Aku bisa siapkan camilan ringan.",
+    "bg_image": "street_night.jpg",
+    "sprite": "ichika_happy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_ichika_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 48,
+    "speaker": "Tachibana Nino",
+    "text": "Bento aku yang bikin. Ichika boleh bantu potong buah saja—jangan dekat-dekat kompor.",
+    "bg_image": "street_night.jpg",
+    "sprite": "nino_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_nino_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 49,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku bawa frisbee! Itsuki, main ya? Jangan bilang jadwal!",
+    "bg_image": "street_night.jpg",
+    "sprite": "yotsuba_energetic.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_yotsuba_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 50,
+    "speaker": "Watanabe Itsuki",
+    "text": "...Saya siapkan waktu satu jam untuk aktivitas fisik rekreasi. Lebih dari itu, saya kembali ke buku.",
+    "bg_image": "street_night.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_itsuki_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 51,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku bawa tikar dan buku. Kalau kalian main, aku jaga minumannya.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_miku_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 52,
+    "speaker": "Narasi",
+    "text": "Tiba di rumah. Lampu ruang tengah dinyalakan. Sepatu berjajar di rak—enam pasang, tidak selalu rapi, tapi selalu lengkap.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 53,
+    "speaker": "Semua Cewek (Bersamaan)",
+    "text": "Selamat datang di rumah, [Nama_MC].",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "all_girls_gather.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_all_01.wav",
+    "effect": "flash",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "speaker": "Suzuki Ichika",
+    "text": "Gini aja tiap hari, aku sudah bahagia. Tidak perlu yang mewah.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_ichika_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 55,
+    "speaker": "Tachibana Nino",
+    "text": "Kalau lapar tengah malam, bilang. Jangan diam-diam ke kulkas—nanti aku yang dimarahin karena stok habis.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "nino_pout.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_nino_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 56,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kalau susah tidur, boleh ketuk kamarku. Kita bisa ngobrol pelan, atau aku bacain cerita sejarah sampai kamu mengantuk.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_miku_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 57,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Dan kalau mau olahraga bareng pagi-pagi buta, panggil aku aja! Jangan sendirian!",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_yotsuba_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 58,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya akan menyalakan lampu koridor. Hati-hati di tangga. Selamat istirahat, [Nama_MC]—dan untuk semuanya.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_itsuki_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 59,
+    "speaker": "Narasi",
+    "text": "Malam semakin dalam. Dari kamar yang berbeda terdengar tawa kecil, bunyi halaman buku, dan langkah kaki yang familiar. Rumah ini tidak pernah benar-benar sunyi—dan kamu tidak ingin sebaliknya.",
+    "bg_image": "house_hallway_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 60,
+    "speaker": "Narasi",
+    "text": "Harmoni lima hati tidak berakhir di altar. Ia berlanjut di dapur yang berasap, di sofa yang penuh bantal, di argumen kecil tentang jadwal, dan di pelukan singkat sebelum tidur.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 61,
+    "speaker": "Semua Cewek (Bersamaan)",
+    "text": "Kami mencintaimu, [Nama_MC]. Sampai kapan pun.",
+    "bg_image": "living_room_night.jpg",
+    "sprite": "all_girls_gather.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "as_all_02.wav",
+    "effect": "flash",
+    "characters": [
+      {
+        "name": "All",
+        "sprite": "all_girls_gather.png",
+        "position": "center"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "speaker": "Narasi",
+    "text": "Dan kamu membalasnya dengan cara yang sama setiap hari: hadir, mendengarkan, dan pulang ke rumah yang sama.",
+    "bg_image": "house_exterior_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 63,
+    "type": "game_clear",
+    "speaker": "Sistem",
+    "text": "🌸 AFTER STORY SELESAI — Kehidupan kalian berenam terus berlanjut dengan hangat.",
+    "ending_type": "after_story",
+    "ending_image": "harem_wedding.jpg",
+    "bg_image": "house_exterior_night.jpg",
+    "sprite": "",
+    "bgm": "hm_wedding.mp3",
+    "voice": "",
+    "effect": "fade_out"
+  }
+]

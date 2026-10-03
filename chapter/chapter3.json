@@ -1,0 +1,1371 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Malam makin larut. Perut keroncongan menuntunku ke kedai ramen kecil di pinggir jalan yang masih buka.",
+    "bg_image": "ramen_shop_outside.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Narasi",
+    "text": "Di dalam, di sudut ruangan, cewek dengan headphone besar di leher sedang asyik membaca buku tebal tentang Era Sengoku. Yoshikawa Miku. Ramen di sampingnya hampir tidak disentuh.",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_membaca.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "speaker": "Narasi",
+    "text": "Aku mendekat pelan. Dia terlalu fokus sampai tidak sadar ada yang duduk di seberangnya.",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_membaca.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 4,
+    "speaker": "MC",
+    "text": "Miku? Kebetulan sekali. Boleh aku duduk di sini?",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_membaca.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 5,
+    "speaker": "Yoshikawa Miku",
+    "text": "A-Ah...! *(Terlonjak, menutup buku)* [Nama_MC]... B-Boleh. Aku... cuma sedang membaca...",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_shocked.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_01.wav",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 6,
+    "speaker": "MC",
+    "text": "Itu tentang Takeda Shingen, ya? Strategi kavalerinya di Kawanakajima memang legendaris.",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_shocked.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 7,
+    "speaker": "Yoshikawa Miku",
+    "text": "K-Kamu tahu?! *(Matanya berbinar)* Kebanyakan orang bilang sejarah membosankan... Mereka bilang aku aneh karena suka ini...",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_excited.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "type": "question",
+    "speaker": "Sistem Pilihan (1/20)",
+    "text": "Miku merasa minder dengan hobinya. Kamu...",
+    "options": [
+      {
+        "text": "Bilang melihatnya bicara soal yang dia sukai membuatnya terlihat keren—tanpa lebay.",
+        "affection_effect": 5,
+        "next_id": 9,
+        "feedback_text": "Jantung Miku berdegup. Jarang ada yang memuji setulus itu."
+      },
+      {
+        "text": "Bilang yang penting nilai sejarahnya bagus.",
+        "affection_effect": 0,
+        "next_id": 10,
+        "feedback_text": "Terlalu formal. Kecanggungan belum hilang."
+      },
+      {
+        "text": "Mengakui hobinya memang agak tidak biasa untuk cewek seusianya.",
+        "affection_effect": -5,
+        "next_id": 11,
+        "feedback_text": "Miku menunduk. Rasa mindernya tervalidasi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 9,
+    "speaker": "Yoshikawa Miku",
+    "text": "M-Manis...?! *(Merona, menarik kerah jaket)* J-Jangan bercanda... Aku tidak sekeren itu...",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_03_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Yoshikawa Miku",
+    "text": "Ah, iya... nilai ujianku memang terbantu. Makasih ya.",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_03_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 11,
+    "speaker": "Yoshikawa Miku",
+    "text": "U-Um... benar juga. Maaf sudah cerita membosankan... *(Memakai headphone lagi)*",
+    "bg_image": "ramen_shop_inside.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_03_a.wav",
+    "effect": ""
+  },
+  {
+    "id": 12,
+    "speaker": "Narasi",
+    "text": "Beberapa hari kemudian di perpustakaan, Miku membaca tentang Nobunaga.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_membaca.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 13,
+    "type": "question",
+    "speaker": "Sistem Pilihan (2/20)",
+    "text": "Kamu mendekat dan dia kaget. Kamu...",
+    "options": [
+      {
+        "text": "Tersenyum dan bilang maaf mengganggu—tapi penasaran dengan bukunya.",
+        "affection_effect": 5,
+        "next_id": 14,
+        "feedback_text": "Miku senang ada yang tertarik."
+      },
+      {
+        "text": "Menyapa biasa: lagi baca apa?",
+        "affection_effect": 0,
+        "next_id": 15,
+        "feedback_text": "Jawaban singkat, masih canggung."
+      },
+      {
+        "text": "Bertanya apakah tidak bosan buku sejarah terus.",
+        "affection_effect": -5,
+        "next_id": 16,
+        "feedback_text": "Dia menutup buku dan pergi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 14,
+    "speaker": "Yoshikawa Miku",
+    "text": "A-Aku... ini tentang Honno-ji. Kamu tahu?",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_excited.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_101.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Yoshikawa Miku",
+    "text": "Ah... buku sejarah.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_town.mp3",
+    "voice": "miku_jp_102.wav",
+    "effect": ""
+  },
+  {
+    "id": 16,
+    "speaker": "Yoshikawa Miku",
+    "text": "...Aku mau pergi dulu.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_103.wav",
+    "effect": ""
+  },
+  {
+    "id": 17,
+    "speaker": "Narasi",
+    "text": "Miku mengajak ke museum sejarah kota. Dia sangat bersemangat.",
+    "bg_image": "museum_day.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 18,
+    "type": "question",
+    "speaker": "Sistem Pilihan (3/20)",
+    "text": "Dia menjelaskan artefak dengan detail. Kamu...",
+    "options": [
+      {
+        "text": "Mendengarkan dan bertanya yang relevan, bilang belajar banyak hari ini.",
+        "affection_effect": 5,
+        "next_id": 19,
+        "feedback_text": "Miku tersenyum lebar."
+      },
+      {
+        "text": "Mengangguk dan bilang menarik.",
+        "affection_effect": 0,
+        "next_id": 20,
+        "feedback_text": "Dia senang, ingin lebih antusias."
+      },
+      {
+        "text": "Sibuk dengan ponsel.",
+        "affection_effect": -5,
+        "next_id": 21,
+        "feedback_text": "Dia kecewa berat."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 19,
+    "speaker": "Yoshikawa Miku",
+    "text": "Beneran tertarik? Aku selalu ingin punya teman yang bisa diajak ngobrol soal ini!",
+    "bg_image": "museum_day.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_104.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 20,
+    "speaker": "Yoshikawa Miku",
+    "text": "A-aku senang kamu mau dengar...",
+    "bg_image": "museum_day.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_105.wav",
+    "effect": ""
+  },
+  {
+    "id": 21,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku tidak seharusnya mengajakmu.",
+    "bg_image": "museum_day.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_106.wav",
+    "effect": ""
+  },
+  {
+    "id": 22,
+    "speaker": "Narasi",
+    "text": "Malam itu Miku mengirim pesan panjang tentang betapa bahagianya bisa berbagi.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 23,
+    "type": "question",
+    "speaker": "Sistem Pilihan (4/20)",
+    "text": "Dia menulis 'aku merasa tidak sendiri lagi'. Kamu membalas...",
+    "options": [
+      {
+        "text": "Dengan tenang: kamu juga beruntung mengenalnya; dunia lebih berwarna dengannya.",
+        "affection_effect": 5,
+        "next_id": 24,
+        "feedback_text": "Miku menangis haru di seberang."
+      },
+      {
+        "text": "Singkat: sama-sama.",
+        "affection_effect": 0,
+        "next_id": 25,
+        "feedback_text": "Dia berharap lebih."
+      },
+      {
+        "text": "Hanya emoticon.",
+        "affection_effect": -5,
+        "next_id": 26,
+        "feedback_text": "Dia merasa tidak dianggap serius."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 24,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku tidak pernah berpikir ada yang melihatku seperti itu...",
+    "bg_image": "phone_night.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_107.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 25,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku senang ada yang mau dengar.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_108.wav",
+    "effect": ""
+  },
+  {
+    "id": 26,
+    "speaker": "Yoshikawa Miku",
+    "text": "Maaf mengganggu.",
+    "bg_image": "phone_night.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_109.wav",
+    "effect": ""
+  },
+  {
+    "id": 27,
+    "speaker": "Narasi",
+    "text": "Di taman kastil, Miku berhenti di tengah penjelasan dan bilang dia terlalu banyak bicara.",
+    "bg_image": "castle_park_day.jpg",
+    "sprite": "miku_embarrassed.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 28,
+    "type": "question",
+    "speaker": "Sistem Pilihan (5/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menatap matanya dan bilang kamu suka melihatnya bersemangat—itu membuatnya cantik.",
+        "affection_effect": 5,
+        "next_id": 29,
+        "feedback_text": "Miku membeku, merah padam."
+      },
+      {
+        "text": "Bilang tidak apa-apa, kamu senang mendengar.",
+        "affection_effect": 0,
+        "next_id": 30,
+        "feedback_text": "Dia lega tapi masih ragu."
+      },
+      {
+        "text": "Mengakui agak terlalu banyak, tapi tidak apa-apa.",
+        "affection_effect": -5,
+        "next_id": 31,
+        "feedback_text": "Dia diam total."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 29,
+    "speaker": "Yoshikawa Miku",
+    "text": "C-Cantik...? Jangan bercanda! Aku cuma cewek aneh yang suka sejarah!",
+    "bg_image": "castle_park_day.jpg",
+    "sprite": "miku_super_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_110.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 30,
+    "speaker": "Yoshikawa Miku",
+    "text": "A-aku senang kamu tidak bosan...",
+    "bg_image": "castle_park_day.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_111.wav",
+    "effect": ""
+  },
+  {
+    "id": 31,
+    "speaker": "Yoshikawa Miku",
+    "text": "Maaf. Aku terlalu bersemangat.",
+    "bg_image": "castle_park_day.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_112.wav",
+    "effect": ""
+  },
+  {
+    "id": 32,
+    "speaker": "Narasi",
+    "text": "Miku memakai kimono sederhana di kedai teh. Dia gugup.",
+    "bg_image": "tea_house_day.jpg",
+    "sprite": "miku_kimono.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 33,
+    "type": "question",
+    "speaker": "Sistem Pilihan (6/20)",
+    "text": "Dia bertanya apakah terlihat aneh. Kamu...",
+    "options": [
+      {
+        "text": "Bilang sangat cocok—seperti dari zaman yang dia sukai.",
+        "affection_effect": 5,
+        "next_id": 34,
+        "feedback_text": "Miku tersipu, percaya diri naik."
+      },
+      {
+        "text": "Bilang bagus.",
+        "affection_effect": 0,
+        "next_id": 35,
+        "feedback_text": "Cukup, kurang dalam."
+      },
+      {
+        "text": "Tertawa kecil karena tidak terbiasa melihatnya seperti itu.",
+        "affection_effect": -5,
+        "next_id": 36,
+        "feedback_text": "Dia malu dan menyesal."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 34,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kamu... selalu bilang hal yang membuatku bingung.",
+    "bg_image": "tea_house_day.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_113.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 35,
+    "speaker": "Yoshikawa Miku",
+    "text": "Makasih...",
+    "bg_image": "tea_house_day.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_114.wav",
+    "effect": ""
+  },
+  {
+    "id": 36,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku tahu aneh.",
+    "bg_image": "tea_house_day.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_115.wav",
+    "effect": ""
+  },
+  {
+    "id": 37,
+    "speaker": "Narasi",
+    "text": "Miku mengajak ke perpustakaan tua. Ruang bacanya sepi.",
+    "bg_image": "old_library_day.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 38,
+    "type": "question",
+    "speaker": "Sistem Pilihan (7/20)",
+    "text": "Sesekali dia melirikmu. Kamu...",
+    "options": [
+      {
+        "text": "Tersenyum dan bilang melihatnya membaca membuatmu tenang.",
+        "affection_effect": 5,
+        "next_id": 39,
+        "feedback_text": "Miku tersipu, merasa nyaman."
+      },
+      {
+        "text": "Tetap fokus ke buku sendiri.",
+        "affection_effect": 0,
+        "next_id": 40,
+        "feedback_text": "Dia berharap lebih diperhatikan."
+      },
+      {
+        "text": "Bertanya kenapa melotot.",
+        "affection_effect": -5,
+        "next_id": 41,
+        "feedback_text": "Dia menunduk malu."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 39,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku juga tenang saat bersamamu. Aku bisa jadi diriku sendiri.",
+    "bg_image": "old_library_day.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_116.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 40,
+    "speaker": "Yoshikawa Miku",
+    "text": "...",
+    "bg_image": "old_library_day.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 41,
+    "speaker": "Yoshikawa Miku",
+    "text": "M-maaf...",
+    "bg_image": "old_library_day.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_117.wav",
+    "effect": ""
+  },
+  {
+    "id": 42,
+    "speaker": "Narasi",
+    "text": "Di salju pertama, Miku menggigil dengan jaket tipis.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_cold.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 43,
+    "type": "question",
+    "speaker": "Sistem Pilihan (8/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Melilitkan syalmu ke lehernya tanpa banyak kata.",
+        "affection_effect": 5,
+        "next_id": 44,
+        "feedback_text": "Dia memegang syal erat, terharu."
+      },
+      {
+        "text": "Mengajak mencari tempat hangat.",
+        "affection_effect": 0,
+        "next_id": 45,
+        "feedback_text": "Baik, kurang personal."
+      },
+      {
+        "text": "Menyuruhnya lain kali pakai jaket tebal.",
+        "affection_effect": -5,
+        "next_id": 46,
+        "feedback_text": "Dia merasa tidak dipedulikan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 44,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kamu selalu membuatku terkejut dengan kebaikanmu.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_118.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 45,
+    "speaker": "Yoshikawa Miku",
+    "text": "A-aku baik-baik saja.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_119.wav",
+    "effect": ""
+  },
+  {
+    "id": 46,
+    "speaker": "Yoshikawa Miku",
+    "text": "...",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 47,
+    "speaker": "Narasi",
+    "text": "Miku membuka sedikit tentang kesepiannya di kelas.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_pensive.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 48,
+    "type": "question",
+    "speaker": "Sistem Pilihan (9/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Mendengarkan sampai selesai, lalu bilang dia tidak sendirian lagi.",
+        "affection_effect": 5,
+        "next_id": 49,
+        "feedback_text": "Beban di matanya berkurang."
+      },
+      {
+        "text": "Mengangguk simpati singkat.",
+        "affection_effect": 0,
+        "next_id": 50,
+        "feedback_text": "Kurang dalam."
+      },
+      {
+        "text": "Menyuruhnya lebih membuka diri ke orang lain.",
+        "affection_effect": -5,
+        "next_id": 51,
+        "feedback_text": "Dia merasa dinasihati, bukan didengar."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 49,
+    "speaker": "Yoshikawa Miku",
+    "text": "...Makasih. Aku simpan kata itu.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_teary_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_120.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 50,
+    "speaker": "Yoshikawa Miku",
+    "text": "Iya...",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_121.wav",
+    "effect": ""
+  },
+  {
+    "id": 51,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku akan coba.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_122.wav",
+    "effect": ""
+  },
+  {
+    "id": 52,
+    "speaker": "Narasi",
+    "text": "Miku memberi daun maple di musim gugur.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 53,
+    "type": "question",
+    "speaker": "Sistem Pilihan (10/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menerima hati-hati dan bilang akan menyimpannya sebagai kenangan.",
+        "affection_effect": 5,
+        "next_id": 54,
+        "feedback_text": "Miku tersipu dalam."
+      },
+      {
+        "text": "Bilang daunnya cantik.",
+        "affection_effect": 0,
+        "next_id": 55,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bertanya buat apa.",
+        "affection_effect": -5,
+        "next_id": 56,
+        "feedback_text": "Dia membuang daun itu."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 54,
+    "speaker": "Yoshikawa Miku",
+    "text": "Daun ini... mengingatkanku pada kita.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_123.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 55,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku ambil karena mengingatkanku padamu.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_124.wav",
+    "effect": ""
+  },
+  {
+    "id": 56,
+    "speaker": "Yoshikawa Miku",
+    "text": "Lupakan saja.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_125.wav",
+    "effect": ""
+  },
+  {
+    "id": 57,
+    "speaker": "Narasi",
+    "text": "Miku hampir mengungkapkan perasaan di jalan malam, lalu ragu.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 58,
+    "type": "question",
+    "speaker": "Sistem Pilihan (11/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memberi ruang, bilang dia tidak harus terburu.",
+        "affection_effect": 5,
+        "next_id": 59,
+        "feedback_text": "Dia lega."
+      },
+      {
+        "text": "Menanyakan apa yang mau dikatakan.",
+        "affection_effect": 0,
+        "next_id": 60,
+        "feedback_text": "Dia gelagapan."
+      },
+      {
+        "text": "Mengganti topik.",
+        "affection_effect": -5,
+        "next_id": 61,
+        "feedback_text": "Kesempatan hilang."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 59,
+    "speaker": "Yoshikawa Miku",
+    "text": "...Nanti. Aku janji.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_126.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 60,
+    "speaker": "Yoshikawa Miku",
+    "text": "Bukan apa-apa...",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_127.wav",
+    "effect": ""
+  },
+  {
+    "id": 61,
+    "speaker": "Yoshikawa Miku",
+    "text": "Iya, pulang yuk.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_128.wav",
+    "effect": ""
+  },
+  {
+    "id": 62,
+    "speaker": "Narasi",
+    "text": "Di sakura, Miku bertanya apakah kamu ingat pertemuan di kedai ramen.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 63,
+    "type": "question",
+    "speaker": "Sistem Pilihan (12/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menceritakan detail yang kamu ingat dan apa yang kamu rasakan.",
+        "affection_effect": 5,
+        "next_id": 64,
+        "feedback_text": "Miku menangis bahagia."
+      },
+      {
+        "text": "Bilang ingat, dia sedang baca sejarah.",
+        "affection_effect": 0,
+        "next_id": 65,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bilang agak kabur.",
+        "affection_effect": -5,
+        "next_id": 66,
+        "feedback_text": "Dia kecewa berat."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 64,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku juga tidak akan lupa hari itu!",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_129.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 65,
+    "speaker": "Yoshikawa Miku",
+    "text": "Iya... aku ingat.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_130.wav",
+    "effect": ""
+  },
+  {
+    "id": 66,
+    "speaker": "Yoshikawa Miku",
+    "text": "Mungkin hanya hari biasa bagimu.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_131.wav",
+    "effect": ""
+  },
+  {
+    "id": 67,
+    "speaker": "Narasi",
+    "text": "Miku menggenggam tanganmu dan bertanya perasaanmu.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 68,
+    "type": "question",
+    "speaker": "Sistem Pilihan (13/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menggenggam balik dan bilang menyukainya—bukan hanya hobinya, tapi dirinya yang tulus.",
+        "affection_effect": 5,
+        "next_id": 69,
+        "feedback_text": "Miku menangis bahagia."
+      },
+      {
+        "text": "Bilang dia teman yang baik.",
+        "affection_effect": 0,
+        "next_id": 70,
+        "feedback_text": "Friendzone terasa."
+      },
+      {
+        "text": "Bilang belum memikirkan itu.",
+        "affection_effect": -5,
+        "next_id": 71,
+        "feedback_text": "Dia melepaskan tangan."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 69,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku juga menyukaimu! Sudah lama!",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_cry.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_132.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 70,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku senang jadi temanmu.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_133.wav",
+    "effect": ""
+  },
+  {
+    "id": 71,
+    "speaker": "Yoshikawa Miku",
+    "text": "Maaf sudah membuatmu tidak nyaman.",
+    "bg_image": "street_night.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_134.wav",
+    "effect": ""
+  },
+  {
+    "id": 72,
+    "speaker": "Narasi",
+    "text": "Miku membawa teh matcha buatan sendiri.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 73,
+    "type": "question",
+    "speaker": "Sistem Pilihan (14/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memegang cangkir dan bilang rasanya diperhatikan detailnya.",
+        "affection_effect": 5,
+        "next_id": 74,
+        "feedback_text": "Miku senang usahanya dihargai."
+      },
+      {
+        "text": "Bilang enak.",
+        "affection_effect": 0,
+        "next_id": 75,
+        "feedback_text": "Ingin lebih."
+      },
+      {
+        "text": "Bilang agak pahit.",
+        "affection_effect": -5,
+        "next_id": 76,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 74,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku belajar dari buku resep zaman Edo!",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_135.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 75,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku senang kamu suka.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_136.wav",
+    "effect": ""
+  },
+  {
+    "id": 76,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku akan perbaiki...",
+    "bg_image": "campus_park.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_137.wav",
+    "effect": ""
+  },
+  {
+    "id": 77,
+    "speaker": "Narasi",
+    "text": "Di salju, Miku menggigil lagi.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_cold.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 78,
+    "type": "question",
+    "speaker": "Sistem Pilihan (15/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memberikan jaketmu.",
+        "affection_effect": 5,
+        "next_id": 79,
+        "feedback_text": "Dia merasa dihangatkan dua kali."
+      },
+      {
+        "text": "Mengajak masuk.",
+        "affection_effect": 0,
+        "next_id": 80,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Menyuruh pakai lebih tebal.",
+        "affection_effect": -5,
+        "next_id": 81,
+        "feedback_text": "Kurang peduli."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 79,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku tidak pernah merasa sehangat ini.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_138.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 80,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku baik-baik saja.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_139.wav",
+    "effect": ""
+  },
+  {
+    "id": 81,
+    "speaker": "Yoshikawa Miku",
+    "text": "...",
+    "bg_image": "snow_park.jpg",
+    "sprite": "miku_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 82,
+    "speaker": "Narasi",
+    "text": "Miku menanyakan komitmen.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "miku_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 83,
+    "type": "question",
+    "speaker": "Sistem Pilihan (16/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menjawab ingin menjalaninya bersama dengan tenang.",
+        "affection_effect": 5,
+        "next_id": 84,
+        "feedback_text": "Dia lega."
+      },
+      {
+        "text": "Bilang ingin bersama.",
+        "affection_effect": 0,
+        "next_id": 85,
+        "feedback_text": "Kurang dalam."
+      },
+      {
+        "text": "Ragu.",
+        "affection_effect": -5,
+        "next_id": 86,
+        "feedback_text": "Dia menjauh."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 84,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku juga. Aku sangat ingin.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "miku_happy_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_140.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 85,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku senang.",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_141.wav",
+    "effect": ""
+  },
+  {
+    "id": 86,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku mengerti...",
+    "bg_image": "park_sunset.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_142.wav",
+    "effect": ""
+  },
+  {
+    "id": 87,
+    "speaker": "Narasi",
+    "text": "Musim semi, di bawah sakura lagi.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 88,
+    "type": "question",
+    "speaker": "Sistem Pilihan (17/20)",
+    "text": "Miku bilang ingin menghabiskan hidup bersamamu. Kamu...",
+    "options": [
+      {
+        "text": "Menggenggam tangan dan bilang kamu juga—dia adalah rumah.",
+        "affection_effect": 5,
+        "next_id": 89,
+        "feedback_text": "Miku menangis bahagia."
+      },
+      {
+        "text": "Bilang ingin bersama.",
+        "affection_effect": 0,
+        "next_id": 90,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Diam menatap sakura.",
+        "affection_effect": -5,
+        "next_id": 91,
+        "feedback_text": "Dia kecewa berat."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 89,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku mencintaimu! Selamanya!",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_cry.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_143.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 90,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku senang mendengarnya.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_144.wav",
+    "effect": ""
+  },
+  {
+    "id": 91,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku mengerti.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_145.wav",
+    "effect": ""
+  },
+  {
+    "id": 92,
+    "speaker": "Narasi",
+    "text": "Miku memberi buku sejarah favoritnya sebagai hadiah.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_shy.png",
+    "bgm": "hm_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 93,
+    "type": "question",
+    "speaker": "Sistem Pilihan (18/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan serius dan berjanji membacanya.",
+        "affection_effect": 5,
+        "next_id": 94,
+        "feedback_text": "Miku berseri."
+      },
+      {
+        "text": "Mengucapkan terima kasih.",
+        "affection_effect": 0,
+        "next_id": 95,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Bilang tidak terlalu suka sejarah.",
+        "affection_effect": -5,
+        "next_id": 96,
+        "feedback_text": "Dia terluka."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 94,
+    "speaker": "Yoshikawa Miku",
+    "text": "Kalau sudah selesai, cerita padaku ya.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_146.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 95,
+    "speaker": "Yoshikawa Miku",
+    "text": "Semoga kamu suka.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_147.wav",
+    "effect": ""
+  },
+  {
+    "id": 96,
+    "speaker": "Yoshikawa Miku",
+    "text": "Maaf sudah memaksa.",
+    "bg_image": "library_day.jpg",
+    "sprite": "miku_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_148.wav",
+    "effect": ""
+  },
+  {
+    "id": 97,
+    "speaker": "Narasi",
+    "text": "Menjelang akhir, Miku menatapmu di bawah sakura dengan harap.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 98,
+    "type": "question",
+    "speaker": "Sistem Pilihan (19/20)",
+    "text": "Kamu merasakan ini momen penting. Kamu...",
+    "options": [
+      {
+        "text": "Menunggu dia bicara, memberi ruang.",
+        "affection_effect": 5,
+        "next_id": 99,
+        "feedback_text": "Dia mengumpulkan keberanian."
+      },
+      {
+        "text": "Menanyakan apa yang dipikirkan.",
+        "affection_effect": 0,
+        "next_id": 100,
+        "feedback_text": "Dia sedikit tertekan."
+      },
+      {
+        "text": "Mengajak pulang karena dingin.",
+        "affection_effect": -5,
+        "next_id": 101,
+        "feedback_text": "Momen rusak."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 99,
+    "speaker": "Yoshikawa Miku",
+    "text": "Aku... siap bilang sekarang.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "miku_jp_149.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 100,
+    "speaker": "Yoshikawa Miku",
+    "text": "Nanti saja...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_150.wav",
+    "effect": ""
+  },
+  {
+    "id": 101,
+    "speaker": "Yoshikawa Miku",
+    "text": "...Iya, pulang.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "miku_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "miku_jp_151.wav",
+    "effect": ""
+  },
+  {
+    "id": 102,
+    "type": "question",
+    "speaker": "Sistem Pilihan (20/20)",
+    "text": "Di bawah sakura, Miku menggenggam tanganmu dan meminta menjadi pendamping hidup. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan jelas dan berjanji selalu di sampingnya.",
+        "affection_effect": 5,
+        "next_id": 103,
+        "feedback_text": "Miku memeluk erat, menangis bahagia."
+      },
+      {
+        "text": "Mengatakan ingin bersama, tapi belum siap menikah.",
+        "affection_effect": 0,
+        "next_id": 103,
+        "feedback_text": "Miku tersenyum, ada kecewa."
+      },
+      {
+        "text": "Menolak dengan lembut.",
+        "affection_effect": -5,
+        "next_id": 103,
+        "feedback_text": "Miku berjalan pergi di bawah sakura."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 103,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Chapter 3 telah selesai. Menghitung perasaan Yoshikawa Miku kepadamu...",
+    "ending_type": "auto",
+    "ending_image": "auto",
+    "bgm": ""
+  }
+]

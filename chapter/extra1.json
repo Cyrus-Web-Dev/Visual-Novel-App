@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Beberapa bulan setelah pernikahan. Rumah kecil kalian masih berbau cat baru. Tapi setiap pagi ada Ichika di dapur—dan itu sudah cukup membuatmu merasa pulang.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_spring.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Suzuki Ichika",
+    "text": "Pagi... masih ngantuk. Jangan ketawa, aku memang berantakan kalau belum makeup.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_tired.png",
+    "bgm": "",
+    "voice": "ex1_ichika_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 3,
+    "speaker": "Suzuki Ichika",
+    "text": "Kopimu agak pahit hari ini. Sengaja, biar aku sadar ini bukan mimpi—kita beneran tinggal bareng.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ex1_ichika_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Suzuki Ichika",
+    "text": "Agensi nanya shooting minggu depan. Aku bilang mau kurangi. Bukan mundur... mau ada waktu buat kita.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "",
+    "voice": "ex1_ichika_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 5,
+    "speaker": "Suzuki Ichika",
+    "text": "Kamu nggak keberatan, kan? Aku masih suka kerja. Tapi lebih suka pulang dan nemuin kamu di sofa.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_blush.png",
+    "bgm": "",
+    "voice": "ex1_ichika_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "speaker": "Suzuki Ichika",
+    "text": "Dulu di les, aku pura-pura nggak ngerti biar bisa deketin kamu. Sekarang... nggak perlu pura-pura lagi.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "ichika_teasing.png",
+    "bgm": "",
+    "voice": "ex1_ichika_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 7,
+    "speaker": "Suzuki Ichika",
+    "text": "Kemarin manajer bilang aku kelihatan lebih tenang di kamera. Katanya aura-nya beda. Aku bilang, ya soalnya ada tempat pulang.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ex1_ichika_12.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Suzuki Ichika",
+    "text": "Kalau nanti ada anak... aku pengen dia lihat mamanya kerja, tapi juga lihat mamanya ada di rumah. Bukan cuma di poster.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ex1_ichika_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Suzuki Ichika",
+    "text": "Hehe, keburu jauh. Kita aja masih belajar masak bareng. Kemarin telurnya gosong lagi.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_laugh.png",
+    "bgm": "",
+    "voice": "ex1_ichika_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Suzuki Ichika",
+    "text": "Tapi lucu juga, ya. Dulu aku model yang selalu disiapin stylist. Sekarang aku yang masak—meski hasilnya kadang... kreatif.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_happy.png",
+    "bgm": "",
+    "voice": "ex1_ichika_13.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 11,
+    "speaker": "Suzuki Ichika",
+    "text": "Makasih sudah sabar. Dulu di les kamu dengerin aku ngeluh. Sekarang kamu nemenin aku bangun rumah.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_teary_smile.png",
+    "bgm": "",
+    "voice": "ex1_ichika_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 12,
+    "speaker": "Suzuki Ichika",
+    "text": "Kadang aku masih takut. Takut aku nggak cukup bagus jadi istri, cuma bagus di kamera. Tapi kamu selalu bilang aku cukup.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "ichika_pensive.png",
+    "bgm": "",
+    "voice": "ex1_ichika_14.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Suzuki Ichika",
+    "text": "Malam pertama dulu... aku gemetar. Bukan takut, lebih ke: wah, ini beneran ya. Kamu juga kelihatan kaku, lucu.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "ichika_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ex1_ichika_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 14,
+    "speaker": "Suzuki Ichika",
+    "text": "Sekarang lebih rileks. Peluk aja dulu boleh. Nggak harus apa-apa. Aku senang denger napas kamu di samping.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "ichika_soft_smile.png",
+    "bgm": "",
+    "voice": "ex1_ichika_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Suzuki Ichika",
+    "text": "Kalau malam-malam aku kelepasa ngerengek soal kerja, tolong peluk aja. Nggak usah kasih solusi. Cukup ada.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "ichika_shy.png",
+    "bgm": "",
+    "voice": "ex1_ichika_15.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 16,
+    "speaker": "Suzuki Ichika",
+    "text": "Aku sayang kamu. Bukan versi modelnya—versi yang ketiduran di meja les, yang berantakan, yang sekarang jadi istrimu.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "ichika_happy_blush.png",
+    "bgm": "",
+    "voice": "ex1_ichika_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 17,
+    "speaker": "Suzuki Ichika",
+    "text": "Besok weekend. Mau jalan santai? Atau di rumah aja, nonton film sambil kamu gendong bantal—kayak biasa.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "ichika_happy.png",
+    "bgm": "",
+    "voice": "ex1_ichika_16.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 18,
+    "speaker": "Narasi",
+    "text": "Hidup kalian bareng Ichika tidak spektakuler setiap detik—tapi justru karena itu, terasa nyata dan hangat.",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 19,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Extra Chapter 1 selesai. Kisah setelah menikah dengan Suzuki Ichika terus berlanjut.",
+    "ending_type": "extra",
+    "ending_image": "auto",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  }
+]

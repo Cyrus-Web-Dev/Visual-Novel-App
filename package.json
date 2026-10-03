@@ -1,0 +1,19 @@
+{
+  "name": "visual_novel",
+  "version": "1.1.0",
+  "description": "Harmoni Lima Hati — Desktop (Electron + SQLite, tanpa PHP/MySQL/Express)",
+  "main": "dekstop.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . GameVisualNovel --platform=win32 --arch=x64 --overwrite"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-packager": "^17.1.2"
+  }
+}

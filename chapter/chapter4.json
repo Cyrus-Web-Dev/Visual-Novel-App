@@ -1,0 +1,1351 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Matahari sore memancarkan jingga di area olahraga. Suara pantulan bola basket terdengar dari lapangan luar.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Narasi",
+    "text": "Takahashi Yotsuba berlari lincah memunguti bola sambil membawa tumpukan handuk klub lain. Pita hijau di kepalanya bergoyang. Keringatnya bercucuran, napasnya memburu—tapi senyumnya tetap lebar.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_running.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 3,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Uisss! Bola terakhir masuk! *(Berbalik, melambai heboh)* Yaaah, [Nama_MC]!! Sini! Kebetulan banget!",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_01.wav",
+    "effect": "sprite_jump"
+  },
+  {
+    "id": 4,
+    "speaker": "Narasi",
+    "text": "Yotsuba menepuk punggungmu keras sampai tersedak. Senyumnya lebar, tapi jelas dia kelelahan.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_laugh.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": "screen_shake"
+  },
+  {
+    "id": 5,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Hehe maaf ketepuk kencang! Tadi klub bola minta bantu cuci handuk, klub voli minta beresin bola. Hufftt... masih kuat kok! Kerja bakti itu menyenangkan, ya kan?",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_energetic.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "type": "question",
+    "speaker": "Sistem Pilihan (1/20)",
+    "text": "Yotsuba memaksakan senyum ceria padahal fisiknya sudah habis. Kamu...",
+    "options": [
+      {
+        "text": "Menahan pundaknya lembut dan menyuruh duduk—sisanya kamu yang selesaikan.",
+        "affection_effect": 5,
+        "next_id": 7,
+        "feedback_text": "Pertahanan emosionalnya runtuh. Akhirnya ada yang melihat lelahnya."
+      },
+      {
+        "text": "Memuji kerajinannya lalu ikut minta tolong ambil minum.",
+        "affection_effect": -5,
+        "next_id": 8,
+        "feedback_text": "Dia layu. Hatinya sedih meski tetap tersenyum."
+      },
+      {
+        "text": "Menasihati agar menolak kalau disuruh terus.",
+        "affection_effect": 0,
+        "next_id": 9,
+        "feedback_text": "Niat baik, cara terasa kasar."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 7,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Eh...? Kamu tahu aku lelah? Padahal sudah kuyembunyikan... Makasih ya. Kamu... baik banget.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_03_b.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Ah... i-iya! Air dingin segera! *(Berjalan pincang kelelahan)*",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_sad_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_03_a.wav",
+    "effect": ""
+  },
+  {
+    "id": 9,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Hehe... abisnya aku gak tega menolak yang kesusahan... Maaf ya.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_03_c.wav",
+    "effect": ""
+  },
+  {
+    "id": 10,
+    "speaker": "Narasi",
+    "text": "Beberapa hari kemudian Yotsuba berlatih basket sendiri.",
+    "bg_image": "basketball_court_day.jpg",
+    "sprite": "yotsuba_running.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 11,
+    "type": "question",
+    "speaker": "Sistem Pilihan (2/20)",
+    "text": "Dia mengajak bermain. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan semangat, minta jangan terlalu keras.",
+        "affection_effect": 5,
+        "next_id": 12,
+        "feedback_text": "Yotsuba tertawa senang."
+      },
+      {
+        "text": "Ragu karena tidak jago.",
+        "affection_effect": 0,
+        "next_id": 13,
+        "feedback_text": "Dia tetap mengajak mencoba."
+      },
+      {
+        "text": "Menolak karena sibuk.",
+        "affection_effect": -5,
+        "next_id": 14,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 12,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Tenang, aku ajarin! Lempar yang kuat!",
+    "bg_image": "basketball_court_day.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_101.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Gak apa-apa, yang penting senang!",
+    "bg_image": "basketball_court_day.jpg",
+    "sprite": "yotsuba_energetic.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_102.wav",
+    "effect": ""
+  },
+  {
+    "id": 14,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Oh... lain kali ya.",
+    "bg_image": "basketball_court_day.jpg",
+    "sprite": "yotsuba_sad_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_103.wav",
+    "effect": ""
+  },
+  {
+    "id": 15,
+    "speaker": "Narasi",
+    "text": "Di lapangan sore, Yotsuba murung karena temannya pindah sekolah.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_sad.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 16,
+    "type": "question",
+    "speaker": "Sistem Pilihan (3/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Duduk di samping dan bilang kalian bisa buat kenangan baru bersama.",
+        "affection_effect": 5,
+        "next_id": 17,
+        "feedback_text": "Dia tersenyum haru."
+      },
+      {
+        "text": "Bilang masih banyak teman lain.",
+        "affection_effect": 0,
+        "next_id": 18,
+        "feedback_text": "Masih sedih."
+      },
+      {
+        "text": "Bilang jangan terlalu dekat supaya tidak sakit.",
+        "affection_effect": -5,
+        "next_id": 19,
+        "feedback_text": "Dia semakin sedih."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 17,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Beneran? Aku mau buat kenangan baru denganmu!",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_104.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 18,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya... kamu benar.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_105.wav",
+    "effect": ""
+  },
+  {
+    "id": 19,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Mungkin aku terlalu mudah percaya.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_106.wav",
+    "effect": ""
+  },
+  {
+    "id": 20,
+    "speaker": "Narasi",
+    "text": "Festival olahraga. Yotsuba ikut estafet, tegang.",
+    "bg_image": "sports_festival.jpg",
+    "sprite": "yotsuba_nervous.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 21,
+    "type": "question",
+    "speaker": "Sistem Pilihan (4/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Berteriak menyemangati dari pinggir lapangan.",
+        "affection_effect": 5,
+        "next_id": 22,
+        "feedback_text": "Dia menoleh, tersenyum, lalu berlari lebih kencang."
+      },
+      {
+        "text": "Melambai dan tersenyum.",
+        "affection_effect": 0,
+        "next_id": 23,
+        "feedback_text": "Dukungan cukup."
+      },
+      {
+        "text": "Hanya menonton diam.",
+        "affection_effect": -5,
+        "next_id": 24,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 22,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku menang karena kamu menyemangatiku!",
+    "bg_image": "sports_festival.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_107.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 23,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Hehe, menang!",
+    "bg_image": "sports_festival.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_108.wav",
+    "effect": ""
+  },
+  {
+    "id": 24,
+    "speaker": "Takahashi Yotsuba",
+    "text": "...",
+    "bg_image": "sports_festival.jpg",
+    "sprite": "yotsuba_sad_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 25,
+    "speaker": "Narasi",
+    "text": "Malam festival, kembang api. Yotsuba menggenggam tanganmu.",
+    "bg_image": "fireworks_night.jpg",
+    "sprite": "yotsuba_soft.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 26,
+    "type": "question",
+    "speaker": "Sistem Pilihan (5/20)",
+    "text": "Dia bilang senang kamu di sini. Kamu...",
+    "options": [
+      {
+        "text": "Menggenggam balik dan bilang senang bisa di sini bersamanya.",
+        "affection_effect": 5,
+        "next_id": 27,
+        "feedback_text": "Momen itu berharga baginya."
+      },
+      {
+        "text": "Mengomentari kembang apinya indah.",
+        "affection_effect": 0,
+        "next_id": 28,
+        "feedback_text": "Kurang merespons perasaan."
+      },
+      {
+        "text": "Menarik tangan canggung.",
+        "affection_effect": -5,
+        "next_id": 29,
+        "feedback_text": "Dia kecewa berat."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 27,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku ingin momen ini selamanya!",
+    "bg_image": "fireworks_night.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_109.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 28,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya, cantik.",
+    "bg_image": "fireworks_night.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_110.wav",
+    "effect": ""
+  },
+  {
+    "id": 29,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Maaf, aku terlalu...",
+    "bg_image": "fireworks_night.jpg",
+    "sprite": "yotsuba_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_111.wav",
+    "effect": ""
+  },
+  {
+    "id": 30,
+    "speaker": "Narasi",
+    "text": "Di pantai malam, Yotsuba bilang hidupnya lebih berwarna sejak bertemu.",
+    "bg_image": "beach_night.jpg",
+    "sprite": "yotsuba_pensive.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 31,
+    "type": "question",
+    "speaker": "Sistem Pilihan (6/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Mengatakan hal yang sama dengan tenang.",
+        "affection_effect": 5,
+        "next_id": 32,
+        "feedback_text": "Dia tersipu."
+      },
+      {
+        "text": "Mengangguk setuju pantai indah.",
+        "affection_effect": 0,
+        "next_id": 33,
+        "feedback_text": "Kurang merespons."
+      },
+      {
+        "text": "Bilang mulai kedinginan.",
+        "affection_effect": -5,
+        "next_id": 34,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 32,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Kamu membuat hidupku lebih berwarna.",
+    "bg_image": "beach_night.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_112.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 33,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya... indah.",
+    "bg_image": "beach_night.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_113.wav",
+    "effect": ""
+  },
+  {
+    "id": 34,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Ayo kembali.",
+    "bg_image": "beach_night.jpg",
+    "sprite": "yotsuba_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_114.wav",
+    "effect": ""
+  },
+  {
+    "id": 35,
+    "speaker": "Narasi",
+    "text": "Yotsuba memberi gelang persahabatan buatan sendiri.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_shy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 36,
+    "type": "question",
+    "speaker": "Sistem Pilihan (7/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menerima dan bilang akan dipakai setiap hari.",
+        "affection_effect": 5,
+        "next_id": 37,
+        "feedback_text": "Dia tersenyum lebar."
+      },
+      {
+        "text": "Mengucapkan terima kasih.",
+        "affection_effect": 0,
+        "next_id": 38,
+        "feedback_text": "Ingin lebih antusias."
+      },
+      {
+        "text": "Bilang tidak suka gelang.",
+        "affection_effect": -5,
+        "next_id": 39,
+        "feedback_text": "Dia hancur."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 37,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Beneran? Aku akan buat yang baru tiap tahun!",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_115.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 38,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku senang kamu suka.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_116.wav",
+    "effect": ""
+  },
+  {
+    "id": 39,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Maaf...",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_117.wav",
+    "effect": ""
+  },
+  {
+    "id": 40,
+    "speaker": "Narasi",
+    "text": "Di musim gugur Yotsuba membandingkan diri dengan daun yang mudah terbawa angin.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "yotsuba_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 41,
+    "type": "question",
+    "speaker": "Sistem Pilihan (8/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Bilang dia pohon yang kuat, dan kamu tanah yang menahannya.",
+        "affection_effect": 5,
+        "next_id": 42,
+        "feedback_text": "Dia terkesan dan merasa aman."
+      },
+      {
+        "text": "Bilang dia tidak seperti daun.",
+        "affection_effect": 0,
+        "next_id": 43,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bilang perbandingan itu aneh.",
+        "affection_effect": -5,
+        "next_id": 44,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 42,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Kamu selalu tahu apa yang harus dikatakan.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "yotsuba_crying_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_118.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 43,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku senang kamu mengerti.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_119.wav",
+    "effect": ""
+  },
+  {
+    "id": 44,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku hanya berpikir keras.",
+    "bg_image": "autumn_park.jpg",
+    "sprite": "yotsuba_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_120.wav",
+    "effect": ""
+  },
+  {
+    "id": 45,
+    "speaker": "Narasi",
+    "text": "Di salju, Yotsuba melempar bola salju.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "yotsuba_playful.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 46,
+    "type": "question",
+    "speaker": "Sistem Pilihan (9/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Membalas lemparan dengan tertawa.",
+        "affection_effect": 5,
+        "next_id": 47,
+        "feedback_text": "Dia senang bermain."
+      },
+      {
+        "text": "Menghindar sambil tersenyum.",
+        "affection_effect": 0,
+        "next_id": 48,
+        "feedback_text": "Masih senang, kurang ikut."
+      },
+      {
+        "text": "Menolak karena tidak mau basah.",
+        "affection_effect": -5,
+        "next_id": 49,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 47,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Ahaha! Kamu kena! Aku suka main denganmu!",
+    "bg_image": "snow_park.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_121.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 48,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Hehe, lincah juga!",
+    "bg_image": "snow_park.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_122.wav",
+    "effect": ""
+  },
+  {
+    "id": 49,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Oh... aku main sendiri saja.",
+    "bg_image": "snow_park.jpg",
+    "sprite": "yotsuba_sad_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_123.wav",
+    "effect": ""
+  },
+  {
+    "id": 50,
+    "speaker": "Narasi",
+    "text": "Yotsuba bilang ingin selalu di sisimu.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 51,
+    "type": "question",
+    "speaker": "Sistem Pilihan (10/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Menggenggam tangan dan bilang dia membuat hidupmu berarti.",
+        "affection_effect": 5,
+        "next_id": 52,
+        "feedback_text": "Dia menangis bahagia."
+      },
+      {
+        "text": "Bilang ingin bersama.",
+        "affection_effect": 0,
+        "next_id": 53,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bilang lihat saja nanti.",
+        "affection_effect": -5,
+        "next_id": 54,
+        "feedback_text": "Dia kecewa."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 52,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku beruntung bertemu denganmu.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_crying_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_124.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 53,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku juga senang.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_125.wav",
+    "effect": ""
+  },
+  {
+    "id": 54,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku akan menunggu.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_126.wav",
+    "effect": ""
+  },
+  {
+    "id": 55,
+    "speaker": "Narasi",
+    "text": "Kembali ke lapangan basket tempat kalian bicara pertama kali.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 56,
+    "type": "question",
+    "speaker": "Sistem Pilihan (11/20)",
+    "text": "Dia bertanya apakah kamu ingat. Kamu...",
+    "options": [
+      {
+        "text": "Menceritakan detail gadis berpita hijau yang mengubah harimu.",
+        "affection_effect": 5,
+        "next_id": 57,
+        "feedback_text": "Dia menangis bahagia."
+      },
+      {
+        "text": "Bilang ingat dia sedang lelah.",
+        "affection_effect": 0,
+        "next_id": 58,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Bilang kabur.",
+        "affection_effect": -5,
+        "next_id": 59,
+        "feedback_text": "Dia hancur."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 57,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku juga tidak akan lupa!",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_crying_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_127.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 58,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya... aku ingat.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_128.wav",
+    "effect": ""
+  },
+  {
+    "id": 59,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Mungkin hanya hari biasa bagimu.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_129.wav",
+    "effect": ""
+  },
+  {
+    "id": 60,
+    "speaker": "Narasi",
+    "text": "Yotsuba sakit karena terlalu banyak bantu orang.",
+    "bg_image": "house_day.jpg",
+    "sprite": "yotsuba_sick.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 61,
+    "type": "question",
+    "speaker": "Sistem Pilihan (12/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Datang menjenguk dengan bubur, menyuruh istirahat sungguh-sungguh.",
+        "affection_effect": 5,
+        "next_id": 62,
+        "feedback_text": "Dia terharu."
+      },
+      {
+        "text": "Mengirim pesan semoga cepat sembuh.",
+        "affection_effect": 0,
+        "next_id": 63,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Tidak tahu karena dia tidak bilang.",
+        "affection_effect": -5,
+        "next_id": 64,
+        "feedback_text": "Dia merasa tidak penting."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 62,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Kamu datang... makasih.",
+    "bg_image": "house_day.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_130.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 63,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku akan istirahat.",
+    "bg_image": "house_day.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_131.wav",
+    "effect": ""
+  },
+  {
+    "id": 64,
+    "speaker": "Takahashi Yotsuba",
+    "text": "...",
+    "bg_image": "house_day.jpg",
+    "sprite": "yotsuba_sad.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 65,
+    "speaker": "Narasi",
+    "text": "Yotsuba bilang takut jadi beban.",
+    "bg_image": "park_night.jpg",
+    "sprite": "yotsuba_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 66,
+    "type": "question",
+    "speaker": "Sistem Pilihan (13/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Bilang dia bukan beban—kehadirannya justru meringankan.",
+        "affection_effect": 5,
+        "next_id": 67,
+        "feedback_text": "Dia menangis lega."
+      },
+      {
+        "text": "Bilang jangan berpikir begitu.",
+        "affection_effect": 0,
+        "next_id": 68,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Diam karena tidak tahu jawab.",
+        "affection_effect": -5,
+        "next_id": 69,
+        "feedback_text": "Keraguan bertambah."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 67,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku simpan kata itu.",
+    "bg_image": "park_night.jpg",
+    "sprite": "yotsuba_teary.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_132.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 68,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Makasih.",
+    "bg_image": "park_night.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_133.wav",
+    "effect": ""
+  },
+  {
+    "id": 69,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku pulang dulu...",
+    "bg_image": "park_night.jpg",
+    "sprite": "yotsuba_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_134.wav",
+    "effect": ""
+  },
+  {
+    "id": 70,
+    "speaker": "Narasi",
+    "text": "Di pantai siang, Yotsuba berlari di air.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 71,
+    "type": "question",
+    "speaker": "Sistem Pilihan (14/20)",
+    "text": "Dia mengajak ikut. Kamu...",
+    "options": [
+      {
+        "text": "Ikut berlari meski celana basah.",
+        "affection_effect": 5,
+        "next_id": 72,
+        "feedback_text": "Dia tertawa lepas."
+      },
+      {
+        "text": "Menonton dari tepi.",
+        "affection_effect": 0,
+        "next_id": 73,
+        "feedback_text": "Sedikit kecewa."
+      },
+      {
+        "text": "Menolak karena tidak mau basah.",
+        "affection_effect": -5,
+        "next_id": 74,
+        "feedback_text": "Semangatnya turun."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 72,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Lihat! Fun banget kan?!",
+    "bg_image": "beach_day.jpg",
+    "sprite": "yotsuba_happy.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_135.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 73,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Yasudah, aku main sendiri!",
+    "bg_image": "beach_day.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_136.wav",
+    "effect": ""
+  },
+  {
+    "id": 74,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Oh... oke.",
+    "bg_image": "beach_day.jpg",
+    "sprite": "yotsuba_sad_smile.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_137.wav",
+    "effect": ""
+  },
+  {
+    "id": 75,
+    "speaker": "Narasi",
+    "text": "Yotsuba meminta pendapat soal masa depan—kerja atau kuliah lagi.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_pensive.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 76,
+    "type": "question",
+    "speaker": "Sistem Pilihan (15/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Membantu menimbang tanpa memutuskan untuknya.",
+        "affection_effect": 5,
+        "next_id": 77,
+        "feedback_text": "Dia merasa didukung."
+      },
+      {
+        "text": "Menyuruh ikuti saja yang dia mau.",
+        "affection_effect": 0,
+        "next_id": 78,
+        "feedback_text": "Terlalu longgar."
+      },
+      {
+        "text": "Menyuruh pilih yang lebih aman.",
+        "affection_effect": -5,
+        "next_id": 79,
+        "feedback_text": "Dia merasa tidak didengar."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 77,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Makasih sudah dengerin. Aku lebih tenang.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_138.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 78,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya... aku pikir dulu.",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_normal.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_139.wav",
+    "effect": ""
+  },
+  {
+    "id": 79,
+    "speaker": "Takahashi Yotsuba",
+    "text": "...",
+    "bg_image": "campus_park.jpg",
+    "sprite": "yotsuba_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 80,
+    "speaker": "Narasi",
+    "text": "Yotsuba hampir bilang cinta, lalu tertawa menutupi.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "yotsuba_nervous.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 81,
+    "type": "question",
+    "speaker": "Sistem Pilihan (16/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Memberi ruang, bilang tidak apa-apa jika belum siap.",
+        "affection_effect": 5,
+        "next_id": 82,
+        "feedback_text": "Dia lega."
+      },
+      {
+        "text": "Bertanya apa yang mau dikatakan.",
+        "affection_effect": 0,
+        "next_id": 83,
+        "feedback_text": "Dia panik."
+      },
+      {
+        "text": "Ikut tertawa mengalihkan.",
+        "affection_effect": -5,
+        "next_id": 84,
+        "feedback_text": "Kesempatan hilang."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 82,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Nanti ya. Aku janji.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_140.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 83,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Bukan apa-apa!",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "yotsuba_laugh.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_141.wav",
+    "effect": ""
+  },
+  {
+    "id": 84,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya, lucu ya.",
+    "bg_image": "roof_top_night.jpg",
+    "sprite": "yotsuba_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_142.wav",
+    "effect": ""
+  },
+  {
+    "id": 85,
+    "speaker": "Narasi",
+    "text": "Menjelang akhir di lapangan basket.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_pensive.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 86,
+    "type": "question",
+    "speaker": "Sistem Pilihan (17/20)",
+    "text": "Yotsuba menatap serius. Kamu merasakan momen penting. Kamu...",
+    "options": [
+      {
+        "text": "Menunggu dia bicara.",
+        "affection_effect": 5,
+        "next_id": 87,
+        "feedback_text": "Dia mengumpulkan nyali."
+      },
+      {
+        "text": "Menanyakan apa yang dipikirkan.",
+        "affection_effect": 0,
+        "next_id": 88,
+        "feedback_text": "Sedikit tertekan."
+      },
+      {
+        "text": "Mengajak pulang.",
+        "affection_effect": -5,
+        "next_id": 89,
+        "feedback_text": "Momen putus."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 87,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku... mau bilang sesuatu.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_143.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 88,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Nanti saja...",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_144.wav",
+    "effect": ""
+  },
+  {
+    "id": 89,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Iya, pulang yuk.",
+    "bg_image": "basketball_court_sunset.jpg",
+    "sprite": "yotsuba_distant.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_145.wav",
+    "effect": ""
+  },
+  {
+    "id": 90,
+    "speaker": "Narasi",
+    "text": "Yotsuba bilang kamu orang terbaik yang pernah dikenal.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 91,
+    "type": "question",
+    "speaker": "Sistem Pilihan (18/20)",
+    "text": "Kamu...",
+    "options": [
+      {
+        "text": "Membalas dengan tulus bahwa dia juga mengubahmu.",
+        "affection_effect": 5,
+        "next_id": 92,
+        "feedback_text": "Dia memeluk erat."
+      },
+      {
+        "text": "Mengucapkan terima kasih.",
+        "affection_effect": 0,
+        "next_id": 93,
+        "feedback_text": "Cukup."
+      },
+      {
+        "text": "Terkesima diam saja.",
+        "affection_effect": -5,
+        "next_id": 94,
+        "feedback_text": "Dia ragu."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 92,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku sangat beruntung.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_crying_happy.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_146.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 93,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Aku juga.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "yotsuba_jp_147.wav",
+    "effect": ""
+  },
+  {
+    "id": 94,
+    "speaker": "Takahashi Yotsuba",
+    "text": "...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_worried.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 95,
+    "speaker": "Narasi",
+    "text": "Di bawah sakura, Yotsuba menggenggam tanganmu erat.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_nervous.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 96,
+    "type": "question",
+    "speaker": "Sistem Pilihan (19/20)",
+    "text": "Ini menuju puncak. Kamu...",
+    "options": [
+      {
+        "text": "Siap mendengarkan apapun yang dia bilang.",
+        "affection_effect": 5,
+        "next_id": 97,
+        "feedback_text": "Dia mengangguk berani."
+      },
+      {
+        "text": "Menggenggam balik tanpa kata.",
+        "affection_effect": 0,
+        "next_id": 98,
+        "feedback_text": "Baik."
+      },
+      {
+        "text": "Melepaskan karena gugup.",
+        "affection_effect": -5,
+        "next_id": 99,
+        "feedback_text": "Dia terluka."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 97,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Baik... aku bilang sekarang.",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_blush.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "yotsuba_jp_148.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 98,
+    "speaker": "Takahashi Yotsuba",
+    "text": "...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_soft_smile.png",
+    "bgm": "hm_summer.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 99,
+    "speaker": "Takahashi Yotsuba",
+    "text": "Maaf...",
+    "bg_image": "sakura_park.jpg",
+    "sprite": "yotsuba_hurt.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "yotsuba_jp_149.wav",
+    "effect": ""
+  },
+  {
+    "id": 100,
+    "type": "question",
+    "speaker": "Sistem Pilihan (20/20)",
+    "text": "Di lapangan basket tempat kalian berkenalan, Yotsuba meminta menjadi pasangan hidup. Kamu...",
+    "options": [
+      {
+        "text": "Menerima dengan jelas dan berjanji menjaga serta mencintainya.",
+        "affection_effect": 5,
+        "next_id": 101,
+        "feedback_text": "Yotsuba melompat memeluk, menangis bahagia."
+      },
+      {
+        "text": "Mengatakan ingin bersama, tapi belum siap menikah.",
+        "affection_effect": 0,
+        "next_id": 101,
+        "feedback_text": "Yotsuba tersenyum, ada kecewa."
+      },
+      {
+        "text": "Menolak dengan lembut.",
+        "affection_effect": -5,
+        "next_id": 101,
+        "feedback_text": "Yotsuba melepas pita hijau dan pergi."
+      }
+    ],
+    "bgm": ""
+  },
+  {
+    "id": 101,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Chapter 4 telah selesai. Menghitung perasaan Takahashi Yotsuba kepadamu...",
+    "ending_type": "auto",
+    "ending_image": "auto",
+    "bgm": ""
+  }
+]

@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmoni Lima Hati - Visual Novel</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS & RESET
+   ============================================================ */
+:root {
+    --twilight-deep: #170f28;
+    --twilight-mid: #3a2856;
+    --twilight-glow: #6e3f66;
+    --dusk-coral: #ff9472;
+    --parchment: #fdf6ee;
+    --parchment-dim: #ecdfd0;
+    --ink: #2c2438;
+    --ink-soft: #6b5f78;
+    --gold: #e3b567;
+    --gold-bright: #f7dfa0;
+    --line-gold: rgba(227,181,103,0.45);
+    --shadow-deep: rgba(10,4,20,0.55);
+
+    --ichika: #ff8fa8;
+    --nino: #ff6f6f;
+    --miku: #6fc8d6;
+    --yotsuba: #8fc655;
+    --itsuki: #f2c94c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+    margin: 0;
+    background: #0c0714;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: var(--parchment);
+    overflow: hidden;
+}
+
+h1, h2, h3, .font-display { font-family: 'Shippori Mincho', serif; }
+
+button { font-family: inherit; cursor: pointer; }
+
+::selection { background: var(--gold); color: var(--ink); }
+
+/* ============================================================
+   APP SHELL
+   ============================================================ */
+#app-shell {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 900px 420px at 50% -5%, rgba(255,180,150,0.28), transparent 60%),
+        linear-gradient(180deg, var(--twilight-deep) 0%, var(--twilight-mid) 48%, var(--twilight-glow) 78%, var(--dusk-coral) 145%);
+}
+
+.screen {
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+.screen.is-visible { display: flex; }
+
+/* ============================================================
+   AMBIENT EFFECTS
+   ============================================================ */
+#stars-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(1.5px 1.5px at 12% 8%, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1.5px 1.5px at 30% 14%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 48% 6%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1.5px 1.5px at 66% 12%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 82% 9%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1.5px 1.5px at 92% 18%, rgba(255,255,255,0.5), transparent);
+    opacity: 0.8;
+}
+
+#petals-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+}
+.petal {
+    position: absolute;
+    top: -8%;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(135deg, var(--ichika), var(--gold-bright));
+    border-radius: 8px 1px 8px 1px;
+    opacity: 0.75;
+    animation: petal-fall linear infinite;
+}
+@keyframes petal-fall {
+    0% { transform: translate(0,0) rotate(0deg); }
+    100% { transform: translate(24px, 680px) rotate(340deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .petal { animation: none; display: none; }
+}
+
+/* ============================================================
+   SHARED UI
+   ============================================================ */
+.emblem {
+    width: 52px;
+    height: 52px;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    opacity: 0.85;
+    font-weight: 700;
+}
+
+.btn {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 22px;
+    background: linear-gradient(180deg, rgba(253,246,238,0.10), rgba(253,246,238,0.04));
+    border: 1px solid var(--line-gold);
+    border-radius: 999px;
+    color: var(--parchment);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: all 0.22s ease;
+    text-align: left;
+    text-decoration: none;
+}
+.btn:hover {
+    background: linear-gradient(180deg, rgba(227,181,103,0.28), rgba(227,181,103,0.12));
+    border-color: var(--gold-bright);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(227,181,103,0.25);
+}
+.btn:active { transform: translateY(0); }
+.btn .btn-icon { font-size: 18px; }
+
+.btn.btn-primary {
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+    color: #3a2409;
+    border-color: transparent;
+    justify-content: center;
+}
+.btn.btn-primary:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 8px 24px rgba(227,181,103,0.4);
+}
+
+.btn.btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(253,246,238,0.35);
+    justify-content: center;
+}
+.btn.btn-ghost:hover {
+    border-color: var(--gold-bright);
+    background: rgba(253,246,238,0.06);
+}
+
+.back-row {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 5;
+}
+
+/* ============================================================
+   MAIN MENU
+   ============================================================ */
+#main-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    text-align: center;
+    padding: 32px 24px 40px 24px;
+    gap: 0;
+    overflow-y: auto;
+}
+.title-block {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 34px;
+}
+.title-block .eyebrow { display: block; margin-bottom: 10px; }
+.game-title {
+    font-size: 44px;
+    font-weight: 800;
+    margin: 8px 0 6px 0;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 24px rgba(227,181,103,0.35);
+    letter-spacing: 0.02em;
+}
+.game-subtitle {
+    font-size: 13.5px;
+    color: var(--parchment-dim);
+    letter-spacing: 0.12em;
+    font-style: italic;
+    opacity: 0.85;
+}
+.menu-options {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: min(280px, 86vw);
+    padding-bottom: 12px;
+}
+.menu-options .btn {
+    justify-content: center;
+    width: 100%;
+}
+
+/* ============================================================
+   NAME INPUT
+   ============================================================ */
+#name-input-screen {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    text-align: center;
+    padding: 40px;
+}
+#name-input-screen .letter-card {
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(180deg, var(--parchment), var(--parchment-dim));
+    color: var(--ink);
+    padding: 36px 40px;
+    border-radius: 16px;
+    width: 380px;
+    max-width: 90vw;
+    box-shadow: 0 20px 50px var(--shadow-deep);
+    border: 1px solid rgba(227,181,103,0.6);
+}
+#name-input-screen h2 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+#name-input-screen .hint {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+}
+#mc-name-field {
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #d8c7ae;
+    text-align: center;
+    background: #fffdf9;
+    color: var(--ink);
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+#mc-name-field:focus-visible { outline: 2px solid var(--gold); }
+#name-input-screen .btn-primary { width: 100%; margin-top: 18px; }
+
+/* ============================================================
+   SYNOPSIS
+   ============================================================ */
+#synopsis-screen {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    padding: 60px 70px;
+}
+.parchment-panel {
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(180deg, var(--parchment), var(--parchment-dim));
+    color: var(--ink);
+    border-radius: 16px;
+    padding: 34px 38px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 100%;
+    box-shadow: 0 20px 50px var(--shadow-deep);
+    border: 1px solid rgba(227,181,103,0.6);
+    overflow-y: auto;
+}
+.parchment-panel h2 {
+    margin: 2px 0 4px 0;
+    font-size: 24px;
+}
+.parchment-panel .divider {
+    width: 60px;
+    height: 3px;
+    margin: 14px 0 18px 0;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--ichika), var(--gold));
+}
+.parchment-panel p {
+    font-size: 14.5px;
+    line-height: 1.85;
+    margin: 0 0 14px 0;
+    text-align: justify;
+    color: var(--ink);
+}
+.parchment-panel p:last-of-type { margin-bottom: 0; }
+
+/* ============================================================
+   CHAPTER MENU
+   ============================================================ */
+#chapter-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+    text-align: center;
+    padding: 30px 36px;
+}
+#chapter-menu h2 {
+    position: relative;
+    z-index: 3;
+    font-size: 24px;
+    margin: 0 0 4px 0;
+}
+#chapter-menu .subhead {
+    position: relative;
+    z-index: 3;
+    font-size: 13px;
+    color: var(--parchment-dim);
+    margin: 0 0 22px 0;
+    opacity: 0.85;
+}
+.chapter-grid {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.ch-btn {
+    flex: 1 1 120px;
+    max-width: 130px;
+    padding: 16px 8px 14px 8px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.25s ease;
+    background: linear-gradient(180deg, rgba(253,246,238,0.10), rgba(253,246,238,0.03));
+    border: 1px solid rgba(253,246,238,0.18);
+    color: var(--parchment);
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.ch-btn .ch-emoji { font-size: 22px; display: block; margin-bottom: 6px; }
+.ch-btn h3 { margin: 2px 0; font-size: 14px; font-family: 'Shippori Mincho', serif; }
+.ch-btn p { margin: 2px 0; font-size: 12.5px; font-weight: 700; }
+.ch-btn span { font-size: 10px; opacity: 0.75; }
+
+.ch-btn.active {
+    border-color: var(--ch-color, var(--gold));
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--ch-color, var(--gold)) 45%, transparent);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--ch-color, var(--gold)) 22%, transparent), rgba(253,246,238,0.04));
+}
+.ch-btn.active:hover { transform: translateY(-4px); }
+.ch-btn.locked {
+    opacity: 0.45;
+    cursor: not-allowed;
+    filter: grayscale(0.5);
+}
+.ch-btn.locked:hover { transform: none; }
+
+.harem-btn {
+    position: relative;
+    z-index: 3;
+    width: 82%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 12px;
+    border: 1px solid var(--gold-bright);
+    background: linear-gradient(120deg, var(--dusk-coral), var(--gold-bright), var(--ichika));
+    background-size: 200% 200%;
+    color: #3a2409;
+    cursor: pointer;
+    margin-top: 16px;
+    animation: pulse-glow 2.2s ease-in-out infinite;
+    font-family: 'Shippori Mincho', serif;
+}
+@keyframes pulse-glow {
+    0%,100% { background-position: 0% 50%; box-shadow: 0 4px 20px rgba(244,201,77,0.35); }
+    50% { background-position: 100% 50%; box-shadow: 0 8px 30px rgba(244,201,77,0.55); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .harem-btn { animation: none; }
+}
+
+#chapter-menu .back-btn {
+    position: relative;
+    z-index: 3;
+    margin-top: 20px;
+}
+
+/* ============================================================
+   CHARACTER INFO
+   ============================================================ */
+#character-info-screen {
+    flex-direction: column;
+    align-items: center;
+    z-index: 13;
+    padding: 70px 5% 40px 5%;
+}
+#character-info-screen h2 {
+    position: relative;
+    z-index: 3;
+    margin: 0 0 20px 0;
+    font-size: clamp(20px, 2.4vw, 28px);
+}
+.char-layout {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 22px;
+    width: 100%;
+    max-width: 1100px;
+    flex: 1;
+    min-height: 0;
+}
+#char-tab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 210px;
+    flex-shrink: 0;
+}
+.char-tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgba(253,246,238,0.06);
+    border: 1px solid rgba(253,246,238,0.14);
+    border-left: 4px solid var(--tab-color, var(--gold));
+    color: var(--parchment);
+    font-weight: 700;
+    font-size: 13.5px;
+    transition: all 0.2s ease;
+}
+.char-tab:hover { background: rgba(253,246,238,0.14); }
+.char-tab.is-active {
+    background: color-mix(in srgb, var(--tab-color, var(--gold)) 30%, rgba(253,246,238,0.08));
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--tab-color, var(--gold)) 35%, transparent);
+}
+.char-tab .tab-emoji { font-size: 17px; }
+.char-tab small {
+    display: block;
+    font-weight: 500;
+    opacity: 0.75;
+    font-size: 10.5px;
+}
+
+#char-detail-panel {
+    flex: 1;
+    background: linear-gradient(180deg, var(--parchment), var(--parchment-dim));
+    color: var(--ink);
+    border-radius: 16px;
+    padding: 22px 26px;
+    overflow-y: auto;
+    box-shadow: 0 16px 40px var(--shadow-deep);
+    border: 1px solid rgba(227,181,103,0.6);
+}
+.char-detail-head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.char-portrait {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(150deg, var(--portrait-color, var(--gold)), rgba(0,0,0,0.15));
+    box-shadow: 0 6px 16px color-mix(in srgb, var(--portrait-color, var(--gold)) 50%, transparent);
+    overflow: hidden;
+    cursor: zoom-in;
+    border: 3px solid rgba(255,255,255,0.7);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.char-portrait:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 24px color-mix(in srgb, var(--portrait-color, var(--gold)) 65%, transparent);
+}
+.char-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.char-detail-head h3 {
+    margin: 0 0 3px 0;
+    font-size: 19px;
+}
+.char-detail-head .char-role {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    font-weight: 700;
+}
+.char-detail-head .char-chapter-tag {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--portrait-color, var(--gold));
+}
+.char-section { margin-bottom: 14px; }
+.char-section h4 {
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--portrait-color, var(--gold));
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 900;
+}
+.char-section p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.7;
+}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+#char-lightbox {
+    position: absolute;
+    inset: 0;
+    z-index: 25;
+    background: rgba(8,4,14,0.88);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    animation: lightbox-fade 0.18s ease;
+}
+#char-lightbox.is-visible { display: flex; }
+@keyframes lightbox-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.lightbox-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    max-width: min(80vw, 520px);
+}
+.lightbox-frame {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(88vw, 480px);
+    height: min(82vh, 680px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid var(--lb-color, var(--gold));
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 6px rgba(253,246,238,0.06);
+    background: linear-gradient(150deg, var(--lb-color, var(--gold)), rgba(0,0,0,0.2));
+}
+#lightbox-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#lightbox-fallback {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 120px;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 260px;
+}
+.lightbox-caption {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 19px;
+    color: var(--parchment);
+    background: rgba(23,15,40,0.6);
+    padding: 8px 20px;
+    border-radius: 999px;
+    border: 1px solid var(--line-gold);
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    z-index: 26;
+    background: rgba(23,15,40,0.6);
+    color: var(--parchment);
+    border: 1px solid var(--line-gold);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lightbox-close:hover {
+    border-color: var(--gold-bright);
+    background: rgba(23,15,40,0.9);
+}
+
+/* ============================================================
+   GAME SCREEN
+   ============================================================ */
+#game-container {
+    z-index: 14;
+    background-size: cover;
+    background-position: center;
+    background-color: #170f28;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+#game-container.is-visible {
+    display: block !important;
+}
+#character-sprite {
+    position: absolute;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: min(68vh, 580px);
+    transition: all 0.3s ease;
+    z-index: 3;
+    filter: drop-shadow(0 24px 26px rgba(0,0,0,0.4));
+}
+#sprite-left {
+    position: absolute;
+    bottom: 54px;
+    left: 4%;
+    height: min(65vh, 560px);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    z-index: 3;
+    transform-origin: bottom center;
+    filter: drop-shadow(0 24px 26px rgba(0,0,0,0.4));
+}
+#sprite-right {
+    position: absolute;
+    bottom: 54px;
+    right: 4%;
+    height: min(65vh, 560px);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    z-index: 3;
+    transform-origin: bottom center;
+    filter: drop-shadow(0 24px 26px rgba(0,0,0,0.4));
+}
+.sprite-inactive {
+    filter: brightness(0.5) saturate(0.65) drop-shadow(0 24px 26px rgba(0,0,0,0.4));
+    transform: scale(0.98);
+}
+.sprite-active {
+    filter: drop-shadow(0 24px 26px rgba(0,0,0,0.4));
+    transform: scale(1.02);
+}
+
+#top-left-menu {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(23,15,40,0.55);
+    border: 1px solid var(--line-gold);
+    color: var(--parchment);
+    padding: 9px 16px;
+    cursor: pointer;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 13.5px;
+    backdrop-filter: blur(6px);
+    transition: all 0.2s ease;
+}
+#top-left-menu:hover {
+    border-color: var(--gold-bright);
+    background: rgba(23,15,40,0.8);
+}
+
+#stats-box {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 6;
+    color: var(--parchment);
+    background: rgba(23,15,40,0.55);
+    border: 1px solid var(--line-gold);
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    backdrop-filter: blur(6px);
+}
+#stats-box span { color: var(--gold-bright); }
+
+#dialogue-box {
+    position: absolute;
+    bottom: 24px;
+    left: 5%;
+    right: 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 140px;
+    z-index: 15;
+    background: linear-gradient(180deg, rgba(23,15,40,0.96), rgba(15,10,26,0.98));
+    border: 2px solid var(--gold-bright);
+    border-radius: 14px;
+    color: #fdf6ee;
+    padding: 28px 26px 20px 26px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.55), 0 0 0 1px rgba(227,181,103,0.3);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+#speaker-name {
+    position: absolute;
+    top: -16px;
+    left: 22px;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 800;
+    color: #3a2409;
+    font-size: 15px;
+    padding: 6px 22px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.6);
+}
+#dialogue-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#options-container {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(84%, 620px);
+    z-index: 7;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+.option-btn {
+    background: linear-gradient(135deg, rgba(255,190,206,0.94), rgba(255,140,166,0.94));
+    color: #3a1020;
+    border: 1px solid rgba(255,255,255,0.65);
+    padding: 15px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+    backdrop-filter: blur(3px);
+    transition: all 0.18s ease;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.option-btn:hover {
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    color: #3a2409;
+    transform: scale(1.03);
+}
+
+/* ============================================================
+   ENDING SCREEN
+   ============================================================ */
+.ending-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,6,18,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    animation: ending-fade 0.6s ease;
+}
+@keyframes ending-fade {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.ending-content {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    width: 90%;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(253,246,238,0.08), rgba(253,246,238,0.02));
+    border-radius: 20px;
+    border: 1px solid var(--line-gold);
+    backdrop-filter: blur(4px);
+}
+.ending-image-container {
+    flex: 0 0 300px;
+    height: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.ending-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ending-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    background: linear-gradient(150deg, var(--gold), var(--dusk-coral));
+}
+.ending-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+.ending-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 28px;
+    color: var(--gold-bright);
+    margin: 0;
+}
+.ending-score {
+    font-size: 14px;
+    color: var(--parchment-dim);
+    background: rgba(255,255,255,0.08);
+    padding: 4px 14px;
+    border-radius: 999px;
+    display: inline-block;
+    width: fit-content;
+}
+.ending-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--parchment);
+    margin: 8px 0;
+}
+.ending-actions {
+    margin-top: 12px;
+}
+.ending-actions .btn {
+    justify-content: center;
+    min-width: 180px;
+}
+/* ============================================================
+   HAREM ENDING - TAMPILAN KECIL & RAPI
+   ============================================================ */
+   .ending-screen.harem-ending {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(40,20,60,0.92), rgba(10,6,18,0.96));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    animation: ending-fade 0.6s ease;
+    padding: 10px;
+}
+
+.ending-screen.harem-ending .ending-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 420px;   /* ← DIKECILKAN */
+    width: 100%;
+    padding: 24px 20px 20px 20px;   /* ← DIKECILKAN */
+    background: linear-gradient(180deg, rgba(253,246,238,0.10), rgba(253,246,238,0.03));
+    border-radius: 20px;
+    border: 1.5px solid rgba(227,181,103,0.4);   /* ← TIPIS */
+    box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 40px rgba(227,181,103,0.06);
+    backdrop-filter: blur(6px);
+    position: relative;
+    overflow: hidden;
+    max-height: 92vh;
+}
+
+/* Dekorasi latar belakang - DIPERKECIL */
+.ending-screen.harem-ending .ending-content::before {
+    content: "✨💖✨";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;   /* ← DIKECILKAN */
+    letter-spacing: 8px;   /* ← DIKECILKAN */
+    opacity: 0.25;
+    animation: sparkle-float-h 3s ease-in-out infinite;
+}
+
+/* Gambar - DIPERKECIL */
+.ending-screen.harem-ending .harem-image {
+    flex: none;
+    width: 100%;
+    max-width: 200px;   /* ← DIKECILKAN */
+    height: 140px;      /* ← DIKECILKAN */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--gold);
+    box-shadow: 0 6px 24px rgba(227,181,103,0.2);
+    margin-bottom: 12px;   /* ← DIKECILKAN */
+    position: relative;
+}
+
+.ending-screen.harem-ending .harem-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ending-screen.harem-ending .harem-sparkles {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;   /* ← DIKECILKAN */
+    letter-spacing: 4px;
+    animation: sparkle-float-h 2s ease-in-out infinite;
+    background: rgba(0,0,0,0.25);
+    padding: 2px 10px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+}
+
+@keyframes sparkle-float-h {
+    0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.7; }
+    50% { transform: translateX(-50%) scale(1.08); opacity: 1; }
+}
+
+/* Judul Harem - DIPERKECIL */
+.ending-screen.harem-ending .harem-title {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20px;   /* ← DIKECILKAN */
+    font-weight: 800;
+    margin: 0 0 6px 0;
+    background: linear-gradient(135deg, #f7dfa0, #ff8fa8, #f7dfa0);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gold-shimmer 3s ease-in-out infinite;
+    text-shadow: none;
+}
+
+@keyframes gold-shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Deskripsi - DIPERKECIL */
+.ending-screen.harem-ending .harem-desc {
+    font-size: 12.5px;   /* ← DIKECILKAN */
+    line-height: 1.7;
+    color: var(--parchment);
+    margin: 0 0 10px 0;
+    padding: 0 2px;
+}
+
+.ending-screen.harem-ending .harem-desc .highlight-name {
+    color: var(--gold-bright);
+    font-weight: 800;
+}
+
+.ending-screen.harem-ending .harem-desc .girls-list {
+    display: block;
+    color: #ffb4c0;
+    font-weight: 700;
+    margin: 4px 0;
+    font-size: 12px;   /* ← DIKECILKAN */
+    line-height: 1.6;
+}
+
+.ending-screen.harem-ending .harem-desc .girls-list span {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* Tombol - DIPERKECIL */
+.ending-screen.harem-ending .ending-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;   /* ← DIKECILKAN */
+    width: 100%;
+    margin-top: 4px;
+}
+
+.ending-screen.harem-ending .ending-actions .btn {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 16px;   /* ← DIKECILKAN */
+    font-size: 13px;      /* ← DIKECILKAN */
+    border-radius: 999px;
+}
+
+.ending-screen.harem-ending .harem-btn-final {
+    background: linear-gradient(135deg, #f7dfa0, #e3b567) !important;
+    color: #3a2409 !important;
+    font-weight: 900 !important;
+    border: none !important;
+    box-shadow: 0 3px 14px rgba(227,181,103,0.3);
+}
+
+.ending-screen.harem-ending .harem-btn-final:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(227,181,103,0.5);
+}
+
+.ending-screen.harem-ending .btn-secondary {
+    background: transparent !important;
+    border: 1px solid rgba(253,246,238,0.2) !important;
+    color: var(--parchment-dim) !important;
+}
+
+.ending-screen.harem-ending .btn-secondary:hover {
+    border-color: var(--gold-bright) !important;
+    background: rgba(253,246,238,0.05) !important;
+}
+
+/* ============================================================
+   AFFECTION FX
+   ============================================================ */
+#affection-fx-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 22;
+    background: rgba(8,4,14,0.55);
+    backdrop-filter: blur(2px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#affection-fx-overlay.is-visible { display: flex; }
+
+.affection-fx-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+.affection-fx-icon {
+    font-size: 130px;
+    line-height: 1;
+}
+@keyframes heart-pop {
+    0% { transform: scale(0.3) rotate(-6deg); opacity: 0; }
+    45% { transform: scale(1.28) rotate(4deg); opacity: 1; }
+    65% { transform: scale(0.95) rotate(-2deg); }
+    100% { transform: scale(1.08) rotate(0deg); }
+}
+@keyframes heart-glow-pulse {
+    0%,100% { filter: drop-shadow(0 0 22px rgba(255,111,143,0.75)); }
+    50% { filter: drop-shadow(0 0 42px rgba(255,181,110,0.9)); }
+}
+.affection-fx-icon.fx-correct {
+    animation: heart-pop 0.55s cubic-bezier(.34,1.56,.64,1) forwards,
+               heart-glow-pulse 1.6s ease-in-out 0.55s infinite;
+}
+@keyframes heart-crack {
+    0% { transform: scale(0.4) rotate(0deg); opacity: 0; }
+    30% { transform: scale(1.15) rotate(-7deg); opacity: 1; }
+    45% { transform: scale(1.0) rotate(6deg); }
+    58% { transform: scale(1.0) rotate(-4deg); }
+    70% { transform: scale(1.0) rotate(2deg); }
+    100% { transform: scale(0.88) translateY(14px) rotate(0deg); opacity: 0.85; }
+}
+.affection-fx-icon.fx-wrong {
+    animation: heart-crack 0.85s ease-out forwards;
+    filter: grayscale(0.4) drop-shadow(0 0 18px rgba(120,140,180,0.65));
+}
+@media (prefers-reduced-motion: reduce) {
+    .affection-fx-icon.fx-correct,
+    .affection-fx-icon.fx-wrong { animation: none; }
+}
+
+.affection-fx-label {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 4px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+.fx-label-correct { color: var(--gold-bright); }
+.fx-label-wrong { color: #b9c4d6; }
+
+.affection-fx-text {
+    max-width: 440px;
+    font-size: 14.5px;
+    color: var(--parchment-dim);
+    margin-top: 2px;
+    line-height: 1.5;
+}
+.affection-fx-hint {
+    font-size: 11px;
+    color: var(--parchment-dim);
+    opacity: 0.6;
+    margin-top: 14px;
+    letter-spacing: 0.05em;
+}
+
+#affection-fx-sparkles {
+    position: absolute;
+    inset: -60px;
+    pointer-events: none;
+}
+.affection-sparkle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 20px;
+    animation: sparkle-float 1s ease-out forwards;
+}
+@keyframes sparkle-float {
+    0% { transform: translate(0,0) scale(0.4); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translate(var(--sx), var(--sy)) scale(1); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .affection-sparkle { animation: none; display: none; }
+}
+
+/* ============================================================
+   IN-GAME MENU
+   ============================================================ */
+#in-game-menu-modal {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    background: rgba(10,6,18,0.68);
+    backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#in-game-menu-modal.is-visible { display: flex; }
+
+.modal-box {
+    background: linear-gradient(180deg, var(--parchment), var(--parchment-dim));
+    color: var(--ink);
+    width: 280px;
+    border-radius: 16px;
+    padding: 26px 24px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+    border: 1px solid rgba(227,181,103,0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.modal-box h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+.modal-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d8c7ae;
+    background: #fffdf9;
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    transition: all 0.18s ease;
+}
+.modal-btn:hover { background: var(--gold-bright); }
+.modal-btn.danger { color: #9b3a3a; }
+.modal-close {
+    margin-top: 6px;
+    background: none;
+    border: none;
+    color: var(--ink-soft);
+    font-size: 12.5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ============================================================
+   ROMANTIC NOTIFICATION (Pengganti alert)
+   ============================================================ */
+.romantic-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    animation: notif-slide 0.4s ease;
+}
+@keyframes notif-slide {
+    from { transform: translateX(-50%) translateY(-30px); opacity: 0; }
+    to { transform: translateX(-50%) translateY(0); opacity: 1; }
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, rgba(253,246,238,0.95), rgba(253,246,238,0.85));
+    border-radius: 16px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    max-width: 500px;
+}
+.notification-content.error {
+    border-color: #ff6b6b;
+}
+.notification-content.info {
+    border-color: var(--miku);
+}
+.notif-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+.notif-text {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    flex: 1;
+}
+.notif-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.notif-close:hover {
+    background: rgba(0,0,0,0.06);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    .game-title { font-size: 28px; }
+    .menu-options { width: 220px; }
+
+    .ending-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .ending-image-container {
+        flex: none;
+        width: 100%;
+        height: 200px;
+    }
+    .ending-title { font-size: 22px; }
+
+    #character-info-screen .char-layout {
+        flex-direction: column;
+    }
+    #char-tab-list {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .char-tab {
+        flex: 0 0 auto;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    #dialogue-box { padding: 20px 16px 16px 16px; }
+    #dialogue-text { font-size: 14px; }
+    .option-btn { font-size: 13px; padding: 12px 16px; }
+
+    #character-sprite {
+        height: min(50vh, 300px);
+    }
+    #sprite-left, #sprite-right {
+        height: min(45vh, 260px);
+    }
+}
+
+@media (max-width: 480px) {
+    .game-title { font-size: 22px; }
+    #name-input-screen .letter-card { padding: 24px 20px; }
+
+    .ending-title { font-size: 18px; }
+    .ending-description { font-size: 13px; }
+
+    #stats-box {
+        font-size: 11px;
+        padding: 6px 12px;
+        top: 12px;
+        right: 12px;
+    }
+    #top-left-menu {
+        font-size: 12px;
+        padding: 6px 12px;
+        top: 12px;
+        left: 12px;
+    }
+}
+
+
+/* ============================================================
+   IN-GAME VOLUME CONTROLS
+   ============================================================ */
+#volume-panel {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    background: rgba(12, 8, 20, 0.72);
+    border: 1px solid rgba(227, 181, 103, 0.35);
+    border-radius: 999px;
+    padding: 7px 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.35);
+    font-size: 12px;
+    color: var(--parchment);
+    user-select: none;
+}
+#volume-panel .vol-group {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+#volume-panel .vol-icon {
+    font-size: 14px;
+    opacity: 0.9;
+}
+#volume-panel .vol-label-text {
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+    min-width: 36px;
+}
+#volume-panel input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90px;
+    height: 5px;
+    border-radius: 999px;
+    background: rgba(253,246,238,0.2);
+    outline: none;
+    cursor: pointer;
+}
+#volume-panel input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+    border: 1px solid rgba(58,36,9,0.35);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+#volume-panel input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+    border: 1px solid rgba(58,36,9,0.35);
+    cursor: pointer;
+}
+#volume-panel .vol-pct {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--gold-bright);
+    min-width: 34px;
+    text-align: right;
+}
+@media (max-width: 640px) {
+    #volume-panel {
+        top: auto;
+        bottom: 118px;
+        flex-direction: column;
+        gap: 6px;
+        border-radius: 14px;
+        padding: 8px 12px;
+    }
+    #volume-panel input[type="range"] { width: 72px; }
+}
+
+/* ============================================================
+   ALBUM FOTO
+   ============================================================ */
+#album-screen {
+    flex-direction: column;
+    align-items: center;
+    z-index: 13;
+    padding: 64px 5% 48px 5%;
+    overflow-y: auto;
+}
+.album-title {
+    position: relative;
+    z-index: 3;
+    margin: 0 0 8px 0;
+    font-size: clamp(22px, 2.6vw, 30px);
+    letter-spacing: 0.02em;
+}
+.album-sub {
+    position: relative;
+    z-index: 3;
+    font-size: 13px;
+    color: var(--parchment-dim);
+    margin: 0 0 28px 0;
+    text-align: center;
+    max-width: 480px;
+    line-height: 1.55;
+    opacity: 0.9;
+}
+.album-grid {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 720px;
+    padding-bottom: 40px;
+}
+@media (max-width: 640px) {
+    .album-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+@media (max-width: 420px) {
+    .album-grid { grid-template-columns: 1fr; max-width: 260px; }
+}
+.album-card {
+    background: linear-gradient(180deg, rgba(253,246,238,0.12), rgba(253,246,238,0.04));
+    border: 1px solid rgba(253,246,238,0.16);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: default;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    display: flex;
+    flex-direction: column;
+}
+.album-card.is-unlocked {
+    cursor: pointer;
+    border-color: color-mix(in srgb, var(--album-color, var(--gold)) 55%, rgba(253,246,238,0.2));
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+.album-card.is-unlocked:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 14px 32px color-mix(in srgb, var(--album-color, var(--gold)) 35%, transparent);
+    border-color: var(--album-color, var(--gold));
+}
+.album-card.is-locked {
+    opacity: 0.5;
+    filter: grayscale(0.4);
+}
+.album-thumb {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: rgba(10,6,18,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.album-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+.album-card.is-unlocked:hover .album-thumb img {
+    transform: scale(1.06);
+}
+.album-fallback {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    background: linear-gradient(155deg, var(--album-color, var(--gold)), rgba(20,10,30,0.4));
+}
+.album-locked-thumb {
+    background: linear-gradient(160deg, rgba(30,20,45,0.9), rgba(12,8,20,0.95));
+}
+.album-lock {
+    font-size: 34px;
+    opacity: 0.75;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+.album-info {
+    padding: 12px 12px 14px 12px;
+    text-align: center;
+    background: rgba(12,8,20,0.35);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.album-info strong {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 800;
+    color: var(--parchment);
+}
+.album-emoji { font-size: 15px; line-height: 1.2; }
+.album-label {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 800;
+    color: #3a2409;
+    margin-top: 6px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+}
+.album-card.is-locked .album-label {
+    background: rgba(253,246,238,0.12);
+    color: var(--parchment-dim);
+}
+.album-hint {
+    display: block;
+    font-size: 10.5px;
+    color: var(--parchment-dim);
+    margin-top: 6px;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+.album-harem {
+    grid-column: 1 / -1;
+    max-width: 240px;
+    justify-self: center;
+    margin-top: 8px;
+}
+.album-section-header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 2px 0;
+    position: relative;
+    z-index: 3;
+}
+.album-section-header:first-child { margin-top: 0; }
+.album-section-emoji {
+    font-size: 18px;
+}
+.album-section-name {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--album-color, var(--gold));
+    white-space: nowrap;
+}
+.album-section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--album-color, var(--gold)), transparent);
+    opacity: 0.55;
+}
+
+
+/* Album lightbox — fixed overlay so it never sticks to scrolled album content */
+#album-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(6,3,12,0.92);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 24px;
+}
+#album-lightbox.is-visible { display: flex; }
+#album-lightbox .lightbox-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: min(92vw, 560px);
+    width: 100%;
+    max-height: 92vh;
+}
+#album-lightbox-frame {
+    width: 100%;
+    max-height: min(78vh, 720px);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid var(--lb-color, var(--gold));
+    box-shadow:
+        0 0 0 6px rgba(253,246,238,0.06),
+        0 24px 60px rgba(0,0,0,0.65);
+    background: #120c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#album-lightbox-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: min(78vh, 720px);
+    object-fit: contain;
+}
+#album-lightbox-fallback {
+    font-size: 96px;
+    color: #fff;
+    padding: 80px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#album-lightbox-caption {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--parchment);
+    background: rgba(23,15,40,0.85);
+    border: 1px solid var(--line-gold);
+    padding: 10px 22px;
+    border-radius: 999px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+#album-lightbox .lightbox-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(253,246,238,0.35);
+    background: rgba(23,15,40,0.75);
+    color: var(--parchment);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.18s ease;
+}
+#album-lightbox .lightbox-close:hover {
+    background: rgba(227,181,103,0.35);
+    border-color: var(--gold-bright);
+}
+
+
+
+
+.extra-row {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    width: 90%;
+    max-width: 640px;
+    margin-top: 14px;
+}
+.extra-btn {
+    flex: 1 1 140px;
+    max-width: 180px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(247,223,160,0.55);
+    background: linear-gradient(180deg, rgba(253,246,238,0.14), rgba(253,246,238,0.04));
+    color: var(--parchment);
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.extra-btn:hover:not(:disabled) {
+    border-color: var(--gold-bright);
+    transform: translateY(-2px);
+}
+.extra-btn.locked, .extra-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Save / Load slot modal */
+.slot-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(8,4,14,0.88);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    pointer-events: auto;
+}
+.slot-modal.is-visible { display: flex !important; }
+.slot-box {
+    background: linear-gradient(180deg, #2a1c3c, #1a1028);
+    border: 1px solid var(--line-gold);
+    border-radius: 16px;
+    padding: 22px 20px;
+    width: min(440px, 94vw);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.slot-box h3 {
+    text-align: center;
+    margin: 0 0 14px 0;
+    font-size: 18px;
+    color: var(--gold-bright);
+}
+.slot-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+.slot-card {
+    text-align: left;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(253,246,238,0.18);
+    background: rgba(253,246,238,0.06);
+    color: var(--parchment);
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.18s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+.slot-card:hover {
+    border-color: var(--gold-bright);
+    background: rgba(227,181,103,0.15);
+}
+.slot-card.empty { opacity: 0.75; cursor: default; }
+.slot-card .slot-num { display: block; font-weight: 800; font-size: 13px; }
+.slot-card .slot-meta { display: block; font-size: 12px; opacity: 0.85; margin-top: 2px; }
+.slot-card .slot-date { display: block; font-size: 11px; color: var(--gold-bright); margin-top: 4px; }
+.slot-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.slot-main-btn, .slot-info {
+    flex: 1;
+    text-align: left;
+    padding: 12px 14px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+.slot-delete-btn {
+    flex: 0 0 48px;
+    border: none;
+    border-left: 1px solid rgba(253,246,238,0.12);
+    background: rgba(180,40,60,0.25);
+    color: #ffb4c0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.15s ease;
+}
+.slot-delete-btn:hover {
+    background: rgba(220,50,70,0.55);
+    color: #fff;
+}
+.slot-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.slot-actions .modal-close {
+    min-width: 120px;
+}
+.slot-secondary {
+    background: rgba(253,246,238,0.08) !important;
+}
+
+.after-story-btn {
+    background: linear-gradient(120deg, #6fc8d6, #f7dfa0, #ff8fa8) !important;
+    background-size: 200% 200% !important;
+}
+</style>
+</head>
+<body>
+
+<div id="app-shell">
+    <div id="stars-layer"></div>
+    <div id="petals-layer"></div>
+
+    <!-- ==================== MAIN MENU ==================== -->
+    <div id="main-menu" class="screen is-visible">
+        <div class="title-block">
+            <svg class="emblem" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:10px;">
+                <path d="M26 44C26 44 8 33.5 8 20.5C8 13.5 13.5 9 19.5 9C22.7 9 25 10.8 26 13C27 10.8 29.3 9 32.5 9C38.5 9 44 13.5 44 20.5C44 33.5 26 44 26 44Z" fill="url(#g1)"/>
+                <defs><linearGradient id="g1" x1="8" y1="9" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#f7dfa0"/><stop offset="1" stop-color="#e3b567"/>
+                </linearGradient></defs>
+            </svg>
+            <span class="eyebrow">Visual Novel · Romance Simulation</span>
+            <h1 class="game-title">Harmoni Lima Hati</h1>
+            <p class="game-subtitle">Lima pertemuan. Lima hati. Satu musim semi yang tak terlupakan.</p>
+        </div>
+        <div class="menu-options">
+            <button class="btn btn-primary" onclick="startNewGame()"><span class="btn-icon">🌸</span> New Game</button>
+            <button id="btn-continue" class="btn" onclick="continueGame()" style="display:none;"><span class="btn-icon">▶️</span> Continue</button>
+            <button class="btn" onclick="handleLoadGameClick()"><span class="btn-icon">📂</span> Load Game</button>
+            <button class="btn" onclick="showSynopsis()"><span class="btn-icon">📖</span> Sinopsis Cerita</button>
+            <button class="btn" onclick="showCharacterInfo()"><span class="btn-icon">💌</span> Informasi Karakter</button>
+            <button class="btn" onclick="showAlbum()"><span class="btn-icon">📷</span> Album Foto</button>
+            <button class="btn btn-ghost" onclick="exitGame()"><span class="btn-icon">✕</span> Exit</button>
+        </div>
+    </div>
+
+    <!-- ==================== SYNOPSIS ==================== -->
+    <div id="synopsis-screen" class="screen">
+        <div class="back-row"><button class="btn btn-ghost" onclick="hideOverlayScreen('synopsis-screen')">← Kembali</button></div>
+        <div class="parchment-panel">
+            <span class="eyebrow" style="color:var(--ichika);">Sinopsis</span>
+            <h2>Harmoni Lima Hati</h2>
+            <div class="divider"></div>
+            <p>Musim semi baru saja dimulai ketika kamu pindah ke sebuah kota kecil yang tenang, jauh dari hiruk-pikuk yang selama ini kamu kenal. Tanpa disangka, lima pertemuan sederhana — di ruang les bahasa Inggris, sudut perpustakaan, kedai ramen langganan, pinggir lapangan basket, hingga meja belajar privat — membawamu mengenal lima gadis dengan dunia yang begitu berbeda.</p>
+            <p>Di balik senyum manis, sikap ketus, sifat pendiam, semangat berlebih, atau kesan angkuh mereka, masing-masing menyimpan luka dan harapan yang jarang mereka tunjukkan pada siapa pun. Satu per satu, kamu belajar mendengarkan — bukan untuk menilai, tapi untuk memahami.</p>
+            <p>Setiap pilihan kata dan setiap kepekaanmu akan menentukan arah hati mereka: akankah hubungan itu tumbuh menjadi kisah yang hangat, atau justru menjauh karena kurangnya perhatian? <em>Harmoni Lima Hati</em> adalah kisah tentang ketulusan kecil yang mampu menyembuhkan hati yang paling tersembunyi sekalipun.</p>
+            <p style="font-weight:700; color:var(--ink);">Chapter mana yang akan kamu buka lebih dulu? Dan hati siapa yang akan benar-benar kamu mengerti?</p>
+        </div>
+    </div>
+
+    <!-- ==================== NAME INPUT ==================== -->
+    <div id="name-input-screen" class="screen">
+        <div class="letter-card">
+            <h2>Masukkan Nama Karakter Utamamu</h2>
+            <p class="hint">Nama ini akan dipanggil oleh kelima gadis di sepanjang cerita.</p>
+            <input type="text" id="mc-name-field" placeholder="Ketik nama di sini... (khusus teks)" maxlength="15">
+            <button class="btn btn-primary" onclick="confirmMcName()">Mulai Petualangan ✨</button>
+        </div>
+    </div>
+
+    <!-- ==================== CHAPTER MENU ==================== -->
+    <div id="chapter-menu" class="screen">
+        <h2>Pilih Petualangan Cintamu</h2>
+        <p class="subhead">Selesaikan chapter sebelumnya untuk membuka hati gadis berikutnya.</p>
+
+        <div class="chapter-grid">
+            <button id="btn-ch1" class="ch-btn active" style="--ch-color:var(--ichika);" onclick="pilihChapter(1)">
+                <span class="ch-emoji">🌸</span>
+                <h3>Chapter 1</h3>
+                <p>Suzuki Ichika</p>
+                <span>Tempat Les Inggris</span>
+            </button>
+            <button id="btn-ch2" class="ch-btn locked" style="--ch-color:var(--nino);" onclick="pilihChapter(2)" disabled>
+                <span class="ch-emoji">🍓</span>
+                <h3>Chapter 2 🔒</h3>
+                <p>Tachibana Nino</p>
+                <span>Perpustakaan</span>
+            </button>
+            <button id="btn-ch3" class="ch-btn locked" style="--ch-color:var(--miku);" onclick="pilihChapter(3)" disabled>
+                <span class="ch-emoji">💧</span>
+                <h3>Chapter 3 🔒</h3>
+                <p>Yoshikawa Miku</p>
+                <span>Kedai Ramen</span>
+            </button>
+            <button id="btn-ch4" class="ch-btn locked" style="--ch-color:var(--yotsuba);" onclick="pilihChapter(4)" disabled>
+                <span class="ch-emoji">🍀</span>
+                <h3>Chapter 4 🔒</h3>
+                <p>Takahashi Yotsuba</p>
+                <span>Lapangan Basket</span>
+            </button>
+            <button id="btn-ch5" class="ch-btn locked" style="--ch-color:var(--itsuki);" onclick="pilihChapter(5)" disabled>
+                <span class="ch-emoji">🌟</span>
+                <h3>Chapter 5 🔒</h3>
+                <p>Watanabe Itsuki</p>
+                <span>Kelas Privat</span>
+            </button>
+        </div>
+
+        <div class="extra-row" id="extra-row">
+            <button id="btn-extra1" class="extra-btn locked" onclick="pilihExtraChapter(1)" disabled style="display:none;">🌸 Extra 1 · Ichika After</button>
+            <button id="btn-extra2" class="extra-btn locked" onclick="pilihExtraChapter(2)" disabled style="display:none;">🍓 Extra 2 · Nino After</button>
+            <button id="btn-extra3" class="extra-btn locked" onclick="pilihExtraChapter(3)" disabled style="display:none;">💧 Extra 3 · Miku After</button>
+            <button id="btn-extra4" class="extra-btn locked" onclick="pilihExtraChapter(4)" disabled style="display:none;">🍀 Extra 4 · Yotsuba After</button>
+            <button id="btn-extra5" class="extra-btn locked" onclick="pilihExtraChapter(5)" disabled style="display:none;">🌟 Extra 5 · Itsuki After</button>
+        </div>
+
+        <button id="btn-ch6" class="harem-btn locked" onclick="pilihChapter(6)" disabled style="display:none;">
+            👑 OPEN CHAPTER 6: TRUE HAREM WEDDING 👑
+        </button>
+
+        <button id="btn-ch7" class="harem-btn after-story-btn locked" onclick="pilihChapter(7)" disabled style="display:none;">
+            🌸 CHAPTER 7: AFTER STORY — Hidup Berenam 🌸
+        </button>
+
+        <div class="chapter-save-row" style="position:relative;z-index:3;display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap;">
+            <button class="btn" onclick="openSaveSlots()"><span class="btn-icon">💾</span> Save</button>
+            <button class="btn" onclick="openLoadSlots()"><span class="btn-icon">📂</span> Load</button>
+        </div>
+
+        <button class="btn btn-ghost back-btn" onclick="kembaliKeMenuUtama()">← Kembali ke Menu Utama</button>
+    </div>
+
+    <!-- ==================== CHARACTER INFO ==================== -->
+    <div id="character-info-screen" class="screen">
+        <div class="back-row"><button class="btn btn-ghost" onclick="hideOverlayScreen('character-info-screen')">← Kembali</button></div>
+        <h2>💌 Informasi Karakter</h2>
+        <div class="char-layout">
+            <div id="char-tab-list"></div>
+            <div id="char-detail-panel"></div>
+        </div>
+
+        <div id="char-lightbox" onclick="closeCharLightbox()">
+            <button class="lightbox-close" onclick="event.stopPropagation(); closeCharLightbox();">✕</button>
+            <div class="lightbox-inner">
+                <div class="lightbox-frame" id="lightbox-frame">
+                    <img id="lightbox-img" src="" alt="">
+                    <div id="lightbox-fallback"></div>
+                </div>
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ALBUM FOTO ==================== -->
+    <div id="album-screen" class="screen">
+        <div class="back-row"><button class="btn btn-ghost" onclick="hideOverlayScreen('album-screen')">← Kembali</button></div>
+        <h2 class="album-title">📷 Album Kenangan</h2>
+        <p class="album-sub">Foto terbuka permanen sesuai ending yang pernah kamu raih di tiap chapter.</p>
+        <div id="album-grid" class="album-grid"></div>
+
+        <div id="album-lightbox" onclick="closeAlbumLightbox()">
+            <button class="lightbox-close" onclick="event.stopPropagation(); closeAlbumLightbox();">✕</button>
+            <div class="lightbox-inner">
+                <div class="lightbox-frame" id="album-lightbox-frame">
+                    <img id="album-lightbox-img" src="" alt="">
+                    <div id="album-lightbox-fallback"></div>
+                </div>
+                <div class="lightbox-caption" id="album-lightbox-caption"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- ==================== GAME SCREEN ==================== -->
+<div id="game-container" class="screen" style="background-image: url('assets/bg/default.jpg');">
+    <!-- Menu button - top left -->
+    <div id="top-left-menu" onclick="openInGameMenu()">
+        ☰ Menu
+    </div>
+
+    <!-- Volume controls (BGM + Voice) -->
+    <div id="volume-panel" onclick="event.stopPropagation();">
+        <div class="vol-group" title="Volume musik latar">
+            <span class="vol-icon">🎵</span>
+            <span class="vol-label-text">BGM</span>
+            <input type="range" id="bgm-volume-slider" min="0" max="100" value="28"
+                   oninput="setBgmVolume(this.value/100)">
+            <span class="vol-pct" id="bgm-vol-label">28%</span>
+        </div>
+        <div class="vol-group" title="Volume suara karakter">
+            <span class="vol-icon">🗣️</span>
+            <span class="vol-label-text">Voice</span>
+            <input type="range" id="voice-volume-slider" min="0" max="100" value="100"
+                   oninput="setVoiceVolume(this.value/100)">
+            <span class="vol-pct" id="voice-vol-label">100%</span>
+        </div>
+    </div>
+    
+    <!-- Stats - top right -->
+    <div id="stats-box">
+        Affection <span id="char-name-label">Ichika</span>: <span id="aff-val">0</span>%
+    </div>
+    
+    <!-- Character sprites -->
+    <img id="sprite-left" src="" style="display:none;">
+    <img id="character-sprite" src="" style="display:none;">
+    <img id="sprite-right" src="" style="display:none;">
+
+    <!-- Options container -->
+    <div id="options-container"></div>
+
+    <!-- Dialogue box -->
+    <div id="dialogue-box" onclick="nextDialogue()">
+        <div id="speaker-name">Narasi</div>
+        <div id="dialogue-text">Klik di sini untuk memulai game...</div>
+    </div>
+
+    <!-- In-game menu modal -->
+    <div id="in-game-menu-modal">
+        <div class="modal-box">
+            <h3>☰ Menu</h3>
+            <button class="modal-btn" onclick="openSaveSlots()">💾 Save Game</button>
+            <button class="modal-btn" onclick="handleLoadFromInGameMenu()">📂 Load Game</button>
+            <button class="modal-btn" onclick="openDeleteSlots()">🗑️ Hapus Save</button>
+            <button class="modal-btn danger" onclick="confirmReturnToMainMenu()">🏠 Menu Utama</button>
+            <button class="modal-close" onclick="closeInGameMenu()">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Affection FX overlay -->
+    <div id="affection-fx-overlay" onclick="closeAffectionFx()">
+        <div class="affection-fx-inner">
+            <div id="affection-fx-sparkles"></div>
+            <div id="affection-fx-icon" class="affection-fx-icon">❤️</div>
+            <div id="affection-fx-label" class="affection-fx-label">+10% Affection</div>
+            <div id="affection-fx-text" class="affection-fx-text"></div>
+            <div class="affection-fx-hint">(klik untuk lanjut)</div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script>
+(async function ensureLogin() {
+  if (!window.hlhAPI) {
+    // Bukan Electron — tetap izinkan play offline tanpa akun
+    console.warn('hlhAPI tidak ada; mode browser tanpa login akun.');
+    return;
+  }
+  try {
+    const s = await window.hlhAPI.getSession();
+    if (!s || !s.ok || !s.user) {
+      window.location.href = 'login.html';
+    }
+  } catch (e) {
+    console.warn(e);
+  }
+})();
+</script>
+
+<script src="game.js"></script>
+</body>
+</html>

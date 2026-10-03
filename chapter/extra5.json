@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1,
+    "speaker": "Narasi",
+    "text": "Beberapa bulan setelah pernikahan. Rumah kecil kalian masih berbau cat baru. Tapi setiap pagi ada Itsuki di dapur—dan itu sudah cukup membuatmu merasa pulang.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "",
+    "bgm": "hm_soundtrack.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 2,
+    "speaker": "Watanabe Itsuki",
+    "text": "Selamat pagi. Saya sudah susun daftar belanja minggu ini. Anda boleh menambah, asal logis.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "itsuki_formal.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_01.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 3,
+    "speaker": "Watanabe Itsuki",
+    "text": "...Kopi Anda saya buatkan. Jangan bilang saya manja. Ini efisiensi: satu gelas, dua orang tetap fokus.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_02.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 4,
+    "speaker": "Watanabe Itsuki",
+    "text": "Proyek arsitektur kecil saya diterima. Bukan gedung besar—renovasi perpustakaan komunitas. Saya... senang.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "itsuki_happy.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_03.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 5,
+    "speaker": "Watanabe Itsuki",
+    "text": "Dulu saya pikir cinta tidak efisien. Ternyata data empiris menunjukkan saya salah—dan saya tidak menyesal.",
+    "bg_image": "house_kitchen_morning.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_04.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 6,
+    "speaker": "Watanabe Itsuki",
+    "text": "Anak? Saya sudah baca beberapa buku parenting. Terlalu dini, mungkin. Tapi persiapan tidak ada salahnya.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "itsuki_normal.png",
+    "bgm": "hm_chill_town.mp3",
+    "voice": "ex5_itsuki_05.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 7,
+    "speaker": "Watanabe Itsuki",
+    "text": "Orang tua saya mulai mengunjungi lebih sering. Saya bilang Anda bagian dari keputusan saya. Mereka mengangguk.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_06.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 8,
+    "speaker": "Watanabe Itsuki",
+    "text": "Terima kasih telah mengajar saya istirahat. Tanpa Anda, saya mungkin masih menghafal sampai pingsan.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "itsuki_teary.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_07.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 9,
+    "speaker": "Watanabe Itsuki",
+    "text": "Kadang saya masih menyusun jadwal berlebihan. Kalau Anda bilang 'cukup', saya akan mencoba menurut.",
+    "bg_image": "living_room_day.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_11.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 10,
+    "speaker": "Watanabe Itsuki",
+    "text": "Malam pertama... saya meminta lampu diredupkan. Bukan karena takut gelap—karena wajah saya terlalu panas.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "itsuki_blush.png",
+    "bgm": "hm_winter.mp3",
+    "voice": "ex5_itsuki_08.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 11,
+    "speaker": "Watanabe Itsuki",
+    "text": "Sekarang saya bisa bilang: tetap di sini. Peluk saya. Tidak perlu kata-kata rumit.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_09.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 12,
+    "speaker": "Watanabe Itsuki",
+    "text": "Jika saya kaku di depan orang lain, di rumah... biarkan saya menjadi lebih lembut. Hanya di depan Anda.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "itsuki_shy.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_12.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 13,
+    "speaker": "Watanabe Itsuki",
+    "text": "Saya mencintai Anda. Itu pernyataan yang saya ucapkan dengan sadar.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "itsuki_happy_blush.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_10.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 14,
+    "speaker": "Watanabe Itsuki",
+    "text": "Besok saya alokasikan waktu kosong. Tanpa jadwal. Hanya bersama Anda. Itu... juga efisien, menurut saya.",
+    "bg_image": "bedroom_night.jpg",
+    "sprite": "itsuki_soft_smile.png",
+    "bgm": "",
+    "voice": "ex5_itsuki_13.wav",
+    "effect": "typewriter"
+  },
+  {
+    "id": 15,
+    "speaker": "Narasi",
+    "text": "Hidup kalian bareng Itsuki tidak spektakuler setiap detik—tapi justru karena itu, terasa nyata dan hangat.",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  },
+  {
+    "id": 16,
+    "type": "chapter_end",
+    "speaker": "Sistem",
+    "text": "Extra Chapter 5 selesai. Kisah setelah menikah dengan Watanabe Itsuki terus berlanjut.",
+    "ending_type": "extra",
+    "ending_image": "auto",
+    "bg_image": "house_exterior_day.jpg",
+    "sprite": "",
+    "bgm": "hm_ending.mp3",
+    "voice": "",
+    "effect": ""
+  }
+]
